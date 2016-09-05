@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	    <string>&lt;%</string>
+		<string>%&gt;</string>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<true/>
+
+	<key>keywords</key>
+	<array>
+        <string>alias</string>
+		<string>and</string>
+		<string>begin</string>
+		<string>BEGIN</string>
+		<string>break</string>
+		<string>case</string>
+		<string>catch</string>
+		<string>class</string>
+		<string>def</string>
+		<string>defined?</string>
+		<string>do</string>
+		<string>else</string>
+		<string>elsif</string>
+		<string>end</string>
+		<string>END</string>
+		<string>ensure</string>
+		<string>false</string>
+		<string>for</string>
+		<string>if</string>
+		<string>in</string>
+		<string>module</string>
+		<string>next</string>
+		<string>nil</string>
+		<string>not</string>
+		<string>or</string>
+		<string>private</string>
+		<string>protected</string>
+		<string>public</string>
+		<string>redo</string>
+		<string>rescue</string>
+		<string>retry</string>
+		<string>return</string>
+		<string>self</string>
+		<string>super</string>
+		<string>then</string>
+		<string>true</string>
+		<string>throw</string>
+		<string>undef</string>
+		<string>unless</string>
+		<string>until</string>
+		<string>when</string>
+		<string>while</string>
+		<string>yield</string>
+		<string>__ENCODING__</string>
+		<string>__END__</string>
+		<string>__FILE__</string>
+		<string>__LINE__</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+	    <string>=begin</string>
+		<string>=end</string>
+		<string>/*</string>
+		<string>*/</string>
+		<string>&lt;!--</string>
+		<string>--&gt;</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>#</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	    <string>&lt;</string>
+		<string>&gt;</string>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<true/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

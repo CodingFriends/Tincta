@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'Tincta' target in the 'Tincta' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <Foundation/Foundation.h>
+    #import "TCADefaultsHelper.h"
+#endif
+
+#define TCADefaults [NSUserDefaults standardUserDefaults]
+#define TCAFileExtensionsPath [[NSBundle mainBundle] pathForResource:@"FileExtensions" ofType:@"plist"]
+#define TCAFileExtensionsFile @"FileExtensions"
+
+
+static const BOOL kTCA_IsInAppStore = YES;

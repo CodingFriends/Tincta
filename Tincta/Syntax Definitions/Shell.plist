@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>case</string>
+		<string>coproc</string>
+		<string>do</string>
+		<string>done</string>
+		<string>elif</string>
+		<string>else</string>
+		<string>end</string>
+		<string>esac</string>
+		<string>fi</string>
+		<string>for</string>
+		<string>foreach</string>
+		<string>function</string>
+		<string>if</string>
+		<string>in</string>
+		<string>nocorrect</string>
+		<string>repeat</string>
+		<string>select</string>
+		<string>then</string>
+		<string>time</string>
+		<string>until</string>
+		<string>while</string>
+		<string>!</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	   <string>alias</string>
+        <string>bg</string>
+        <string>builtin</string>
+        <string>break</string>
+        <string>cd</string>
+        <string>command</string>
+        <string>continue</string>
+        <string>disown</string>
+        <string>echo</string>
+        <string>exec</string>
+        <string>exit</string>
+        <string>export</string>
+        <string>eval</string>
+        <string>false</string>
+        <string>fg</string>
+        <string>getconf</string>
+        <string>getopts</string>
+        <string>hist</string>
+        <string>jobs</string>
+        <string>kill</string>
+        <string>let</string>
+        <string>newgrp</string>
+        <string>print</string>
+        <string>printf</string>
+        <string>pwd</string>
+        <string>read</string>
+        <string>readonly</string>
+        <string>return</string>
+        <string>set</string>
+        <string>shift</string>
+        <string>sleep</string>
+        <string>test</string>
+        <string>trap</string>
+        <string>true</string>
+        <string>typeset</string>
+        <string>ulimit</string>
+        <string>umask</string>
+        <string>unalias</string>
+        <string>unset</string>
+        <string>wait</string>
+        <string>whence</string>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>#</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

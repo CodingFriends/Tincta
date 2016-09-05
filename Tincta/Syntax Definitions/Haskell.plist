@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>!</string>
+		<string>-&lt;</string>
+		<string>-&lt;&lt;</string>
+		<string>-&gt;</string>
+		<string>&lt;-</string>
+		<string>as</string>
+		<string>Bool</string>
+		<string>case</string>
+		<string>Char</string>
+		<string>class</string>
+		<string>data</string>
+		<string>default</string>
+		<string>deriving</string>
+		<string>do</string>
+		<string>else</string>
+		<string>Eq</string>
+		<string>False</string>
+		<string>family</string>
+		<string>forall</string>
+		<string>foreign</string>
+		<string>Fractional</string>
+		<string>hiding</string>
+		<string>if</string>
+		<string>import</string>
+		<string>in</string>
+		<string>infix</string>
+		<string>infixl</string>
+		<string>infixr</string>
+		<string>instance</string>
+		<string>Int</string>
+		<string>Integer</string>
+		<string>let</string>
+		<string>mdo</string>
+		<string>module</string>
+		<string>newtype</string>
+		<string>Num</string>
+		<string>proc</string>
+		<string>qualified</string>
+		<string>rec</string>
+		<string>String</string>
+		<string>then</string>
+		<string>True</string>
+		<string>type</string>
+		<string>where</string>
+		<string>of</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<false/>
+
+	<key>multiLineComments</key>
+	<array>
+		<string>{-</string>
+		<string>-}</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>--</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

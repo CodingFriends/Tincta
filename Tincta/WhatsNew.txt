@@ -1,0 +1,34 @@
+======================
+Welcome to Tincta 2
+======================
+
+Did you know:
+... that Tincta automatically notices if an open file was changed by another application? If you have not modified the file in Tincta it will even reload the file contents without you noticing. If you made unsaved changes, Tincta will ask you what you would like to do.
+... that you can make your own syntax definitions? just right-click the application, click
+    'Show Package Contents' and go into the foler 'Contents/Resources/Syntax Definitons'. Then copy
+    one of the definitions that describes the language you need best and copy it to the folder
+    '~/Library/Application Support/Tincta/Definitions/'. You can then rename the file to provide
+    a new definition or keep the name to overwrite a existing one. If you wish to have your new
+    defined language registered with certain file extensions you need to copy the file
+    'FileExtension.plist' into '~/Library/Application Support/Tincta/' and extend it with a
+    correspondig entry.
+    If you add new syntax definitions we'll be glad to hear from you!
+
+
+----------------------
+New in Tincta 2.5
+----------------------
+
+* block commenting of selection via cmd + /
+* UI bugfixes
+* overall bugfixes
+
+
+----------------------
+New in Tincta 2.4
+----------------------
+
+* auto update!!
+* improved search
+* bugfixes
+

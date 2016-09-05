@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributesDelim</key>
+	<array>
+		<string>:</string>
+	</array>
+	<key>attributeColoringInBlocks</key>
+	<true/>
+	<key>blocks</key>
+	<array>
+		<string>{</string>
+		<string>}</string>
+	</array>
+	<key>charStrings</key>
+	<array/>
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+	<key>keywords</key>
+	<array/>
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+	<key>multiLineComments</key>
+	<array>
+		<string>/*</string>
+		<string>*/</string>
+	</array>
+	<key>multiLineStrings</key>
+	<array/>
+	<key>predefined</key>
+	<array/>
+	<key>predefinedDelim</key>
+	<array/>
+	<key>singleLineComments</key>
+	<array>
+		<string>//</string>
+	</array>
+	<key>singleLineStrings</key>
+	<array>
+		<string>&quot;</string>
+		<string>&quot;</string>
+		<string>&apos;</string>
+		<string>&apos;</string>
+	</array>
+	<key>tags</key>
+	<array/>
+	<key>variablesDelim</key>
+	<array/>
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+	<key>isXMLbased</key>
+	<false/>
+	<key>indentionBlocks</key>
+	<array/>
+</dict>
+</plist>

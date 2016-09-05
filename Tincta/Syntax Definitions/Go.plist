@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>append</string>
+		<string>bool</string>
+		<string>break</string>
+		<string>byte</string>
+		<string>cap</string>
+		<string>case</string>
+		<string>chan</string>
+		<string>chose</string>
+		<string>complex</string>
+		<string>complex128</string>
+		<string>complex64</string>
+		<string>const</string>
+		<string>continue</string>
+		<string>copy</string>
+		<string>default</string>
+		<string>defer</string>
+		<string>else</string>
+		<string>fallthrough</string>
+		<string>false</string>
+		<string>float32</string>
+		<string>float64</string>
+		<string>for</string>
+		<string>func</string>
+		<string>go</string>
+		<string>goto</string>
+		<string>if</string>
+		<string>iota</string>
+		<string>imag</string>
+		<string>import</string>
+		<string>int</string>
+		<string>int16</string>
+		<string>int32</string>
+		<string>int64</string>
+		<string>int8</string>
+		<string>interface</string>
+		<string>len</string>
+		<string>make</string>
+		<string>map</string>
+		<string>new</string>
+		<string>nil</string>
+		<string>package</string>
+		<string>panic</string>
+		<string>print</string>
+		<string>println</string>
+		<string>range</string>
+		<string>real</string>
+		<string>recover</string>
+		<string>return</string>
+		<string>select</string>
+		<string>string</string>
+		<string>struct</string>
+		<string>switch</string>
+		<string>true</string>
+		<string>type</string>
+		<string>uint</string>
+		<string>uint16</string>
+		<string>uint32</string>
+		<string>uint64</string>
+		<string>uint8</string>
+		<string>uintptr</string>
+		<string>var</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<false/>
+
+	<key>multiLineComments</key>
+	<array>
+		<string>/*</string>
+		<string>*/</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>//</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

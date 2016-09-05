@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+		<string>=</string>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+	    <string>ELEMENT</string>
+		<string>ATTLIST</string>
+		<string>DOCTYPE</string>
+		<string>NOTATION</string>
+		<string>PUBLIC</string>
+		<string>SYSTEM</string>
+		<string>SHORTREF</string>
+		<string>USEMAP</string>
+		<string>NMTOKEN</string>
+		<string>NMTOKENS</string>
+		<string>IDREF</string>
+		<string>IDREFS</string>
+		<string>ENTITY</string>
+		<string>ENTITIES</string>
+		<string>ANY</string>
+		<string>EMPTY</string>
+		<string>INCLUDE</string>
+		<string>IGNORE</string>
+		<string>NDATA</string>
+		<string>CDATA</string>
+		<string>ID</string>
+		<string>#FIXED</string>
+        <string>#IMPLIED</string>
+		<string>#PCDATA</string>
+		<string>#REQUIRED</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<false/>
+
+    <key>singleLineComments</key>
+    <array>
+    </array>
+    
+	<key>multiLineComments</key>
+	<array>
+		<string>&lt;!--</string>
+		<string>--&gt;</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+		<string>&lt;</string>
+		<string>&gt;</string>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<true/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

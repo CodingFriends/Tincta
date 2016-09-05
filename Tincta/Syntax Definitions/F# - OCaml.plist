@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>abstract</string>
+		<string>and</string>
+		<string>as</string>
+		<string>assert</string>
+		<string>base</string>
+		<string>begin</string>
+		<string>class</string>
+		<string>default</string>
+		<string>delegate</string>
+		<string>do</string>
+		<string>done</string>
+		<string>downcast</string>
+		<string>downto</string>
+		<string>elif</string>
+		<string>else</string>
+		<string>end</string>
+		<string>exception</string>
+		<string>extern</string>
+		<string>false</string>
+		<string>finally</string>
+		<string>for</string>
+		<string>fun</string>
+		<string>function</string>
+		<string>global</string>
+		<string>if</string>
+		<string>in</string>
+		<string>inherit</string>
+		<string>inline</string>
+		<string>interface</string>
+		<string>internal</string>
+		<string>lazy</string>
+		<string>let</string>
+		<string>match</string>
+		<string>member</string>
+		<string>module</string>
+		<string>mutable</string>
+		<string>namespace</string>
+		<string>new</string>
+		<string>not</string>
+		<string>null</string>
+		<string>of</string>
+		<string>open</string>
+		<string>or</string>
+		<string>override</string>
+		<string>private</string>
+		<string>public</string>
+		<string>rec</string>
+		<string>return</string>
+		<string>static</string>
+		<string>struct</string>
+		<string>then</string>
+		<string>to</string>
+		<string>true</string>
+		<string>try</string>
+		<string>type</string>
+		<string>upcast</string>
+		<string>use</string>
+		<string>val</string>
+		<string>void</string>
+		<string>when</string>
+		<string>while</string>
+		<string>whith</string>
+		<string>yield</string>
+		
+		
+		<string>asr</string>
+		<string>land</string>
+		<string>lor</string>
+		<string>lsl</string>
+		<string>lsr</string>
+		<string>lxor</string>
+		<string>mod</string>
+		<string>sig</string>
+		<string>atomic</string>
+		<string>break</string>
+		<string>checked</string>
+		<string>continue</string>
+		<string>eager</string>
+		<string>event</string>
+		<string>method</string>
+		<string>mixin</string>
+		<string>object</string>
+		<string>sealed</string>
+		<string>tailcall</string>
+		<string>trait</string>
+		<string>component</string>
+		<string>external</string>
+		<string>parallel</string>
+		<string>virtual</string>
+		<string>const</string>
+		<string>fixed</string>
+		<string>process</string>
+		<string>volatile</string>
+		<string>constraint</string>
+		<string>functor</string>
+		<string>protected</string>
+		<string>constructor</string>
+		<string>include</string>
+		<string>pure</string>
+
+
+		<string>bool</string>
+		<string>byte</string>
+		<string>sbyte</string>
+		<string>int16</string>
+		<string>uint32</string>
+		<string>int64</string>
+		<string>uint64</string>
+		<string>nativeint</string>
+		<string>unativeint</string>
+		<string>char</string>
+		<string>string</string>
+		<string>decimal</string>
+		<string>unit</string>
+		<string>void</string>
+		<string>float32</string>
+		<string>single</string>
+		<string>float</string>
+		<string>double</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<false/>
+
+	<key>multiLineComments</key>
+	<array>
+		<string>(*</string>
+		<string>*)</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>//</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>		
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<true/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

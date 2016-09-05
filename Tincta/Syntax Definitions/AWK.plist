@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+	
+	<key>blocks</key>
+	<array>
+	</array>
+	
+	<key>charStrings</key>
+	<array>
+	</array>
+	
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>break</string>
+		<string>close</string>
+		<string>continue</string>
+		<string>delete</string>
+		<string>do</string>
+		<string>else</string>
+		<string>exit</string>
+		<string>fflush</string>
+		<string>for</string>
+		<string>huge</string>
+		<string>if</string>
+		<string>in</string>
+		<string>function</string>
+		<string>next</string>
+		<string>nextfile</string>
+		<string>print</string>
+		<string>printf</string>
+		<string>return</string>
+		<string>while</string>
+		<string>atan2</string>
+		<string>cos</string>
+		<string>exp</string>
+		<string>gensub</string>
+		<string>getline</string>
+		<string>gsub</string>
+		<string>index</string>
+		<string>int</string>
+		<string>length</string>
+		<string>log</string>
+		<string>match</string>
+		<string>rand</string>
+		<string>sin</string>
+		<string>split</string>
+		<string>sprintf</string>
+		<string>sqrt</string>
+		<string>srand</string>
+		<string>sub</string>
+		<string>substr</string>
+		<string>system</string>
+		<string>tolower</string>
+		<string>toupper</string>
+		<string>BEGIN</string>
+		<string>END</string>
+		<string>$0</string>
+		<string>ARGC</string>
+		<string>ARGIND</string>
+		<string>ARGV</string>
+		<string>CONVFMT</string>
+		<string>ENVIRON</string>
+		<string>ERRNO</string>
+		<string>FIELDWIDTHS</string>
+		<string>FILENAME</string>
+		<string>FNR</string>
+		<string>FS</string>
+		<string>IGNORECASE</string>
+		<string>NF</string>
+		<string>NR</string>
+		<string>OFMT</string>
+		<string>OFS</string>
+		<string>ORS</string>
+		<string>RLENGTH</string>
+		<string>RS</string>
+		<string>RSTART</string>
+		<string>RT</string>
+		<string>SUBSEP</string>
+	</array>
+	
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+	</array>
+	
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+	
+	<key>predefined</key>
+	<array>
+	</array>
+	
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>#</string>
+	</array>
+	
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+	</array>
+	
+	<key>tags</key>
+	<array>
+	</array>
+	
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

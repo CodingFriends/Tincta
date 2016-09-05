@@ -1,0 +1,1043 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E6ADDE51A61831F00BAA882 /* TCAddons_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6ADDE41A61831F00BAA882 /* TCAddons_Test.m */; };
+		0E7286D41A85726E008D6395 /* ColorSchemes in Resources */ = {isa = PBXBuildFile; fileRef = 0E7286D21A85726E008D6395 /* ColorSchemes */; };
+		95F1D01B19AFA3C70022EA99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF1E1358922D008CA186 /* main.m */; };
+		95F1D01C19AFA3C70022EA99 /* TinctaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF241358922E008CA186 /* TinctaAppDelegate.m */; };
+		95F1D02019AFA3C70022EA99 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF4213589517008CA186 /* MainWindowController.m */; };
+		95F1D03C19AFA3C70022EA99 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B1DEDB18F5B61F00AF2F76 /* IOKit.framework */; };
+		95F1D03D19AFA3C70022EA99 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D8361516B56B8900400410 /* Security.framework */; };
+		95F1D03E19AFA3C70022EA99 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957D5D94139AA29B00186F1D /* SystemConfiguration.framework */; };
+		95F1D03F19AFA3C70022EA99 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957D5D81139AA1A400186F1D /* CoreFoundation.framework */; };
+		95F1D04019AFA3C70022EA99 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A5CF501358955A008CA186 /* QuickLook.framework */; };
+		95F1D04219AFA3C70022EA99 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A5CF111358922D008CA186 /* Cocoa.framework */; };
+		95F1D04419AFA3C70022EA99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95A5CF1A1358922D008CA186 /* InfoPlist.strings */; };
+		95F1D04519AFA3C70022EA99 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = C638AAC81376CECC00E9339C /* Preferences.xib */; };
+		95F1D04619AFA3C70022EA99 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = C66657CD137A84C900E6822F /* Credits.html */; };
+		95F1D04719AFA3C70022EA99 /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC831958E70C00A270A9 /* color.png */; };
+		95F1D04819AFA3C70022EA99 /* preferences.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC8D1958E70C00A270A9 /* preferences.png */; };
+		95F1D04919AFA3C70022EA99 /* save@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC881958E70C00A270A9 /* save@2x.png */; };
+		95F1D04A19AFA3C70022EA99 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC931958E70C00A270A9 /* settings.png */; };
+		95F1D04B19AFA3C70022EA99 /* app_icon_running.icns in Resources */ = {isa = PBXBuildFile; fileRef = C66657D5137A8A4E00E6822F /* app_icon_running.icns */; };
+		95F1D04C19AFA3C70022EA99 /* Syntax Definitions in Resources */ = {isa = PBXBuildFile; fileRef = C63E5C021382E42300C62BCF /* Syntax Definitions */; };
+		95F1D04D19AFA3C70022EA99 /* Notification.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95B8F05D138C2C3400DB73DF /* Notification.xib */; };
+		95F1D04E19AFA3C70022EA99 /* open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC8C1958E70C00A270A9 /* open@2x.png */; };
+		95F1D05019AFA3C70022EA99 /* search_notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF7B13B0D51C00A7F1CD /* search_notification.png */; };
+		95F1D05119AFA3C70022EA99 /* preferences@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC8E1958E70C00A270A9 /* preferences@2x.png */; };
+		95F1D05219AFA3C70022EA99 /* wrap_notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF7C13B0D51C00A7F1CD /* wrap_notification.png */; };
+		95F1D05319AFA3C70022EA99 /* app_icon_ink1.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF7F13B0F25800A7F1CD /* app_icon_ink1.icns */; };
+		95F1D05419AFA3C70022EA99 /* app_icon_ink2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF8013B0F25900A7F1CD /* app_icon_ink2.icns */; };
+		95F1D05519AFA3C70022EA99 /* app_icon_ink3.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF8113B0F25A00A7F1CD /* app_icon_ink3.icns */; };
+		95F1D05619AFA3C70022EA99 /* app_icon_yelling.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF8213B0F25C00A7F1CD /* app_icon_yelling.icns */; };
+		95F1D05719AFA3C70022EA99 /* app_icon_ink4.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF8713B0F50E00A7F1CD /* app_icon_ink4.icns */; };
+		95F1D05819AFA3C70022EA99 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC911958E70C00A270A9 /* search.png */; };
+		95F1D05919AFA3C70022EA99 /* customize.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC851958E70C00A270A9 /* customize.png */; };
+		95F1D05A19AFA3C70022EA99 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC941958E70C00A270A9 /* settings@2x.png */; };
+		95F1D05B19AFA3C70022EA99 /* color@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC841958E70C00A270A9 /* color@2x.png */; };
+		95F1D05D19AFA3C70022EA99 /* FileExtensions.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6796BF0142500DD006AC19F /* FileExtensions.plist */; };
+		95F1D05E19AFA3C70022EA99 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC891958E70C00A270A9 /* new.png */; };
+		95F1D06019AFA3C70022EA99 /* tincta_pro.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AA9E0314DC2A050092346D /* tincta_pro.png */; };
+		95F1D06119AFA3C70022EA99 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC811958E70C00A270A9 /* close.png */; };
+		95F1D06419AFA3C70022EA99 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC821958E70C00A270A9 /* close@2x.png */; };
+		95F1D06519AFA3C70022EA99 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC921958E70C00A270A9 /* search@2x.png */; };
+		95F1D06719AFA3C70022EA99 /* new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC8A1958E70C00A270A9 /* new@2x.png */; };
+		95F1D06819AFA3C70022EA99 /* GenericDocumentIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6ACD8E618788F8700EB30C4 /* GenericDocumentIcon.icns */; };
+		95F1D06919AFA3C70022EA99 /* browser.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC7F1958E70C00A270A9 /* browser.png */; };
+		95F1D06A19AFA3C70022EA99 /* app_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6ACD8E018788EF300EB30C4 /* app_icon.icns */; };
+		95F1D06B19AFA3C70022EA99 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC871958E70C00A270A9 /* save.png */; };
+		95F1D06C19AFA3C70022EA99 /* customize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC861958E70C00A270A9 /* customize@2x.png */; };
+		95F1D06D19AFA3C70022EA99 /* print.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC8F1958E70C00A270A9 /* print.png */; };
+		95F1D06E19AFA3C70022EA99 /* print@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC901958E70C00A270A9 /* print@2x.png */; };
+		95F1D06F19AFA3C70022EA99 /* browser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC801958E70C00A270A9 /* browser@2x.png */; };
+		95F1D07319AFA3C70022EA99 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9554216516B3276400AB5874 /* MainMenu.xib */; };
+		95F1D07419AFA3C70022EA99 /* WhatsNew.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9554218616B4193A00AB5874 /* WhatsNew.txt */; };
+		95F1D07619AFA3C70022EA99 /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EC8B1958E70C00A270A9 /* open.png */; };
+		C608B94E19DDFEEA00A45A57 /* TCAMiscHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C608B94D19DDFEEA00A45A57 /* TCAMiscHelperTest.m */; };
+		C63F316C18A2DA4E008B2B8E /* TCATextStorageTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C63F316B18A2DA4E008B2B8E /* TCATextStorageTest.m */; };
+		C63F316E18A2DA9B008B2B8E /* TCALineNumberViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C63F316D18A2DA9B008B2B8E /* TCALineNumberViewTest.m */; };
+		C66A9F9818994DFF004CCC9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A5CF111358922D008CA186 /* Cocoa.framework */; };
+		C66A9F9B189964E3004CCC9E /* TinctaSyntaxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C66A9F9A189964E3004CCC9E /* TinctaSyntaxTest.m */; };
+		C66EFC4019D0A50C005D6E9C /* TCAEditTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C66EFC3F19D0A50C005D6E9C /* TCAEditTest.m */; };
+		C69867CA1A93F7E60009AF24 /* upgrade.png in Resources */ = {isa = PBXBuildFile; fileRef = C69867C71A93F7E60009AF24 /* upgrade.png */; };
+		C69867CB1A93F7E60009AF24 /* upgrade.png in Resources */ = {isa = PBXBuildFile; fileRef = C69867C71A93F7E60009AF24 /* upgrade.png */; };
+		C69867CD1A93F7E60009AF24 /* upgrade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C69867C81A93F7E60009AF24 /* upgrade@2x.png */; };
+		C69867CE1A93F7E60009AF24 /* upgrade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C69867C81A93F7E60009AF24 /* upgrade@2x.png */; };
+		C6B908531D7E1C49009F3465 /* TCATextManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9080F1D7E1C49009F3465 /* TCATextManipulation.m */; };
+		C6B908541D7E1C49009F3465 /* TCEncodings.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908111D7E1C49009F3465 /* TCEncodings.m */; };
+		C6B908551D7E1C49009F3465 /* TCLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908131D7E1C49009F3465 /* TCLineNumberView.m */; };
+		C6B908561D7E1C49009F3465 /* ColorConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908161D7E1C49009F3465 /* ColorConverter.m */; };
+		C6B908571D7E1C49009F3465 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908181D7E1C49009F3465 /* Reachability.m */; };
+		C6B908581D7E1C49009F3465 /* TCAApplicationSupportHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9081A1D7E1C49009F3465 /* TCAApplicationSupportHelper.m */; };
+		C6B908591D7E1C49009F3465 /* TCABookmarkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9081C1D7E1C49009F3465 /* TCABookmarkHelper.m */; };
+		C6B9085A1D7E1C49009F3465 /* TCADefaultsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9081E1D7E1C49009F3465 /* TCADefaultsHelper.m */; };
+		C6B9085B1D7E1C49009F3465 /* TCAMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908201D7E1C49009F3465 /* TCAMenuHelper.m */; };
+		C6B9085C1D7E1C49009F3465 /* TCAMiscHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908221D7E1C49009F3465 /* TCAMiscHelper.m */; };
+		C6B9085D1D7E1C49009F3465 /* TCNotificationBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908251D7E1C49009F3465 /* TCNotificationBackground.m */; };
+		C6B9085E1D7E1C49009F3465 /* TCNotificationCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908271D7E1C49009F3465 /* TCNotificationCreator.m */; };
+		C6B9085F1D7E1C49009F3465 /* TCAColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9082A1D7E1C49009F3465 /* TCAColorScheme.m */; };
+		C6B908601D7E1C49009F3465 /* TCPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9082C1D7E1C49009F3465 /* TCPreferencesController.m */; };
+		C6B908611D7E1C49009F3465 /* TCASearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9082F1D7E1C49009F3465 /* TCASearchController.m */; };
+		C6B908621D7E1C49009F3465 /* TCSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908311D7E1C49009F3465 /* TCSearchView.m */; };
+		C6B908631D7E1C49009F3465 /* TCImageTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908341D7E1C49009F3465 /* TCImageTextCell.m */; };
+		C6B908641D7E1C49009F3465 /* TCSideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908361D7E1C49009F3465 /* TCSideBarController.m */; };
+		C6B908651D7E1C49009F3465 /* TCSideBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908381D7E1C49009F3465 /* TCSideBarItem.m */; };
+		C6B908661D7E1C49009F3465 /* LexicalState.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9083B1D7E1C49009F3465 /* LexicalState.m */; };
+		C6B908671D7E1C49009F3465 /* TCAScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9083D1D7E1C49009F3465 /* TCAScanner.m */; };
+		C6B908681D7E1C49009F3465 /* TCStateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9083F1D7E1C49009F3465 /* TCStateFactory.m */; };
+		C6B908691D7E1C49009F3465 /* TCSyntaxColoring.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908411D7E1C49009F3465 /* TCSyntaxColoring.m */; };
+		C6B9086A1D7E1C49009F3465 /* TCTextAttributesFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908431D7E1C49009F3465 /* TCTextAttributesFactory.m */; };
+		C6B9086B1D7E1C49009F3465 /* OHBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908461D7E1C49009F3465 /* OHBoxView.m */; };
+		C6B9086C1D7E1C49009F3465 /* OHGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908481D7E1C49009F3465 /* OHGradientView.m */; };
+		C6B9086D1D7E1C49009F3465 /* TCLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9084A1D7E1C49009F3465 /* TCLayoutManager.m */; };
+		C6B9086E1D7E1C49009F3465 /* TCStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9084C1D7E1C49009F3465 /* TCStatusView.m */; };
+		C6B9086F1D7E1C49009F3465 /* TCTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9084E1D7E1C49009F3465 /* TCTextStorage.m */; };
+		C6B908701D7E1C49009F3465 /* TCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908501D7E1C49009F3465 /* TCTextView.m */; };
+		C6B908711D7E1C49009F3465 /* TCTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B908521D7E1C49009F3465 /* TCTextViewController.m */; };
+		C6FE66011898617100CC3019 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FE65FF1898617100CC3019 /* InfoPlist.strings */; };
+		C6FE66031898617100CC3019 /* Tincta_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FE66021898617100CC3019 /* Tincta_Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E6ADDE41A61831F00BAA882 /* TCAddons_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAddons_Test.m; sourceTree = "<group>"; };
+		0E7286D21A85726E008D6395 /* ColorSchemes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ColorSchemes; path = Tincta/ColorSchemes; sourceTree = "<group>"; };
+		0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tincta AppStore-Bridging-Header.h"; sourceTree = "<group>"; };
+		9554216516B3276400AB5874 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		9554218616B4193A00AB5874 /* WhatsNew.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhatsNew.txt; sourceTree = "<group>"; };
+		95768996166B56D900275BBA /* Web Sharing.prefPane */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Web Sharing.prefPane"; sourceTree = "<group>"; };
+		957D5D81139AA1A400186F1D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		957D5D94139AA29B00186F1D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		95A5CF111358922D008CA186 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		95A5CF141358922D008CA186 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		95A5CF151358922D008CA186 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		95A5CF161358922D008CA186 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95A5CF191358922D008CA186 /* Tincta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tincta-Info.plist"; sourceTree = "<group>"; };
+		95A5CF1B1358922D008CA186 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95A5CF1E1358922D008CA186 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95A5CF231358922E008CA186 /* TinctaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinctaAppDelegate.h; sourceTree = "<group>"; };
+		95A5CF241358922E008CA186 /* TinctaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinctaAppDelegate.m; sourceTree = "<group>"; };
+		95A5CF4113589517008CA186 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		95A5CF4213589517008CA186 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		95A5CF501358955A008CA186 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		95A8383314D6F236008D70A9 /* Tincta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tincta.entitlements; sourceTree = "<group>"; };
+		95AA9E0314DC2A050092346D /* tincta_pro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tincta_pro.png; sourceTree = "<group>"; };
+		95B0CF7B13B0D51C00A7F1CD /* search_notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_notification.png; sourceTree = "<group>"; };
+		95B0CF7C13B0D51C00A7F1CD /* wrap_notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrap_notification.png; sourceTree = "<group>"; };
+		95B0CF7F13B0F25800A7F1CD /* app_icon_ink1.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_ink1.icns; sourceTree = "<group>"; };
+		95B0CF8013B0F25900A7F1CD /* app_icon_ink2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_ink2.icns; sourceTree = "<group>"; };
+		95B0CF8113B0F25A00A7F1CD /* app_icon_ink3.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_ink3.icns; sourceTree = "<group>"; };
+		95B0CF8213B0F25C00A7F1CD /* app_icon_yelling.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_yelling.icns; sourceTree = "<group>"; };
+		95B0CF8713B0F50E00A7F1CD /* app_icon_ink4.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_ink4.icns; sourceTree = "<group>"; };
+		95B8F05D138C2C3400DB73DF /* Notification.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Notification.xib; sourceTree = "<group>"; };
+		95D1B86319CF3FA8000A5DE7 /* Tincta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tincta.entitlements; sourceTree = "<group>"; };
+		95D8361516B56B8900400410 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		95F1D07B19AFA3C70022EA99 /* Tincta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tincta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F1D07D19AFA44C0022EA99 /* Tincta-AppStore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tincta-AppStore-Prefix.pch"; sourceTree = "<group>"; };
+		C608B94D19DDFEEA00A45A57 /* TCAMiscHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAMiscHelperTest.m; sourceTree = "<group>"; };
+		C638AAC81376CECC00E9339C /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		C63E5C021382E42300C62BCF /* Syntax Definitions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Syntax Definitions"; path = "Tincta/Syntax Definitions"; sourceTree = "<group>"; };
+		C63F316B18A2DA4E008B2B8E /* TCATextStorageTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCATextStorageTest.m; sourceTree = "<group>"; };
+		C63F316D18A2DA9B008B2B8E /* TCALineNumberViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCALineNumberViewTest.m; sourceTree = "<group>"; };
+		C66657CD137A84C900E6822F /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		C66657D5137A8A4E00E6822F /* app_icon_running.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_running.icns; sourceTree = "<group>"; };
+		C66A9F9A189964E3004CCC9E /* TinctaSyntaxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TinctaSyntaxTest.m; sourceTree = "<group>"; };
+		C66EFC3F19D0A50C005D6E9C /* TCAEditTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAEditTest.m; sourceTree = "<group>"; };
+		C6796BF0142500DD006AC19F /* FileExtensions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FileExtensions.plist; sourceTree = "<group>"; };
+		C69867C71A93F7E60009AF24 /* upgrade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upgrade.png; sourceTree = "<group>"; };
+		C69867C81A93F7E60009AF24 /* upgrade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upgrade@2x.png"; sourceTree = "<group>"; };
+		C6ACD8E018788EF300EB30C4 /* app_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = app_icon.icns; path = ../app_icon.icns; sourceTree = "<group>"; };
+		C6ACD8E618788F8700EB30C4 /* GenericDocumentIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = GenericDocumentIcon.icns; sourceTree = "<group>"; };
+		C6B1DEDB18F5B61F00AF2F76 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		C6B2EC7F1958E70C00A270A9 /* browser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = browser.png; sourceTree = "<group>"; };
+		C6B2EC801958E70C00A270A9 /* browser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser@2x.png"; sourceTree = "<group>"; };
+		C6B2EC811958E70C00A270A9 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		C6B2EC821958E70C00A270A9 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		C6B2EC831958E70C00A270A9 /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
+		C6B2EC841958E70C00A270A9 /* color@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color@2x.png"; sourceTree = "<group>"; };
+		C6B2EC851958E70C00A270A9 /* customize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customize.png; sourceTree = "<group>"; };
+		C6B2EC861958E70C00A270A9 /* customize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customize@2x.png"; sourceTree = "<group>"; };
+		C6B2EC871958E70C00A270A9 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		C6B2EC881958E70C00A270A9 /* save@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save@2x.png"; sourceTree = "<group>"; };
+		C6B2EC891958E70C00A270A9 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
+		C6B2EC8A1958E70C00A270A9 /* new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new@2x.png"; sourceTree = "<group>"; };
+		C6B2EC8B1958E70C00A270A9 /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
+		C6B2EC8C1958E70C00A270A9 /* open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open@2x.png"; sourceTree = "<group>"; };
+		C6B2EC8D1958E70C00A270A9 /* preferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preferences.png; sourceTree = "<group>"; };
+		C6B2EC8E1958E70C00A270A9 /* preferences@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preferences@2x.png"; sourceTree = "<group>"; };
+		C6B2EC8F1958E70C00A270A9 /* print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = print.png; sourceTree = "<group>"; };
+		C6B2EC901958E70C00A270A9 /* print@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "print@2x.png"; sourceTree = "<group>"; };
+		C6B2EC911958E70C00A270A9 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		C6B2EC921958E70C00A270A9 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		C6B2EC931958E70C00A270A9 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		C6B2EC941958E70C00A270A9 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		C6B9080E1D7E1C49009F3465 /* TCATextManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCATextManipulation.h; sourceTree = "<group>"; };
+		C6B9080F1D7E1C49009F3465 /* TCATextManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCATextManipulation.m; sourceTree = "<group>"; };
+		C6B908101D7E1C49009F3465 /* TCEncodings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCEncodings.h; sourceTree = "<group>"; };
+		C6B908111D7E1C49009F3465 /* TCEncodings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCEncodings.m; sourceTree = "<group>"; };
+		C6B908121D7E1C49009F3465 /* TCLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLineNumberView.h; sourceTree = "<group>"; };
+		C6B908131D7E1C49009F3465 /* TCLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLineNumberView.m; sourceTree = "<group>"; };
+		C6B908151D7E1C49009F3465 /* ColorConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConverter.h; sourceTree = "<group>"; };
+		C6B908161D7E1C49009F3465 /* ColorConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConverter.m; sourceTree = "<group>"; };
+		C6B908171D7E1C49009F3465 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C6B908181D7E1C49009F3465 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C6B908191D7E1C49009F3465 /* TCAApplicationSupportHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAApplicationSupportHelper.h; sourceTree = "<group>"; };
+		C6B9081A1D7E1C49009F3465 /* TCAApplicationSupportHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAApplicationSupportHelper.m; sourceTree = "<group>"; };
+		C6B9081B1D7E1C49009F3465 /* TCABookmarkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCABookmarkHelper.h; sourceTree = "<group>"; };
+		C6B9081C1D7E1C49009F3465 /* TCABookmarkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCABookmarkHelper.m; sourceTree = "<group>"; };
+		C6B9081D1D7E1C49009F3465 /* TCADefaultsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCADefaultsHelper.h; sourceTree = "<group>"; };
+		C6B9081E1D7E1C49009F3465 /* TCADefaultsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCADefaultsHelper.m; sourceTree = "<group>"; };
+		C6B9081F1D7E1C49009F3465 /* TCAMenuHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAMenuHelper.h; sourceTree = "<group>"; };
+		C6B908201D7E1C49009F3465 /* TCAMenuHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAMenuHelper.m; sourceTree = "<group>"; };
+		C6B908211D7E1C49009F3465 /* TCAMiscHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAMiscHelper.h; sourceTree = "<group>"; };
+		C6B908221D7E1C49009F3465 /* TCAMiscHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAMiscHelper.m; sourceTree = "<group>"; };
+		C6B908241D7E1C49009F3465 /* TCNotificationBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNotificationBackground.h; sourceTree = "<group>"; };
+		C6B908251D7E1C49009F3465 /* TCNotificationBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNotificationBackground.m; sourceTree = "<group>"; };
+		C6B908261D7E1C49009F3465 /* TCNotificationCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNotificationCreator.h; sourceTree = "<group>"; };
+		C6B908271D7E1C49009F3465 /* TCNotificationCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNotificationCreator.m; sourceTree = "<group>"; };
+		C6B908291D7E1C49009F3465 /* TCAColorScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAColorScheme.h; sourceTree = "<group>"; };
+		C6B9082A1D7E1C49009F3465 /* TCAColorScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAColorScheme.m; sourceTree = "<group>"; };
+		C6B9082B1D7E1C49009F3465 /* TCPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPreferencesController.h; sourceTree = "<group>"; };
+		C6B9082C1D7E1C49009F3465 /* TCPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPreferencesController.m; sourceTree = "<group>"; };
+		C6B9082E1D7E1C49009F3465 /* TCASearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCASearchController.h; sourceTree = "<group>"; };
+		C6B9082F1D7E1C49009F3465 /* TCASearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCASearchController.m; sourceTree = "<group>"; };
+		C6B908301D7E1C49009F3465 /* TCSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSearchView.h; sourceTree = "<group>"; };
+		C6B908311D7E1C49009F3465 /* TCSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSearchView.m; sourceTree = "<group>"; };
+		C6B908331D7E1C49009F3465 /* TCImageTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCImageTextCell.h; sourceTree = "<group>"; };
+		C6B908341D7E1C49009F3465 /* TCImageTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCImageTextCell.m; sourceTree = "<group>"; };
+		C6B908351D7E1C49009F3465 /* TCSideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSideBarController.h; sourceTree = "<group>"; };
+		C6B908361D7E1C49009F3465 /* TCSideBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSideBarController.m; sourceTree = "<group>"; };
+		C6B908371D7E1C49009F3465 /* TCSideBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSideBarItem.h; sourceTree = "<group>"; };
+		C6B908381D7E1C49009F3465 /* TCSideBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSideBarItem.m; sourceTree = "<group>"; };
+		C6B9083A1D7E1C49009F3465 /* LexicalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LexicalState.h; sourceTree = "<group>"; };
+		C6B9083B1D7E1C49009F3465 /* LexicalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LexicalState.m; sourceTree = "<group>"; };
+		C6B9083C1D7E1C49009F3465 /* TCAScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAScanner.h; sourceTree = "<group>"; };
+		C6B9083D1D7E1C49009F3465 /* TCAScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAScanner.m; sourceTree = "<group>"; };
+		C6B9083E1D7E1C49009F3465 /* TCStateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCStateFactory.h; sourceTree = "<group>"; };
+		C6B9083F1D7E1C49009F3465 /* TCStateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCStateFactory.m; sourceTree = "<group>"; };
+		C6B908401D7E1C49009F3465 /* TCSyntaxColoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSyntaxColoring.h; sourceTree = "<group>"; };
+		C6B908411D7E1C49009F3465 /* TCSyntaxColoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSyntaxColoring.m; sourceTree = "<group>"; };
+		C6B908421D7E1C49009F3465 /* TCTextAttributesFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTextAttributesFactory.h; sourceTree = "<group>"; };
+		C6B908431D7E1C49009F3465 /* TCTextAttributesFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTextAttributesFactory.m; sourceTree = "<group>"; };
+		C6B908451D7E1C49009F3465 /* OHBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHBoxView.h; sourceTree = "<group>"; };
+		C6B908461D7E1C49009F3465 /* OHBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHBoxView.m; sourceTree = "<group>"; };
+		C6B908471D7E1C49009F3465 /* OHGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHGradientView.h; sourceTree = "<group>"; };
+		C6B908481D7E1C49009F3465 /* OHGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHGradientView.m; sourceTree = "<group>"; };
+		C6B908491D7E1C49009F3465 /* TCLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLayoutManager.h; sourceTree = "<group>"; };
+		C6B9084A1D7E1C49009F3465 /* TCLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLayoutManager.m; sourceTree = "<group>"; };
+		C6B9084B1D7E1C49009F3465 /* TCStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCStatusView.h; sourceTree = "<group>"; };
+		C6B9084C1D7E1C49009F3465 /* TCStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCStatusView.m; sourceTree = "<group>"; };
+		C6B9084D1D7E1C49009F3465 /* TCTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTextStorage.h; sourceTree = "<group>"; };
+		C6B9084E1D7E1C49009F3465 /* TCTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTextStorage.m; sourceTree = "<group>"; };
+		C6B9084F1D7E1C49009F3465 /* TCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTextView.h; sourceTree = "<group>"; };
+		C6B908501D7E1C49009F3465 /* TCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTextView.m; sourceTree = "<group>"; };
+		C6B908511D7E1C49009F3465 /* TCTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTextViewController.h; sourceTree = "<group>"; };
+		C6B908521D7E1C49009F3465 /* TCTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTextViewController.m; sourceTree = "<group>"; };
+		C6FE65F91898617100CC3019 /* Tincta Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tincta Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FE65FE1898617100CC3019 /* Tincta Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tincta Tests-Info.plist"; sourceTree = "<group>"; };
+		C6FE66001898617100CC3019 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6FE66021898617100CC3019 /* Tincta_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tincta_Tests.m; sourceTree = "<group>"; };
+		C6FE66041898617100CC3019 /* Tincta Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tincta Tests-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95F1D03B19AFA3C70022EA99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F1D03C19AFA3C70022EA99 /* IOKit.framework in Frameworks */,
+				95F1D03D19AFA3C70022EA99 /* Security.framework in Frameworks */,
+				95F1D03E19AFA3C70022EA99 /* SystemConfiguration.framework in Frameworks */,
+				95F1D03F19AFA3C70022EA99 /* CoreFoundation.framework in Frameworks */,
+				95F1D04019AFA3C70022EA99 /* QuickLook.framework in Frameworks */,
+				95F1D04219AFA3C70022EA99 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FE65F61898617100CC3019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66A9F9818994DFF004CCC9E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95A5CF021358922D008CA186 = {
+			isa = PBXGroup;
+			children = (
+				95D1B86319CF3FA8000A5DE7 /* Tincta.entitlements */,
+				95A5CF171358922D008CA186 /* Tincta */,
+				0E7286D21A85726E008D6395 /* ColorSchemes */,
+				C63E5C021382E42300C62BCF /* Syntax Definitions */,
+				C6FE65FC1898617100CC3019 /* Tincta Tests */,
+				95A5CF101358922D008CA186 /* Frameworks */,
+				95A5CF0E1358922D008CA186 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95A5CF0E1358922D008CA186 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6FE65F91898617100CC3019 /* Tincta Tests.xctest */,
+				95F1D07B19AFA3C70022EA99 /* Tincta.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95A5CF101358922D008CA186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6B1DEDB18F5B61F00AF2F76 /* IOKit.framework */,
+				95D8361516B56B8900400410 /* Security.framework */,
+				95A5CF501358955A008CA186 /* QuickLook.framework */,
+				95A5CF111358922D008CA186 /* Cocoa.framework */,
+				957D5D94139AA29B00186F1D /* SystemConfiguration.framework */,
+				957D5D81139AA1A400186F1D /* CoreFoundation.framework */,
+				95A5CF131358922D008CA186 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95A5CF131358922D008CA186 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95A5CF141358922D008CA186 /* AppKit.framework */,
+				95A5CF151358922D008CA186 /* CoreData.framework */,
+				95A5CF161358922D008CA186 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		95A5CF171358922D008CA186 /* Tincta */ = {
+			isa = PBXGroup;
+			children = (
+				C6B9080D1D7E1C49009F3465 /* Editor Performers */,
+				C6B908141D7E1C49009F3465 /* Helper */,
+				C6B908231D7E1C49009F3465 /* Notification */,
+				C6B908281D7E1C49009F3465 /* Preferences */,
+				C6B9082D1D7E1C49009F3465 /* Search */,
+				C6B908321D7E1C49009F3465 /* Sidebar */,
+				C6B908391D7E1C49009F3465 /* SyntaxColoring */,
+				C6B908441D7E1C49009F3465 /* TextEditor */,
+				95A5CF3B135894EF008CA186 /* Controllers */,
+				9554216516B3276400AB5874 /* MainMenu.xib */,
+				95B8F05D138C2C3400DB73DF /* Notification.xib */,
+				C638AAC81376CECC00E9339C /* Preferences.xib */,
+				95768996166B56D900275BBA /* Web Sharing.prefPane */,
+				95A5CF181358922D008CA186 /* Supporting Files */,
+				95A5CF3A135894DE008CA186 /* Icons */,
+			);
+			path = Tincta;
+			sourceTree = "<group>";
+		};
+		95A5CF181358922D008CA186 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95A8383314D6F236008D70A9 /* Tincta.entitlements */,
+				C6796BF0142500DD006AC19F /* FileExtensions.plist */,
+				95A5CF191358922D008CA186 /* Tincta-Info.plist */,
+				95A5CF1A1358922D008CA186 /* InfoPlist.strings */,
+				95A5CF1E1358922D008CA186 /* main.m */,
+				C66657CD137A84C900E6822F /* Credits.html */,
+				9554218616B4193A00AB5874 /* WhatsNew.txt */,
+				95F1D07D19AFA44C0022EA99 /* Tincta-AppStore-Prefix.pch */,
+				0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95A5CF3A135894DE008CA186 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C6DB0B5D1928DF6D00484E91 /* Upgrade */,
+				C6DBD42E137A9AF000A3A4FE /* Toolbar */,
+				C6ACD8E018788EF300EB30C4 /* app_icon.icns */,
+				95B0CF7F13B0F25800A7F1CD /* app_icon_ink1.icns */,
+				95B0CF8013B0F25900A7F1CD /* app_icon_ink2.icns */,
+				95B0CF8113B0F25A00A7F1CD /* app_icon_ink3.icns */,
+				95B0CF8713B0F50E00A7F1CD /* app_icon_ink4.icns */,
+				95B0CF8213B0F25C00A7F1CD /* app_icon_yelling.icns */,
+				C66657D5137A8A4E00E6822F /* app_icon_running.icns */,
+				95AA9E0314DC2A050092346D /* tincta_pro.png */,
+				95B0CF7B13B0D51C00A7F1CD /* search_notification.png */,
+				95B0CF7C13B0D51C00A7F1CD /* wrap_notification.png */,
+				C6ACD8E618788F8700EB30C4 /* GenericDocumentIcon.icns */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		95A5CF3B135894EF008CA186 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95A5CF231358922E008CA186 /* TinctaAppDelegate.h */,
+				95A5CF241358922E008CA186 /* TinctaAppDelegate.m */,
+				95A5CF4113589517008CA186 /* MainWindowController.h */,
+				95A5CF4213589517008CA186 /* MainWindowController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C6B9080D1D7E1C49009F3465 /* Editor Performers */ = {
+			isa = PBXGroup;
+			children = (
+				C6B9080E1D7E1C49009F3465 /* TCATextManipulation.h */,
+				C6B9080F1D7E1C49009F3465 /* TCATextManipulation.m */,
+				C6B908101D7E1C49009F3465 /* TCEncodings.h */,
+				C6B908111D7E1C49009F3465 /* TCEncodings.m */,
+				C6B908121D7E1C49009F3465 /* TCLineNumberView.h */,
+				C6B908131D7E1C49009F3465 /* TCLineNumberView.m */,
+			);
+			path = "Editor Performers";
+			sourceTree = "<group>";
+		};
+		C6B908141D7E1C49009F3465 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C6B908151D7E1C49009F3465 /* ColorConverter.h */,
+				C6B908161D7E1C49009F3465 /* ColorConverter.m */,
+				C6B908171D7E1C49009F3465 /* Reachability.h */,
+				C6B908181D7E1C49009F3465 /* Reachability.m */,
+				C6B908191D7E1C49009F3465 /* TCAApplicationSupportHelper.h */,
+				C6B9081A1D7E1C49009F3465 /* TCAApplicationSupportHelper.m */,
+				C6B9081B1D7E1C49009F3465 /* TCABookmarkHelper.h */,
+				C6B9081C1D7E1C49009F3465 /* TCABookmarkHelper.m */,
+				C6B9081D1D7E1C49009F3465 /* TCADefaultsHelper.h */,
+				C6B9081E1D7E1C49009F3465 /* TCADefaultsHelper.m */,
+				C6B9081F1D7E1C49009F3465 /* TCAMenuHelper.h */,
+				C6B908201D7E1C49009F3465 /* TCAMenuHelper.m */,
+				C6B908211D7E1C49009F3465 /* TCAMiscHelper.h */,
+				C6B908221D7E1C49009F3465 /* TCAMiscHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C6B908231D7E1C49009F3465 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				C6B908241D7E1C49009F3465 /* TCNotificationBackground.h */,
+				C6B908251D7E1C49009F3465 /* TCNotificationBackground.m */,
+				C6B908261D7E1C49009F3465 /* TCNotificationCreator.h */,
+				C6B908271D7E1C49009F3465 /* TCNotificationCreator.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		C6B908281D7E1C49009F3465 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				C6B908291D7E1C49009F3465 /* TCAColorScheme.h */,
+				C6B9082A1D7E1C49009F3465 /* TCAColorScheme.m */,
+				C6B9082B1D7E1C49009F3465 /* TCPreferencesController.h */,
+				C6B9082C1D7E1C49009F3465 /* TCPreferencesController.m */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		C6B9082D1D7E1C49009F3465 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C6B9082E1D7E1C49009F3465 /* TCASearchController.h */,
+				C6B9082F1D7E1C49009F3465 /* TCASearchController.m */,
+				C6B908301D7E1C49009F3465 /* TCSearchView.h */,
+				C6B908311D7E1C49009F3465 /* TCSearchView.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C6B908321D7E1C49009F3465 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				C6B908331D7E1C49009F3465 /* TCImageTextCell.h */,
+				C6B908341D7E1C49009F3465 /* TCImageTextCell.m */,
+				C6B908351D7E1C49009F3465 /* TCSideBarController.h */,
+				C6B908361D7E1C49009F3465 /* TCSideBarController.m */,
+				C6B908371D7E1C49009F3465 /* TCSideBarItem.h */,
+				C6B908381D7E1C49009F3465 /* TCSideBarItem.m */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		C6B908391D7E1C49009F3465 /* SyntaxColoring */ = {
+			isa = PBXGroup;
+			children = (
+				C6B9083A1D7E1C49009F3465 /* LexicalState.h */,
+				C6B9083B1D7E1C49009F3465 /* LexicalState.m */,
+				C6B9083C1D7E1C49009F3465 /* TCAScanner.h */,
+				C6B9083D1D7E1C49009F3465 /* TCAScanner.m */,
+				C6B9083E1D7E1C49009F3465 /* TCStateFactory.h */,
+				C6B9083F1D7E1C49009F3465 /* TCStateFactory.m */,
+				C6B908401D7E1C49009F3465 /* TCSyntaxColoring.h */,
+				C6B908411D7E1C49009F3465 /* TCSyntaxColoring.m */,
+				C6B908421D7E1C49009F3465 /* TCTextAttributesFactory.h */,
+				C6B908431D7E1C49009F3465 /* TCTextAttributesFactory.m */,
+			);
+			path = SyntaxColoring;
+			sourceTree = "<group>";
+		};
+		C6B908441D7E1C49009F3465 /* TextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C6B908451D7E1C49009F3465 /* OHBoxView.h */,
+				C6B908461D7E1C49009F3465 /* OHBoxView.m */,
+				C6B908471D7E1C49009F3465 /* OHGradientView.h */,
+				C6B908481D7E1C49009F3465 /* OHGradientView.m */,
+				C6B908491D7E1C49009F3465 /* TCLayoutManager.h */,
+				C6B9084A1D7E1C49009F3465 /* TCLayoutManager.m */,
+				C6B9084B1D7E1C49009F3465 /* TCStatusView.h */,
+				C6B9084C1D7E1C49009F3465 /* TCStatusView.m */,
+				C6B9084D1D7E1C49009F3465 /* TCTextStorage.h */,
+				C6B9084E1D7E1C49009F3465 /* TCTextStorage.m */,
+				C6B9084F1D7E1C49009F3465 /* TCTextView.h */,
+				C6B908501D7E1C49009F3465 /* TCTextView.m */,
+				C6B908511D7E1C49009F3465 /* TCTextViewController.h */,
+				C6B908521D7E1C49009F3465 /* TCTextViewController.m */,
+			);
+			path = TextEditor;
+			sourceTree = "<group>";
+		};
+		C6DB0B5D1928DF6D00484E91 /* Upgrade */ = {
+			isa = PBXGroup;
+			children = (
+				C69867C71A93F7E60009AF24 /* upgrade.png */,
+				C69867C81A93F7E60009AF24 /* upgrade@2x.png */,
+			);
+			name = Upgrade;
+			sourceTree = "<group>";
+		};
+		C6DBD42E137A9AF000A3A4FE /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				C6B2EC7F1958E70C00A270A9 /* browser.png */,
+				C6B2EC801958E70C00A270A9 /* browser@2x.png */,
+				C6B2EC811958E70C00A270A9 /* close.png */,
+				C6B2EC821958E70C00A270A9 /* close@2x.png */,
+				C6B2EC831958E70C00A270A9 /* color.png */,
+				C6B2EC841958E70C00A270A9 /* color@2x.png */,
+				C6B2EC851958E70C00A270A9 /* customize.png */,
+				C6B2EC861958E70C00A270A9 /* customize@2x.png */,
+				C6B2EC871958E70C00A270A9 /* save.png */,
+				C6B2EC881958E70C00A270A9 /* save@2x.png */,
+				C6B2EC891958E70C00A270A9 /* new.png */,
+				C6B2EC8A1958E70C00A270A9 /* new@2x.png */,
+				C6B2EC8B1958E70C00A270A9 /* open.png */,
+				C6B2EC8C1958E70C00A270A9 /* open@2x.png */,
+				C6B2EC8D1958E70C00A270A9 /* preferences.png */,
+				C6B2EC8E1958E70C00A270A9 /* preferences@2x.png */,
+				C6B2EC8F1958E70C00A270A9 /* print.png */,
+				C6B2EC901958E70C00A270A9 /* print@2x.png */,
+				C6B2EC911958E70C00A270A9 /* search.png */,
+				C6B2EC921958E70C00A270A9 /* search@2x.png */,
+				C6B2EC931958E70C00A270A9 /* settings.png */,
+				C6B2EC941958E70C00A270A9 /* settings@2x.png */,
+			);
+			name = Toolbar;
+			sourceTree = "<group>";
+		};
+		C6FE65FC1898617100CC3019 /* Tincta Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0E6ADDE41A61831F00BAA882 /* TCAddons_Test.m */,
+				C63F316D18A2DA9B008B2B8E /* TCALineNumberViewTest.m */,
+				C63F316B18A2DA4E008B2B8E /* TCATextStorageTest.m */,
+				C66A9F9A189964E3004CCC9E /* TinctaSyntaxTest.m */,
+				C6FE66021898617100CC3019 /* Tincta_Tests.m */,
+				C66EFC3F19D0A50C005D6E9C /* TCAEditTest.m */,
+				C6FE65FD1898617100CC3019 /* Supporting Files */,
+				C608B94D19DDFEEA00A45A57 /* TCAMiscHelperTest.m */,
+			);
+			path = "Tincta Tests";
+			sourceTree = "<group>";
+		};
+		C6FE65FD1898617100CC3019 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6FE65FE1898617100CC3019 /* Tincta Tests-Info.plist */,
+				C6FE65FF1898617100CC3019 /* InfoPlist.strings */,
+				C6FE66041898617100CC3019 /* Tincta Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95F1D01819AFA3C70022EA99 /* Tincta AppStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F1D07819AFA3C70022EA99 /* Build configuration list for PBXNativeTarget "Tincta AppStore" */;
+			buildPhases = (
+				95F1D01919AFA3C70022EA99 /* Sources */,
+				95F1D03B19AFA3C70022EA99 /* Frameworks */,
+				95F1D04319AFA3C70022EA99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tincta AppStore";
+			productName = Tincta;
+			productReference = 95F1D07B19AFA3C70022EA99 /* Tincta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6FE65F81898617100CC3019 /* Tincta Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6FE66091898617100CC3019 /* Build configuration list for PBXNativeTarget "Tincta Tests" */;
+			buildPhases = (
+				C6FE65F51898617100CC3019 /* Sources */,
+				C6FE65F61898617100CC3019 /* Frameworks */,
+				C6FE65F71898617100CC3019 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tincta Tests";
+			productName = "Tincta Tests";
+			productReference = C6FE65F91898617100CC3019 /* Tincta Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95A5CF041358922D008CA186 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					95F1D01819AFA3C70022EA99 = {
+						DevelopmentTeam = 3UAW763979;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					C6FE65F81898617100CC3019 = {
+						DevelopmentTeam = 3UAW763979;
+						TestTargetID = 95A5CF0C1358922D008CA186;
+					};
+				};
+			};
+			buildConfigurationList = 95A5CF071358922D008CA186 /* Build configuration list for PBXProject "tincta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95A5CF021358922D008CA186;
+			productRefGroup = 95A5CF0E1358922D008CA186 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95F1D01819AFA3C70022EA99 /* Tincta AppStore */,
+				C6FE65F81898617100CC3019 /* Tincta Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95F1D04319AFA3C70022EA99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F1D04419AFA3C70022EA99 /* InfoPlist.strings in Resources */,
+				95F1D04519AFA3C70022EA99 /* Preferences.xib in Resources */,
+				95F1D04619AFA3C70022EA99 /* Credits.html in Resources */,
+				95F1D04719AFA3C70022EA99 /* color.png in Resources */,
+				C69867CE1A93F7E60009AF24 /* upgrade@2x.png in Resources */,
+				95F1D04819AFA3C70022EA99 /* preferences.png in Resources */,
+				95F1D04919AFA3C70022EA99 /* save@2x.png in Resources */,
+				95F1D04A19AFA3C70022EA99 /* settings.png in Resources */,
+				0E7286D41A85726E008D6395 /* ColorSchemes in Resources */,
+				95F1D04B19AFA3C70022EA99 /* app_icon_running.icns in Resources */,
+				95F1D04C19AFA3C70022EA99 /* Syntax Definitions in Resources */,
+				95F1D04D19AFA3C70022EA99 /* Notification.xib in Resources */,
+				95F1D04E19AFA3C70022EA99 /* open@2x.png in Resources */,
+				95F1D05019AFA3C70022EA99 /* search_notification.png in Resources */,
+				95F1D05119AFA3C70022EA99 /* preferences@2x.png in Resources */,
+				95F1D05219AFA3C70022EA99 /* wrap_notification.png in Resources */,
+				95F1D05319AFA3C70022EA99 /* app_icon_ink1.icns in Resources */,
+				95F1D05419AFA3C70022EA99 /* app_icon_ink2.icns in Resources */,
+				95F1D05519AFA3C70022EA99 /* app_icon_ink3.icns in Resources */,
+				95F1D05619AFA3C70022EA99 /* app_icon_yelling.icns in Resources */,
+				95F1D05719AFA3C70022EA99 /* app_icon_ink4.icns in Resources */,
+				95F1D05819AFA3C70022EA99 /* search.png in Resources */,
+				95F1D05919AFA3C70022EA99 /* customize.png in Resources */,
+				95F1D05A19AFA3C70022EA99 /* settings@2x.png in Resources */,
+				95F1D05B19AFA3C70022EA99 /* color@2x.png in Resources */,
+				95F1D05D19AFA3C70022EA99 /* FileExtensions.plist in Resources */,
+				95F1D05E19AFA3C70022EA99 /* new.png in Resources */,
+				C69867CB1A93F7E60009AF24 /* upgrade.png in Resources */,
+				95F1D06019AFA3C70022EA99 /* tincta_pro.png in Resources */,
+				95F1D06119AFA3C70022EA99 /* close.png in Resources */,
+				95F1D06419AFA3C70022EA99 /* close@2x.png in Resources */,
+				95F1D06519AFA3C70022EA99 /* search@2x.png in Resources */,
+				95F1D06719AFA3C70022EA99 /* new@2x.png in Resources */,
+				95F1D06819AFA3C70022EA99 /* GenericDocumentIcon.icns in Resources */,
+				95F1D06919AFA3C70022EA99 /* browser.png in Resources */,
+				95F1D06A19AFA3C70022EA99 /* app_icon.icns in Resources */,
+				95F1D06B19AFA3C70022EA99 /* save.png in Resources */,
+				95F1D06C19AFA3C70022EA99 /* customize@2x.png in Resources */,
+				95F1D06D19AFA3C70022EA99 /* print.png in Resources */,
+				95F1D06E19AFA3C70022EA99 /* print@2x.png in Resources */,
+				95F1D06F19AFA3C70022EA99 /* browser@2x.png in Resources */,
+				95F1D07319AFA3C70022EA99 /* MainMenu.xib in Resources */,
+				95F1D07419AFA3C70022EA99 /* WhatsNew.txt in Resources */,
+				95F1D07619AFA3C70022EA99 /* open.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FE65F71898617100CC3019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C69867CA1A93F7E60009AF24 /* upgrade.png in Resources */,
+				C69867CD1A93F7E60009AF24 /* upgrade@2x.png in Resources */,
+				C6FE66011898617100CC3019 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95F1D01919AFA3C70022EA99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B908691D7E1C49009F3465 /* TCSyntaxColoring.m in Sources */,
+				C6B9085E1D7E1C49009F3465 /* TCNotificationCreator.m in Sources */,
+				C6B908681D7E1C49009F3465 /* TCStateFactory.m in Sources */,
+				C6B9086A1D7E1C49009F3465 /* TCTextAttributesFactory.m in Sources */,
+				C6B908641D7E1C49009F3465 /* TCSideBarController.m in Sources */,
+				C6B9086B1D7E1C49009F3465 /* OHBoxView.m in Sources */,
+				95F1D01B19AFA3C70022EA99 /* main.m in Sources */,
+				C6B908631D7E1C49009F3465 /* TCImageTextCell.m in Sources */,
+				C6B908701D7E1C49009F3465 /* TCTextView.m in Sources */,
+				C6B9085F1D7E1C49009F3465 /* TCAColorScheme.m in Sources */,
+				C6B908591D7E1C49009F3465 /* TCABookmarkHelper.m in Sources */,
+				C6B908551D7E1C49009F3465 /* TCLineNumberView.m in Sources */,
+				C6B908561D7E1C49009F3465 /* ColorConverter.m in Sources */,
+				C6B908651D7E1C49009F3465 /* TCSideBarItem.m in Sources */,
+				C6B908671D7E1C49009F3465 /* TCAScanner.m in Sources */,
+				C6B9085D1D7E1C49009F3465 /* TCNotificationBackground.m in Sources */,
+				C6B9086C1D7E1C49009F3465 /* OHGradientView.m in Sources */,
+				C6B908601D7E1C49009F3465 /* TCPreferencesController.m in Sources */,
+				C6B9085C1D7E1C49009F3465 /* TCAMiscHelper.m in Sources */,
+				C6B908621D7E1C49009F3465 /* TCSearchView.m in Sources */,
+				C6B908711D7E1C49009F3465 /* TCTextViewController.m in Sources */,
+				C6B908581D7E1C49009F3465 /* TCAApplicationSupportHelper.m in Sources */,
+				95F1D01C19AFA3C70022EA99 /* TinctaAppDelegate.m in Sources */,
+				C6B9085A1D7E1C49009F3465 /* TCADefaultsHelper.m in Sources */,
+				95F1D02019AFA3C70022EA99 /* MainWindowController.m in Sources */,
+				C6B9086F1D7E1C49009F3465 /* TCTextStorage.m in Sources */,
+				C6B908611D7E1C49009F3465 /* TCASearchController.m in Sources */,
+				C6B908541D7E1C49009F3465 /* TCEncodings.m in Sources */,
+				C6B908531D7E1C49009F3465 /* TCATextManipulation.m in Sources */,
+				C6B9086D1D7E1C49009F3465 /* TCLayoutManager.m in Sources */,
+				C6B908661D7E1C49009F3465 /* LexicalState.m in Sources */,
+				C6B908571D7E1C49009F3465 /* Reachability.m in Sources */,
+				C6B9085B1D7E1C49009F3465 /* TCAMenuHelper.m in Sources */,
+				C6B9086E1D7E1C49009F3465 /* TCStatusView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FE65F51898617100CC3019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6ADDE51A61831F00BAA882 /* TCAddons_Test.m in Sources */,
+				C63F316C18A2DA4E008B2B8E /* TCATextStorageTest.m in Sources */,
+				C608B94E19DDFEEA00A45A57 /* TCAMiscHelperTest.m in Sources */,
+				C6FE66031898617100CC3019 /* Tincta_Tests.m in Sources */,
+				C63F316E18A2DA9B008B2B8E /* TCALineNumberViewTest.m in Sources */,
+				C66A9F9B189964E3004CCC9E /* TinctaSyntaxTest.m in Sources */,
+				C66EFC4019D0A50C005D6E9C /* TCAEditTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95A5CF1A1358922D008CA186 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95A5CF1B1358922D008CA186 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C6FE65FF1898617100CC3019 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FE66001898617100CC3019 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95A5CF291358922E008CA186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = Tincta/Tincta.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		95A5CF2A1358922E008CA186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = Tincta/Tincta.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		95F1D07919AFA3C70022EA99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_X86_VECTOR_INSTRUCTIONS = ssse3;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tincta/Tincta-AppStore-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_UNROLL_LOOPS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Tincta/Tincta-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Tincta;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta AppStore-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYMROOT = "build-appstore";
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		95F1D07A19AFA3C70022EA99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_X86_VECTOR_INSTRUCTIONS = ssse3;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tincta/Tincta-AppStore-Prefix.pch";
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Tincta/Tincta-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Tincta;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta AppStore-Bridging-Header.h";
+				SYMROOT = "build-appstore";
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C6FE66071898617100CC3019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tincta.app/Contents/MacOS/Tincta";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tincta/Tincta-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Tincta Tests/Tincta Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C6FE66081898617100CC3019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tincta.app/Contents/MacOS/Tincta";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tincta/Tincta-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Tincta Tests/Tincta Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta Tests-Bridging-Header.h";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95A5CF071358922D008CA186 /* Build configuration list for PBXProject "tincta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95A5CF291358922E008CA186 /* Debug */,
+				95A5CF2A1358922E008CA186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F1D07819AFA3C70022EA99 /* Build configuration list for PBXNativeTarget "Tincta AppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F1D07919AFA3C70022EA99 /* Debug */,
+				95F1D07A19AFA3C70022EA99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6FE66091898617100CC3019 /* Build configuration list for PBXNativeTarget "Tincta Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6FE66071898617100CC3019 /* Debug */,
+				C6FE66081898617100CC3019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95A5CF041358922D008CA186 /* Project object */;
+}

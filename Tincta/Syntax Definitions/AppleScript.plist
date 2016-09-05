@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>about</string>
+		<string>above</string>
+		<string>after</string>
+		<string>against</string>
+		<string>and</string>
+		<string>apart</string>
+		<string>around</string>
+		<string>as</string>
+		<string>aside</string>
+		<string>at</string>
+		<string>back</string>
+		<string>before</string>
+		<string>beginning</string>
+		<string>behind</string>
+		<string>below</string>
+		<string>beneath</string>
+		<string>beside</string>
+		<string>between</string>
+		<string>but</string>
+		<string>by</string>
+		<string>considering</string>
+		<string>contain</string>
+		<string>contains</string>
+		<string>continue</string>
+		<string>copy</string>
+		<string>div</string>
+		<string>does</string>
+		<string>eighth</string>
+		<string>else</string>
+		<string>end</string>
+		<string>equal</string>
+		<string>equals</string>
+		<string>error</string>
+		<string>every</string>
+		<string>exit</string>
+		<string>false</string>
+		<string>fifth</string>
+		<string>first</string>
+		<string>for</string>
+		<string>fourth</string>
+		<string>from</string>
+		<string>front</string>
+		<string>get</string>
+		<string>given</string>
+		<string>global</string>
+		<string>if</string>
+		<string>ignoring</string>
+		<string>in</string>
+		<string>instead</string>
+		<string>into</string>
+		<string>is</string>
+		<string>it</string>
+		<string>its</string>
+		<string>last</string>
+		<string>local</string>
+		<string>me</string>
+		<string>middle</string>
+		<string>mod</string>
+		<string>my</string>
+		<string>ninth</string>
+		<string>not</string>
+		<string>of</string>
+		<string>on</string>
+		<string>onto</string>
+		<string>or</string>
+		<string>out of</string>
+		<string>over</string>
+		<string>prop</string>
+		<string>property</string>
+		<string>put</string>
+		<string>ref</string>
+		<string>reference</string>
+		<string>repeat</string>
+		<string>return</string>
+		<string>returning</string>
+		<string>script</string>
+		<string>second</string>
+		<string>set</string>
+		<string>seventh</string>
+		<string>since</string>
+		<string>sixth</string>
+		<string>some</string>
+		<string>tell</string>
+		<string>tenth</string>
+		<string>that</string>
+		<string>the</string>
+		<string>then</string>
+		<string>third</string>
+		<string>through</string>
+		<string>thru</string>
+		<string>timeout</string>
+		<string>times</string>
+		<string>to</string>
+		<string>transaction</string>
+		<string>true</string>
+		<string>try</string>
+		<string>until</string>
+		<string>where</string>
+		<string>while</string>
+		<string>whose</string>
+		<string>with</string>
+		<string>without</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+		<string>(*</string>
+		<string>*)</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>--</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

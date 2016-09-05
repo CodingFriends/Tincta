@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>agent</string>
+		<string>alias</string>
+		<string>all</string>
+		<string>and</string>
+		<string>as</string>
+		<string>assign</string>
+		<string>attribute</string>
+		<string>check</string>
+		<string>class</string>
+		<string>convert</string>
+		<string>create</string>
+		<string>Current</string>
+		<string>debug</string>
+		<string>deferred</string>
+		<string>do</string>
+		<string>else</string>
+		<string>elseif</string>
+		<string>end</string>
+		<string>ensure</string>
+		<string>expanded</string>
+		<string>export</string>
+		<string>external</string>
+		<string>False</string>
+		<string>feature</string>
+		<string>from</string>
+		<string>frozen</string>
+		<string>if</string>
+		<string>implies</string>
+		<string>inherit</string>
+		<string>inspect</string>
+		<string>invariant</string>
+		<string>like</string>
+		<string>local</string>
+		<string>loop</string>
+		<string>not</string>
+		<string>note</string>
+		<string>obsolete</string>
+		<string>old</string>
+		<string>once</string>
+		<string>only</string>
+		<string>or</string>
+		<string>Precursor</string>
+		<string>redefine</string>
+		<string>rename</string>
+		<string>require</string>
+		<string>rescue</string>
+		<string>Result</string>
+		<string>retry</string>
+		<string>select</string>
+		<string>seperate</string>
+		<string>then</string>
+		<string>True</string>
+		<string>TUPLE</string>
+		<string>undefine</string>
+		<string>until</string>
+		<string>variant</string>
+		<string>Void</string>
+		<string>when</string>
+		<string>xor</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>--</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

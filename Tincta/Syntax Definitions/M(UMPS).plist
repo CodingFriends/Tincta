@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>BREAK</string>
+        <string>CLOSE</string>
+        <string>DO</string>
+        <string>ELSE</string>
+        <string>GOTO</string>
+        <string>HALT</string>
+        <string>HANG</string>
+        <string>IF</string>
+        <string>JOB</string>
+        <string>KILL</string>
+        <string>LOCK</string>
+        <string>MERGE</string>
+        <string>NEW</string>
+        <string>OPEN</string>
+        <string>QUIT</string>
+        <string>READ</string>
+        <string>SET</string>
+        <string>USE</string>
+        <string>VIEW</string>
+        <string>WRITE</string>
+        <string>XECUTE</string>
+        <string>FOR</string>
+        <string>$ASCII</string>
+        <string>$CHAR</string>
+        <string>$DATA</string>
+        <string>$EXTRACT</string>
+        <string>$FIND</string>
+        <string>$FNUMBER</string>
+        <string>$GET</string>
+        <string>$JUSTIFY</string>
+        <string>$LENGTH</string>
+        <string>$NAME</string>
+        <string>$ORDER</string>
+        <string>$PIECE</string>
+        <string>$QLENGTH</string>
+        <string>$QSUBSCRIPT</string>
+        <string>$QUERY</string>
+        <string>$RANDOM</string>
+        <string>$REVERSE</string>
+        <string>$SELECT</string>
+        <string>$STACK</string>
+        <string>$TEXT</string>
+        <string>$TRANSLATE</string>
+        <string>$VIEW</string>
+        <string>$A</string>
+        <string>$C</string>
+        <string>$D</string>
+        <string>$E</string>
+        <string>$F</string>
+        <string>$FN</string>
+        <string>$G</string>
+        <string>$J</string>
+        <string>$L</string>
+        <string>$NA</string>
+        <string>$O</string>
+        <string>$P</string>
+        <string>$QL</string>
+        <string>$QS</string>
+        <string>$Q</string>
+        <string>$R</string>
+        <string>$RE</string>
+        <string>$S</string>
+        <string>$ST</string>
+        <string>$T</string>
+        <string>$TR</string>
+        <string>$V</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>		
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>;</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

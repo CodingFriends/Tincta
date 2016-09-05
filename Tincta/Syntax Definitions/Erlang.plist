@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>after</string>
+		<string>and</string>
+		<string>andalso</string>
+		<string>band</string>
+		<string>begin</string>
+		<string>bnot</string>
+		<string>bor</string>
+		<string>bsl</string>
+		<string>bsr</string>
+		<string>bxor</string>
+		<string>case</string>
+		<string>catch</string>
+		<string>cond</string>
+		<string>dif</string>
+		<string>end</string>
+		<string>false</string>
+		<string>fun</string>
+		<string>if</string>
+		<string>let</string>
+		<string>not</string>
+		<string>of</string>
+		<string>or</string>
+		<string>orelse</string>
+		<string>query</string>
+		<string>receive</string>
+		<string>rem</string>
+		<string>true</string>
+		<string>try</string>
+		<string>when</string>
+		<string>xor</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>%</string>
+		<string>%</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

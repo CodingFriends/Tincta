@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	   <string>&lt;%</string>
+		<string>%&gt;</string>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<true/>
+
+	<key>keywords</key>
+	<array>
+		<string>taglib</string>
+		<string>include</string>
+		<string>page</string>
+		<string>tag</string>
+		<string>tagAttribute</string>
+		<string>tagVariable</string>
+		<string>language</string>
+		<string>session</string>
+		<string>contentType</string>
+		<string>charset</string>
+		<string>import</string>
+		<string>buffer</string>
+		<string>autoflush</string>
+		<string>isThreadSafe</string>
+		<string>info</string>
+		<string>errorPage</string>
+		<string>isErrorpage</string>
+		<string>extends</string>
+		<string>file</string>
+		<string>uri</string>
+		<string>prefix</string>
+		<string>method</string>
+		<string>name</string>
+		<string>default</string>
+		<string>required</string>
+		<string>rtexprvalue</string>
+		<string>id</string>
+		<string>type</string>
+		<string>scope</string>
+		<string>abstract</string>
+		<string>break</string>
+		<string>case</string>
+		<string>catch</string>
+		<string>continue</string>
+		<string>default</string>
+		<string>do</string>
+		<string>else</string>
+		<string>extends</string>
+		<string>final</string>
+		<string>finally</string>
+		<string>for</string>
+		<string>if</string>
+		<string>implements</string>
+		<string>instanceof</string>
+		<string>native</string>
+		<string>new</string>
+		<string>private</string>
+		<string>protected</string>
+		<string>public</string>
+		<string>return</string>
+		<string>static</string>
+		<string>switch</string>
+		<string>synchronized</string>
+		<string>throw</string>
+		<string>throws</string>
+		<string>transient</string>
+		<string>try</string>
+		<string>volatile</string>
+		<string>while</string>
+		<string>package</string>
+		<string>import</string>
+		<string>boolean</string>
+		<string>byte</string>
+		<string>char</string>
+		<string>class</string>
+		<string>double</string>
+		<string>float</string>
+		<string>int</string>
+		<string>interface</string>
+		<string>long</string>
+		<string>short</string>
+		<string>void</string>
+		<string>assert</string>
+		<string>strictfp</string>
+		<string>false</string>
+		<string>null</string>
+		<string>super</string>
+		<string>this</string>
+		<string>true</string>
+		<string>goto</string>
+		<string>const</string>
+		<string>enum</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+	   <string>&lt;%--</string>
+		<string>--%&gt;</string>
+		<string>/*</string>
+		<string>*/</string>
+		<string>&lt;!--</string>
+		<string>--&gt;</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>//</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	   <string>&lt;</string>
+	   <string>&gt;</string>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

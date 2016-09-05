@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>abstract</string>
+		<string>assert</string>
+		<string>boolean</string>
+		<string>break</string>
+		<string>byte</string>
+		<string>case</string>
+		<string>catch</string>
+		<string>char</string>
+		<string>class</string>
+		<string>const</string>
+		<string>continue</string>
+		<string>default</string>
+		<string>do</string>
+		<string>double</string>
+		<string>else</string>
+		<string>enum</string>
+		<string>extends</string>
+		<string>false</string>
+		<string>final</string>
+		<string>finally</string>
+		<string>float</string>
+		<string>for</string>
+		<string>goto</string>
+		<string>if</string>
+		<string>implements</string>
+		<string>import</string>
+		<string>instanceof</string>
+		<string>int</string>
+		<string>interface</string>
+		<string>long</string>
+		<string>native</string>
+		<string>new</string>
+		<string>null</string>
+		<string>package</string>
+		<string>private</string>
+		<string>protected</string>
+		<string>public</string>
+		<string>return</string>
+		<string>short</string>
+		<string>static</string>
+		<string>strictfp</string>
+		<string>super</string>
+		<string>switch</string>
+		<string>synchronized</string>
+		<string>this</string>
+		<string>throw</string>
+		<string>throws</string>
+		<string>transient</string>
+		<string>true</string>
+		<string>try</string>
+		<string>void</string>
+		<string>volatile</string>
+		<string>while</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<false/>
+
+	<key>multiLineComments</key>
+	<array>
+		<string>/*</string>
+		<string>*/</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+		<string>String</string>
+		<string>List</string>
+		<string>Array</string>
+		<string>LinkedList</string>
+		<string>ArrayList</string>
+		<string>Collection</string>
+		<string>TreeSet</string>
+		<string>SortedSet</string>
+		<string>Set</string>
+		<string>HashMap</string>
+		<string>Enumeration</string>
+		<string>Iterator</string>
+		<string>ListIterator</string>
+		<string>EventListener</string>
+		<string>Comparator</string>
+		<string>Map</string>
+		<string>AbstractCollection</string>
+		<string>AbstractList</string>
+		<string>AbstractMap</string>
+		<string>AbstractSequentialList</string>
+		<string>AbstractSEt</string>
+		<string>Arrays</string>
+		<string>BitSet</string>
+		<string>Calendar</string>
+		<string>Currency</string>
+		<string>Date</string>
+		<string>Dictionary</string>
+		<string>EventListenerProxy</string>
+		<string>EventObject</string>
+		<string>GregorianCalendar</string>
+		<string>HashSet</string>
+		<string>Hashtable</string>
+		<string>IdentityHashMap</string>
+		<string>LinkedHashMap</string>
+		<string>ListResourceBundle</string>
+		<string>Locale</string>
+		<string>Observable</string>
+		<string>Properties</string>
+	   <string>PropertyPermission</string>
+		<string>PropertyResourceBundle</string>
+		<string>Random</string>
+		<string>ResourceBundle</string>
+		<string>SimpleTimeZone</string>
+		<string>Stack</string>
+		<string>StringTokenizer</string>
+		<string>Timer</string>
+		<string>TimerTask</string>
+		<string>TimeZone</string>
+		<string>TreeMap</string>
+		<string>Vector</string>
+		<string>WeakHashMap</string>
+		<string>Exception</string>
+		<string>Iterator</string>
+		<string>Iterator</string>
+		
+		
+        <string>AclNotFoundException</string>
+        <string>ActivationException</string>
+        <string>AlreadyBoundException</string>
+        <string>ApplicationException</string>
+        <string>AWTException</string>
+        <string>BackingStoreException</string>
+        <string>BadLocationException</string>
+        <string>CertificateException</string>
+        <string>ClassNotFoundException</string>
+        <string>CloneNotSupportedException</string>
+        <string>DataFormatException</string>
+        <string>DestroyFailedException</string>
+        <string>ExpandVetoException</string>
+        <string>FontFormatException</string>
+        <string>GeneralSecurityException</string>
+        <string>GSSException</string>
+        <string>IllegalAccessException</string>
+        <string>InstantiationException</string>
+        <string>InterruptedException</string>
+        <string>IntrospectionException</string>
+        <string>InvalidMidiDataException</string>
+        <string>InvalidPreferencesFormatException</string>
+        <string>InvocationTargetException</string>
+        <string>IOException</string>
+        <string>LastOwnerException</string>
+        <string>LineUnavailableException</string>
+        <string>MidiUnavailableException</string>
+        <string>MimeTypeParseException</string>
+        <string>NamingException</string>
+        <string>NoninvertibleTransformException</string>
+        <string>NoSuchFieldException</string>
+        <string>NoSuchMethodException</string>
+        <string>NotBoundException</string>
+        <string>NotOwnerException</string>
+        <string>ParseException</string>
+        <string>ParserConfigurationException</string>
+        <string>PrinterException</string>
+        <string>PrintException</string>
+        <string>PrivilegedActionException</string>
+        <string>PropertyVetoException</string>
+        <string>RefreshFailedException</string>
+        <string>RemarshalException</string>
+        <string>RuntimeException</string>
+        <string>SAXException</string>
+        <string>ServerNotActiveException</string>
+        <string>SQLException</string>
+        <string>TooManyListenersException</string>
+        <string>TransformerException</string>
+        <string>UnsupportedAudioFileException</string>
+        <string>UnsupportedCallbackException</string>
+        <string>UnsupportedFlavorException</string>
+        <string>UnsupportedLookAndFeelException</string>
+        <string>URISyntaxException</string>
+        <string>UserException</string>
+        <string>XAException</string>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>//</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

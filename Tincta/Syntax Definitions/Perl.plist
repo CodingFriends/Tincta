@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>use</string>
+		<string>package</string>
+		<string>require</string>
+		<string>print</string>
+		<string>close</string>
+		<string>my</string>
+		<string>open</string>
+		<string>new</string>
+		<string>if</string>
+		<string>until</string>
+		<string>while</string>
+		<string>elsif</string>
+		<string>else</string>
+		<string>unless</string>
+		<string>for</string>
+		<string>foreach</string>
+		<string>BEGIN</string>
+		<string>END</string>
+		<string>cmp</string>
+		<string>eq</string>
+		<string>ne</string>
+		<string>le</string>
+		<string>ge</string>
+		<string>not</string>
+		<string>and</string>
+		<string>or</string>
+		<string>xor</string>
+		<string>chomp</string>
+		<string>chop</string>
+		<string>chr</string>
+		<string>crypt</string>
+		<string>hex</string>
+		<string>index</string>
+		<string>lc</string>
+		<string>lcfirst</string>
+		<string>length</string>
+		<string>oct</string>
+		<string>ord</string>
+		<string>pack</string>
+		<string>reverse</string>
+		<string>rindex</string>
+		<string>sprintf</string>
+		<string>substr</string>
+		<string>uc</string>
+		<string>ucfirst</string>
+		<string>pos</string>
+		<string>quotemeta</string>
+		<string>split</string>
+		<string>study</string>
+		<string>abs</string>
+		<string>atan2</string>
+		<string>cos</string>
+		<string>exp</string>
+		<string>int</string>
+		<string>log</string>
+		<string>rand</string>
+		<string>sin</string>
+		<string>sqrt</string>
+		<string>srand</string>
+		<string>pop</string>
+		<string>push</string>
+		<string>shift</string>
+		<string>splice</string>
+		<string>unshift</string>
+		<string>grep</string>
+		<string>join</string>
+		<string>map</string>
+		<string>sort</string>
+		<string>unpack</string>
+		<string>delete</string>
+		<string>each</string>
+		<string>exists</string>
+		<string>keys</string>
+		<string>values</string>
+		<string>caller</string>
+		<string>continue</string>
+		<string>die</string>
+		<string>do</string>
+		<string>dump</string>
+		<string>eval</string>
+		<string>exit</string>
+		<string>goto</string>
+		<string>last</string>
+		<string>next</string>
+		<string>redo</string>
+		<string>return</string>
+		<string>sub</string>
+		<string>wantarray</string>
+		<string>printf</string>
+		<string>local</string>
+		<string>scalar</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+		<string>/*</string>
+		<string>*/</string>
+		<string>&lt;!--</string>
+		<string>--&gt;</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>#</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

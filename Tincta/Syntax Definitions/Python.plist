@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>and</string>
+		<string>array</string>
+		<string>as</string>
+		<string>assert</string>
+		<string>break</string>
+		<string>class</string>
+		<string>continue</string>
+		<string>def</string>
+		<string>del</string>
+		<string>elif</string>
+		<string>else</string>
+		<string>except</string>
+		<string>exec</string>
+		<string>False</string>
+		<string>finally</string>
+		<string>for</string>
+		<string>from</string>
+		<string>global</string>
+		<string>if</string>
+		<string>import</string>
+		<string>in</string>
+		<string>input</string>
+		<string>is</string>
+		<string>lambda</string>
+		<string>None</string>
+		<string>nonlocal</string>
+		<string>not</string>
+		<string>or</string>
+		<string>pass</string>
+		<string>print</string>
+		<string>raise</string>
+		<string>return</string>
+		<string>True</string>
+		<string>try</string>
+		<string>while</string>
+		<string>with</string>
+		<string>yield</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<false/>
+
+	<key>multiLineComments</key>
+	<array>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+		<string>"""</string>
+		<string>"""</string>
+		<string>'''</string>
+		<string>'''</string>
+	</array>
+
+	<key>predefined</key>
+	<array>
+		<string>int</string>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>#</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

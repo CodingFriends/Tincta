@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>abstype</string>
+		<string>and</string>
+		<string>andalso</string>
+		<string>as</string>
+		<string>case</string>
+		<string>do</string>
+		<string>datatype</string>
+		<string>else</string>
+		<string>end</string>
+		<string>eqtype</string>
+		<string>exception</string>
+		<string>false</string>
+		<string>fn</string>
+		<string>fun</string>
+		<string>functor</string>
+		<string>handle</string>
+		<string>if</string>
+		<string>in</string>
+		<string>include</string>
+		<string>infix</string>
+		<string>infixr</string>
+		<string>let</string>
+		<string>local</string>
+		<string>nonfix</string>
+		<string>of</string>
+		<string>op</string>
+		<string>open</string>
+		<string>orelse</string>
+		<string>raise</string>
+		<string>rec</string>
+		<string>sharing</string>
+		<string>sig</string>
+		<string>signature</string>
+		<string>struct</string>
+		<string>structure</string>
+		<string>then</string>
+		<string>true</string>
+		<string>type</string>
+		<string>val</string>
+		<string>where</string>
+		<string>with</string>
+		<string>withtype</string>
+		<string>while</string>
+		<string>unit</string>
+		<string>int</string>
+		<string>real</string>
+		<string>char</string>
+		<string>string</string>
+		<string>substring</string>
+		<string>word</string>
+		<string>ref</string>
+		<string>array</string>
+		<string>vector</string>
+		<string>bool</string>
+		<string>list</string>
+		<string>option</string>
+		<string>order</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>

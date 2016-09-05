@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>attributesDelim</key>
+	<array>
+	</array>
+
+	<key>blocks</key>
+	<array>
+	</array>
+
+	<key>charStrings</key>
+	<array>
+	</array>
+
+	<key>coloringOnlyInBlocksAndTags</key>
+	<false/>
+
+	<key>keywords</key>
+	<array>
+		<string>do</string>
+        <string>reduce</string>
+        <string>compose</string>
+        <string>if</string>
+        <string>either</string>
+        <string>all</string>
+        <string>any</string>
+        <string>case</string>
+        <string>switch</string>
+        <string>loop</string>
+        <string>repeat</string>
+        <string>foreach</string>
+        <string>while</string>
+        <string>remove-each</string>
+        <string>break</string>
+        <string>function</string>
+        <string>funct</string>
+        <string>func</string>
+        <string>has</string>
+        <string>does</string>
+        <string>exit</string>
+        <string>return</string>
+        <string>attempt</string>
+        <string>try</string>
+        <string>catch</string>
+        <string>throw</string>
+        <string>help</string>
+        <string>what</string>
+        <string>docs</string>
+        <string>source</string>
+        <string>trace</string>
+        <string>probe</string>
+        <string>??</string>
+        <string>delta-time</string>
+        <string></string>
+        <string>remainder</string>
+        <string>negate</string>
+        <string>abs absolute</string>
+        <string>round</string>
+        <string>min max</string>
+        <string>and or xor</string>
+        <string>not</string>
+        <string>random</string>
+        <string>shift</string>
+        <string>sine</string>
+        <string>log-e</string>
+        <string>to</string>
+        <string>words-of</string>
+        <string>values-of</string>
+        <string>title-of</string>
+        <string>spec-of</string>
+        <string>body-of</string>
+        <string>find</string>
+        <string>select</string>
+        <string>first</string>
+        <string>last</string>
+        <string>pick</string>
+        <string>length?</string>
+        <string>index?</string>
+        <string>next</string>
+        <string>back</string>
+        <string>skip</string>
+        <string>make</string>
+        <string>copy</string>
+        <string>join</string>
+        <string>ajoin</string>
+        <string>rejoin</string>
+        <string>append</string>
+        <string>repend</string>
+        <string>insert</string>
+        <string>remove</string>
+        <string>take</string>
+        <string>clear</string>
+        <string>change</string>
+        <string>replace</string>
+        <string>trim</string>
+        <string>split</string>
+        <string>sort</string>
+        <string>swap</string>
+        <string>Sets</string>
+        <string>unique</string>
+        <string>union</string>
+        <string>intersect</string>
+        <string>difference</string>
+        <string>exclude</string>
+        <string>print</string>
+        <string>probe</string>
+        <string>input</string>
+        <string>ask</string>
+        <string>confirm</string>
+        <string>halt</string>
+        <string>quit</string>
+        <string>mold</string>
+        <string>form</string>
+        <string>to</string>
+        <string>read</string>
+        <string>write</string>
+        <string>load</string>
+        <string>save</string>
+        <string>open</string>
+        <string>close</string>
+        <string>delete</string>
+        <string>exists?</string>
+        <string>size?</string>
+        <string>modified?</string>
+        <string>suffix?</string>
+        <string>dir?</string>
+        <string>split-path</string>
+        <string>dirize</string>
+        <string>to-local-file</string>
+        <string>file</string>
+        <string>http</string>
+        <string>ftp</string>
+        <string>pop</string>
+        <string>imap</string>
+        <string>smtp</string>
+        <string>dns</string>
+        <string>object</string>
+        <string>module</string>
+        <string>import</string>
+        <string>construct</string>
+        <string>bind</string>
+        <string>get</string>
+        <string>set</string>
+        <string>in</string>
+        <string>value?</string>
+        <string>use</string>
+        <string>now</string>
+        <string>parse</string>
+        <string>secure</string>
+        <string>wait</string>
+        <string>browse</string>
+        <string>compress</string>
+        <string>decompress</string>
+        <string>lowercase</string>
+        <string>uppercase</string>
+        <string>entab</string>
+        <string>detab</string>
+        <string>view</string>
+        <string>unview</string>
+        <string>layout</string>
+        <string>alert</string>
+        <string>request</string>
+        <string>request-file</string>
+        <string>draw</string>
+        <string>show</string>
+        <string>get-face</string>
+        <string>set-face</string>
+        <string>focus</string>
+	</array>
+
+	<key>keywordsCaseInsensitive</key>
+	<true/>
+
+	<key>multiLineComments</key>
+	<array>
+		<string>{</string>
+		<string>}</string>
+		<string>comment {</string>
+		<string>}</string>
+	</array>
+
+	<key>multiLineStrings</key>
+	<array>
+	</array>
+
+	<key>predefined</key>
+	<array>
+	</array>
+
+	<key>predefinedDelim</key>
+	<array>
+	</array>
+
+	<key>singleLineComments</key>
+	<array>
+		<string>;</string>
+	</array>
+
+	<key>singleLineStrings</key>
+	<array>
+		<string>"</string>
+		<string>"</string>
+	</array>
+
+	<key>tags</key>
+	<array>
+	</array>
+
+	<key>variablesDelim</key>
+	<array>
+	</array>
+
+	<key>variablesDelimPartOfVar</key>
+	<false/>
+
+	<key>isXMLbased</key>
+	<false/>
+
+	<key>indentionBlocks</key>
+	<array>
+	</array>
+</dict>
+</plist>
