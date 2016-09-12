@@ -86,6 +86,8 @@
 		<string>edp</string>
 		<string>ml</string>
 		<string>fs</string>
+		<string>fsi</string>
+		<string>fsx</string>
 		<string>ocaml</string>
 	</array>
 	<key>Fortran</key>

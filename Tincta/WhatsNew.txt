@@ -1,9 +1,11 @@
 ======================
-Welcome to Tincta 2
+Welcome to Tincta 3
 ======================
 
 Did you know:
-... that Tincta automatically notices if an open file was changed by another application? If you have not modified the file in Tincta it will even reload the file contents without you noticing. If you made unsaved changes, Tincta will ask you what you would like to do.
+... that Tincta automatically notices if an open file was changed by another application? If you have
+    not modified the file in Tincta it will even reload the file contents without you noticing.
+    If you made unsaved changes, Tincta will ask you what you would like to do.
 ... that you can make your own syntax definitions? just right-click the application, click
     'Show Package Contents' and go into the foler 'Contents/Resources/Syntax Definitons'. Then copy
     one of the definitions that describes the language you need best and copy it to the folder
@@ -16,19 +18,9 @@ Did you know:
 
 
 ----------------------
-New in Tincta 2.5
+New in Tincta 3.1.1
 ----------------------
 
-* block commenting of selection via cmd + /
-* UI bugfixes
-* overall bugfixes
+* Tincta is now open source, learn more at https://mr-fridge-software.github.io/Tincta/
 
-
-----------------------
-New in Tincta 2.4
-----------------------
-
-* auto update!!
-* improved search
-* bugfixes
 
