@@ -12,5 +12,4 @@
 #define TCAFileExtensionsPath [[NSBundle mainBundle] pathForResource:@"FileExtensions" ofType:@"plist"]
 #define TCAFileExtensionsFile @"FileExtensions"
 
-
-static const BOOL kTCA_IsInAppStore = YES;
+//#define RELEASE_BUILD

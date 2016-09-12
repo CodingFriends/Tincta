@@ -62,6 +62,8 @@
 		C608B94E19DDFEEA00A45A57 /* TCAMiscHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C608B94D19DDFEEA00A45A57 /* TCAMiscHelperTest.m */; };
 		C63F316C18A2DA4E008B2B8E /* TCATextStorageTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C63F316B18A2DA4E008B2B8E /* TCATextStorageTest.m */; };
 		C63F316E18A2DA9B008B2B8E /* TCALineNumberViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C63F316D18A2DA9B008B2B8E /* TCALineNumberViewTest.m */; };
+		C6624B761D8715C1005725B7 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6624B751D8715C1005725B7 /* HockeySDK.framework */; };
+		C6624B791D87161B005725B7 /* HockeySDK.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = C6624B751D8715C1005725B7 /* HockeySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C66A9F9818994DFF004CCC9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A5CF111358922D008CA186 /* Cocoa.framework */; };
 		C66A9F9B189964E3004CCC9E /* TinctaSyntaxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C66A9F9A189964E3004CCC9E /* TinctaSyntaxTest.m */; };
 		C66EFC4019D0A50C005D6E9C /* TCAEditTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C66EFC3F19D0A50C005D6E9C /* TCAEditTest.m */; };
@@ -104,6 +106,20 @@
 		C6FE66031898617100CC3019 /* Tincta_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FE66021898617100CC3019 /* Tincta_Tests.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C6624B781D871605005725B7 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6624B791D87161B005725B7 /* HockeySDK.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E6ADDE41A61831F00BAA882 /* TCAddons_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAddons_Test.m; sourceTree = "<group>"; };
 		0E7286D21A85726E008D6395 /* ColorSchemes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ColorSchemes; path = Tincta/ColorSchemes; sourceTree = "<group>"; };
@@ -144,6 +160,8 @@
 		C63E5C021382E42300C62BCF /* Syntax Definitions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Syntax Definitions"; path = "Tincta/Syntax Definitions"; sourceTree = "<group>"; };
 		C63F316B18A2DA4E008B2B8E /* TCATextStorageTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCATextStorageTest.m; sourceTree = "<group>"; };
 		C63F316D18A2DA9B008B2B8E /* TCALineNumberViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCALineNumberViewTest.m; sourceTree = "<group>"; };
+		C6624B751D8715C1005725B7 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-Mac/HockeySDK.framework"; sourceTree = "<group>"; };
+		C6624B7A1D871D8C005725B7 /* HockeyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HockeyConfig.h; sourceTree = "<group>"; };
 		C66657CD137A84C900E6822F /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		C66657D5137A8A4E00E6822F /* app_icon_running.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_running.icns; sourceTree = "<group>"; };
 		C66A9F9A189964E3004CCC9E /* TinctaSyntaxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TinctaSyntaxTest.m; sourceTree = "<group>"; };
@@ -256,6 +274,7 @@
 				95F1D03F19AFA3C70022EA99 /* CoreFoundation.framework in Frameworks */,
 				95F1D04019AFA3C70022EA99 /* QuickLook.framework in Frameworks */,
 				95F1D04219AFA3C70022EA99 /* Cocoa.framework in Frameworks */,
+				C6624B761D8715C1005725B7 /* HockeySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +314,7 @@
 		95A5CF101358922D008CA186 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6624B751D8715C1005725B7 /* HockeySDK.framework */,
 				C6B1DEDB18F5B61F00AF2F76 /* IOKit.framework */,
 				95D8361516B56B8900400410 /* Security.framework */,
 				95A5CF501358955A008CA186 /* QuickLook.framework */,
@@ -350,6 +370,7 @@
 				9554218616B4193A00AB5874 /* WhatsNew.txt */,
 				95F1D07D19AFA44C0022EA99 /* Tincta-AppStore-Prefix.pch */,
 				0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */,
+				C6624B7A1D871D8C005725B7 /* HockeyConfig.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -576,6 +597,8 @@
 				95F1D01919AFA3C70022EA99 /* Sources */,
 				95F1D03B19AFA3C70022EA99 /* Frameworks */,
 				95F1D04319AFA3C70022EA99 /* Resources */,
+				C6624B741D87159D005725B7 /* ShellScript */,
+				C6624B781D871605005725B7 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -706,6 +729,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6624B741D87159D005725B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-Mac/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95F1D01919AFA3C70022EA99 /* Sources */ = {
@@ -849,6 +888,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDK-Mac",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -893,6 +933,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDK-Mac",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;

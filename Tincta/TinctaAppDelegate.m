@@ -7,6 +7,11 @@
 //      & Anna Neovesky Software GbR.
 //
 
+#ifdef RELEASE_BUILD
+#import <HockeySDK/HockeySDK.h>
+#import "HockeyConfig.h"
+#endif
+
 #import "TinctaAppDelegate.h"
 #import "MainWindowController.h"
 #import "TCSideBarController.h"
@@ -14,6 +19,7 @@
 #import "TCTextViewController.h"
 #import "Reachability.h"
 #import "TCABookmarkHelper.h"
+
 
 @implementation TinctaAppDelegate
 
@@ -28,7 +34,12 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-
+#ifdef RELEASE_BUILD
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier: HOCKEYAPPID];
+    // Do some additional configuration if needed here
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    NSLog(@"blub");
+#endif
     NSArray* savedBookmarks = [TCADefaultsHelper getOpenFilesToRestoreBookmarks];
     
     NSInteger addIndex = [self.mainWindowController.sidebarController.items count];
