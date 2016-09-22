@@ -3,8 +3,7 @@
 //  SofaControl
 //
 //  Created by Martin Kahr on 10.10.06.
-//  Copyright 2010-2016 Gabriel Reimers, Julius Peinelt
-//      & Anna Neovesky Software GbR.
+//  Copyright 2010-2016 Coding Friends UG (haftungsbeschränkt)
 //  v1.0
 
 #import "TCImageTextCell.h"

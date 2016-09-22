@@ -37,10 +37,7 @@
 	<key>DTXcodeBuild</key>
 	<string>4G182</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright 2012-2016 Gabriel Reimers, Julius Peinelt 
-&amp; Anna Neovesky Software GbR.
-Mr. Fridge Software
-2011-2014. All rights reserved.</string>
+	<string>Copyright 2011-2016 Coding Friends UG (haftungsbeschränkt). All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>Web_Sharing</string>
 	<key>NSPrefPaneIconFile</key>

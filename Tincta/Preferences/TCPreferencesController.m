@@ -3,8 +3,7 @@
 //  Tincta
 //
 //  Created by Julius on 28.04.11.
-//  Copyright 2010-2016 Gabriel Reimers, Julius Peinelt
-//      & Anna Neovesky Software GbR.
+//  Copyright 2010-2016 Coding Friends UG (haftungsbeschränkt)
 //
 
 #import "TCPreferencesController.h"

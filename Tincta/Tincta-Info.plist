@@ -64,10 +64,7 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>© Gabriel Reimers, Julius Peinelt 
-&amp; Anna Neovesky Software GbR.
-Mr. Fridge Software
-2011-2016.</string>
+	<string>© Coding Friends UG (haftungsbeschränkt) 2011-2016</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>

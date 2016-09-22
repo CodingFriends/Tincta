@@ -3,8 +3,7 @@
 //  tincta
 //
 //  Created by Julius Peinelt on 21.10.12.
-//  Copyright 2010-2016 Gabriel Reimers, Julius Peinelt
-//      & Anna Neovesky Software GbR.
+//  Copyright 2010-2016 Coding Friends UG (haftungsbeschränkt)
 //
 
 #import <Foundation/Foundation.h>

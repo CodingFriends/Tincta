@@ -21,6 +21,6 @@ Did you know:
 New in Tincta 3.1.1
 ----------------------
 
-* Tincta is now open source, learn more at https://mr-fridge-software.github.io/Tincta/
+* Tincta is now open source, learn more at https://codingfriends.github.io/Tincta/
 
 

@@ -3,8 +3,7 @@
 //  FridgeMagnet
 //
 //  Created by Mr. Fridge on 11/12/10.
-//  Copyright 2010-2016 Gabriel Reimers, Julius Peinelt
-//      & Anna Neovesky Software GbR.
+//  Copyright 2010-2016 Coding Friends UG (haftungsbeschränkt)
 //	2010-11-23
 
 #import <Cocoa/Cocoa.h>

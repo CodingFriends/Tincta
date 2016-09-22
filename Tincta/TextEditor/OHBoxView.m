@@ -3,8 +3,7 @@
 //  OHura
 //
 //  Created by Mr. Fridge on 10/19/10.
-//  Copyright 2010-2016 Gabriel Reimers, Julius Peinelt
-//      & Anna Neovesky Software GbR.
+//  Copyright 2010-2016 Coding Friends UG (haftungsbeschränkt)
 //
 
 #import "OHBoxView.h"

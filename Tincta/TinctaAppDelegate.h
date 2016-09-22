@@ -3,8 +3,7 @@
 //  Tincta
 //
 //  Created by Mr. Fridge on 4/15/11.
-//  Copyright 2010-2016 Gabriel Reimers, Julius Peinelt
-//      & Anna Neovesky Software GbR.
+//  Copyright 2010-2016 Coding Friends UG (haftungsbeschränkt)
 //
 
 #import <Cocoa/Cocoa.h>
