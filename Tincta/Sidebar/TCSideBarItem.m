@@ -26,11 +26,9 @@
         self.topTitle = theTopTitle;
         self.bottomTitle = theBottomTitle;
         
-        //self.fileContent = nil;
         self.textStorage = nil;
         NSStringEncoding enc = NSUTF8StringEncoding;
         self.encoding = enc;
-        //self.selectedRange = NSMakeRange(0, 0);
         self.selectedRanges = @[[NSValue valueWithRange:NSMakeRange(0, 0)]];
         self.isBinary = NO;
         self.syntaxColorName = nil;
@@ -42,7 +40,6 @@
         self.undoManager = [[NSUndoManager alloc] init];
         self.numberOfSearchResults = 0;
     }
-    
     return self;
 }
 
@@ -54,11 +51,9 @@
         NSRange lastOccurenceLoc = [self.filePath rangeOfString:self.topTitle options:NSBackwardsSearch];
         self.bottomTitle = [self.filePath stringByReplacingCharactersInRange:lastOccurenceLoc withString:@""];
         
-        //self.fileContent = nil;
         self.textStorage = nil;
         NSStringEncoding enc = NSUTF8StringEncoding;
         self.encoding = enc;
-        //self.selectedRange = NSMakeRange(0, 0);
         self.selectedRanges = @[[NSValue valueWithRange:NSMakeRange(0, 0)]];
         self.isBinary = NO;
         self.syntaxColorName = nil;
@@ -68,26 +63,20 @@
         self.lastSaveDate = nil;
         self.undoManager = [[NSUndoManager alloc] init];
         self.numberOfSearchResults = 0;
-        
     }
-    
     return self;
 }
 
 
 - (NSImage*) image {
-    
     if (image == nil) {
-        
         image = [NSImage imageNamed:@"GenericDocumentIcon"];
     }
-    
     if (!isCreatingImage) {
         isCreatingImage = YES;
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
         
         dispatch_async(queue, ^{
-            
             CGFloat iconSize = 46;
             NSDictionary* quickLookOptions = @{(NSString*)kQLThumbnailOptionIconModeKey: @YES};
             
@@ -103,7 +92,6 @@
             isCreatingImage = NO;
         });
     }
-    
     return image;
 }
 

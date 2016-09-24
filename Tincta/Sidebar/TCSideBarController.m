@@ -145,7 +145,6 @@
 - (void) selectItem: (TCSideBarItem*) anItem {
     NSInteger indexOfItem = [self.items indexOfObject:anItem];
     if (indexOfItem > -1 && indexOfItem < [self.items count]) {
-        //[sideBarTableView deselectAll:self];
         self.selectedIndex = indexOfItem;
         self.selectedItem = anItem;
         [sideBarTableView selectRowIndexes:[NSIndexSet indexSetWithIndex:self.selectedIndex] byExtendingSelection:NO];
