@@ -12,4 +12,4 @@
 #define TCAFileExtensionsPath [[NSBundle mainBundle] pathForResource:@"FileExtensions" ofType:@"plist"]
 #define TCAFileExtensionsFile @"FileExtensions"
 
-//#define RELEASE_BUILD
+#define RELEASE_BUILD

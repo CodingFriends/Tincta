@@ -141,7 +141,6 @@
 		95A5CF4113589517008CA186 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
 		95A5CF4213589517008CA186 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		95A5CF501358955A008CA186 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
-		95A8383314D6F236008D70A9 /* Tincta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tincta.entitlements; sourceTree = "<group>"; };
 		95AA9E0314DC2A050092346D /* tincta_pro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tincta_pro.png; sourceTree = "<group>"; };
 		95B0CF7B13B0D51C00A7F1CD /* search_notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_notification.png; sourceTree = "<group>"; };
 		95B0CF7C13B0D51C00A7F1CD /* wrap_notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrap_notification.png; sourceTree = "<group>"; };
@@ -151,7 +150,6 @@
 		95B0CF8213B0F25C00A7F1CD /* app_icon_yelling.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_yelling.icns; sourceTree = "<group>"; };
 		95B0CF8713B0F50E00A7F1CD /* app_icon_ink4.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_ink4.icns; sourceTree = "<group>"; };
 		95B8F05D138C2C3400DB73DF /* Notification.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Notification.xib; sourceTree = "<group>"; };
-		95D1B86319CF3FA8000A5DE7 /* Tincta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tincta.entitlements; sourceTree = "<group>"; };
 		95D8361516B56B8900400410 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		95F1D07B19AFA3C70022EA99 /* Tincta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tincta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F1D07D19AFA44C0022EA99 /* Tincta-AppStore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tincta-AppStore-Prefix.pch"; sourceTree = "<group>"; };
@@ -256,6 +254,7 @@
 		C6B908501D7E1C49009F3465 /* TCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTextView.m; sourceTree = "<group>"; };
 		C6B908511D7E1C49009F3465 /* TCTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTextViewController.h; sourceTree = "<group>"; };
 		C6B908521D7E1C49009F3465 /* TCTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTextViewController.m; sourceTree = "<group>"; };
+		C6D72AD71D98175A0079163E /* Tincta.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Tincta.entitlements; sourceTree = "<group>"; };
 		C6FE65F91898617100CC3019 /* Tincta Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tincta Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FE65FE1898617100CC3019 /* Tincta Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tincta Tests-Info.plist"; sourceTree = "<group>"; };
 		C6FE66001898617100CC3019 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -292,7 +291,6 @@
 		95A5CF021358922D008CA186 = {
 			isa = PBXGroup;
 			children = (
-				95D1B86319CF3FA8000A5DE7 /* Tincta.entitlements */,
 				95A5CF171358922D008CA186 /* Tincta */,
 				0E7286D21A85726E008D6395 /* ColorSchemes */,
 				C63E5C021382E42300C62BCF /* Syntax Definitions */,
@@ -361,7 +359,7 @@
 		95A5CF181358922D008CA186 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				95A8383314D6F236008D70A9 /* Tincta.entitlements */,
+				C6D72AD71D98175A0079163E /* Tincta.entitlements */,
 				C6796BF0142500DD006AC19F /* FileExtensions.plist */,
 				95A5CF191358922D008CA186 /* Tincta-Info.plist */,
 				95A5CF1A1358922D008CA186 /* InfoPlist.strings */,
@@ -636,7 +634,7 @@
 				TargetAttributes = {
 					95F1D01819AFA3C70022EA99 = {
 						DevelopmentTeam = 3UAW763979;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -914,7 +912,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 3UAW763979;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -940,8 +938,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Tincta;
-				PROVISIONING_PROFILE = "0d710d78-245d-4f2b-9ffd-4153290f6006";
-				PROVISIONING_PROFILE_SPECIFIER = "Mac Tincta Dev Profile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta AppStore-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SYMROOT = "build-appstore";
@@ -958,11 +955,11 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_X86_VECTOR_INSTRUCTIONS = ssse3;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 3UAW763979;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -986,8 +983,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Tincta;
-				PROVISIONING_PROFILE = "8c9134aa-5316-42e9-89d8-4a2e4ab08604";
-				PROVISIONING_PROFILE_SPECIFIER = "Mac Tincta Distribution 2016-09";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta AppStore-Bridging-Header.h";
 				SYMROOT = "build-appstore";
 				VALID_ARCHS = x86_64;
