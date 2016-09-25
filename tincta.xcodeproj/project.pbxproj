@@ -636,6 +636,7 @@
 				TargetAttributes = {
 					95F1D01819AFA3C70022EA99 = {
 						DevelopmentTeam = 3UAW763979;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -909,9 +910,11 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_X86_VECTOR_INSTRUCTIONS = ssse3;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3UAW763979;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -937,7 +940,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Tincta;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "0d710d78-245d-4f2b-9ffd-4153290f6006";
+				PROVISIONING_PROFILE_SPECIFIER = "Mac Tincta Dev Profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta AppStore-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SYMROOT = "build-appstore";
@@ -954,9 +958,11 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_X86_VECTOR_INSTRUCTIONS = ssse3;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3UAW763979;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -980,7 +986,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Tincta;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "8c9134aa-5316-42e9-89d8-4a2e4ab08604";
+				PROVISIONING_PROFILE_SPECIFIER = "Mac Tincta Distribution 2016-09";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta AppStore-Bridging-Header.h";
 				SYMROOT = "build-appstore";
 				VALID_ARCHS = x86_64;
