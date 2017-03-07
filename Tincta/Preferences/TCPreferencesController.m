@@ -68,13 +68,8 @@
     }
     
     [self loadColorProfiles];
-    
     [self importColorsFromPreviousVersion]; //load colors from old tincta if set there
-    
-
-    
     [self.toolbar setSelectedItemIdentifier:@"General"];
-    
     [self setProfileGUI];
     [[self window] setIsVisible:NO];
 }
@@ -111,6 +106,7 @@
 
 - (IBAction)changeToColorsTab:(id)sender {
     [self.tabView selectTabViewItemWithIdentifier:@"Colors"];
+    [self.window makeFirstResponder:self.colorProfileDummyField];
 }
 
 #pragma mark general
@@ -349,8 +345,6 @@
     [self.colorProfilePopup selectItem:selectedMenuItem];
     [self.colorProfilePopup setEnabled: true];
 
-    [self.upgradeInfoLabel setHidden: true];
-
     [self.colorProfileDuplicateButton setEnabled: true];
     [self.colorProfileDuplicateButton setHidden: false];
 
@@ -360,11 +354,8 @@
     
     [self.colorProfileNameField setEnabled: isUserGenerated];
     
-    
     self.colorProfileNameField.stringValue = self.selectedColorProfile.name;
-    [self.window makeFirstResponder:self.colorProfileDummyField];
 }
-
 
 
 - (IBAction)changeColorProfile:(id)sender {
@@ -377,6 +368,7 @@
     [TCADefaults setObject:self.selectedColorProfile.fileUrl.path forKey:@"selectedColorProfilePath"];
 
     [self setProfileGUI];
+    [self.window makeFirstResponder:self.colorProfileDummyField];
 }
 
 
@@ -391,6 +383,7 @@
     }
     [self loadColorProfiles];
     [self setProfileGUI];
+    [self.window makeFirstResponder:self.colorProfileDummyField];
 }
 
 
@@ -402,6 +395,7 @@
             [fm removeItemAtURL:self.selectedColorProfile.fileUrl error:NULL];
             [self loadColorProfiles];
             [self setProfileGUI];
+            [self.window makeFirstResponder:self.colorProfileDummyField];
         }
     }
 }
@@ -416,6 +410,7 @@
     }
     [self loadColorProfiles];
     [self setProfileGUI];
+    [self.window makeFirstResponder:self.colorProfileDummyField];
 }
 
 - (void) saveSelectedProfile {

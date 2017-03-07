@@ -65,7 +65,6 @@
 @property (weak, nonatomic) IBOutlet NSButton* colorProfileDeleteButton;
 @property (weak, nonatomic) IBOutlet NSTextField* colorProfileNameField;
 @property (weak, nonatomic) IBOutlet NSTextField* colorProfileDummyField;
-@property (weak, nonatomic) IBOutlet NSTextField* upgradeInfoLabel;
 
 /////////////////////
 
