@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment version="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -446,15 +447,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="201" height="491"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
-                                    <scrollView borderType="line" autohidesScrollers="YES" horizontalLineScroll="54" horizontalPageScroll="10" verticalLineScroll="54" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="546">
-                                        <rect key="frame" x="-1" y="1" width="202" height="491"/>
+                                    <scrollView misplaced="YES" borderType="line" autohidesScrollers="YES" horizontalLineScroll="54" horizontalPageScroll="10" verticalLineScroll="54" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" id="546">
+                                        <rect key="frame" x="-1" y="0.0" width="202" height="492"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <clipView key="contentView" copiesOnScroll="NO" id="qgS-Oo-H0L">
-                                            <rect key="frame" x="1" y="1" width="200" height="489"/>
+                                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="qgS-Oo-H0L">
+                                            <rect key="frame" x="1" y="1" width="200" height="490"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView focusRingType="none" appearanceType="vibrantLight" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="52" id="550">
-                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="489"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="490"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
