@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E6ADDE51A61831F00BAA882 /* TCAddons_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6ADDE41A61831F00BAA882 /* TCAddons_Test.m */; };
 		0E7286D41A85726E008D6395 /* ColorSchemes in Resources */ = {isa = PBXBuildFile; fileRef = 0E7286D21A85726E008D6395 /* ColorSchemes */; };
 		95F1D01B19AFA3C70022EA99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF1E1358922D008CA186 /* main.m */; };
 		95F1D01C19AFA3C70022EA99 /* TinctaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF241358922E008CA186 /* TinctaAppDelegate.m */; };
@@ -121,7 +120,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E6ADDE41A61831F00BAA882 /* TCAddons_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAddons_Test.m; sourceTree = "<group>"; };
 		0E7286D21A85726E008D6395 /* ColorSchemes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ColorSchemes; path = Tincta/ColorSchemes; sourceTree = "<group>"; };
 		0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tincta AppStore-Bridging-Header.h"; sourceTree = "<group>"; };
 		9554216516B3276400AB5874 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -563,7 +561,6 @@
 		C6FE65FC1898617100CC3019 /* Tincta Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0E6ADDE41A61831F00BAA882 /* TCAddons_Test.m */,
 				C63F316D18A2DA9B008B2B8E /* TCALineNumberViewTest.m */,
 				C63F316B18A2DA4E008B2B8E /* TCATextStorageTest.m */,
 				C66A9F9A189964E3004CCC9E /* TinctaSyntaxTest.m */,
@@ -634,7 +631,7 @@
 				TargetAttributes = {
 					95F1D01819AFA3C70022EA99 = {
 						DevelopmentTeam = 3UAW763979;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -643,6 +640,7 @@
 					};
 					C6FE65F81898617100CC3019 = {
 						DevelopmentTeam = 3UAW763979;
+						ProvisioningStyle = Manual;
 						TestTargetID = 95A5CF0C1358922D008CA186;
 					};
 				};
@@ -791,7 +789,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E6ADDE51A61831F00BAA882 /* TCAddons_Test.m in Sources */,
 				C63F316C18A2DA4E008B2B8E /* TCATextStorageTest.m in Sources */,
 				C608B94E19DDFEEA00A45A57 /* TCAMiscHelperTest.m in Sources */,
 				C6FE66031898617100CC3019 /* Tincta_Tests.m in Sources */,
@@ -912,7 +909,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3UAW763979;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -959,7 +956,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3UAW763979;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -1006,8 +1003,9 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3UAW763979;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -1016,7 +1014,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tincta/Tincta-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tincta/Tincta-AppStore-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1052,9 +1050,10 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 3UAW763979;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -1063,7 +1062,7 @@
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tincta/Tincta-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tincta/Tincta-AppStore-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
