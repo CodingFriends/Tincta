@@ -15,7 +15,11 @@
     NSUInteger len = aRange.length;
     NSUInteger strLen = aString.length;
 
-    return aRange.location != NSNotFound && aRange.length != NSNotFound && (loc + len <= strLen);
+    return aRange.location != NSNotFound
+    && aRange.length != NSNotFound
+    && aRange.length <= strLen
+    && aRange.location <= strLen
+    && (loc + len <= strLen);
 }
 
 @end
