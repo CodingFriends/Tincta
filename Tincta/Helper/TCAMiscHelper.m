@@ -11,9 +11,9 @@
 @implementation TCAMiscHelper
 
 + (BOOL)isRange:(NSRange)aRange inBoundOfString:(NSString*)aString {
-    NSInteger loc = (NSInteger)aRange.location;
-    NSInteger len = (NSInteger)aRange.length;
-    NSInteger strLen = (NSInteger)aString.length;
+    NSUInteger loc = aRange.location;
+    NSUInteger len = aRange.length;
+    NSUInteger strLen = aString.length;
 
     return aRange.location != NSNotFound && aRange.length != NSNotFound && (loc + len <= strLen);
 }
