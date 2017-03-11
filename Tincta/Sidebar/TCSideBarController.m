@@ -33,6 +33,7 @@
 - (void) awakeFromNib {
     [sideBarTableView registerForDraggedTypes: @[WSSideBarDataType, @"public.file-url", @"public.url", NSURLPboardType, NSFilenamesPboardType] ];
     [sideBarTableView setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
+    [sideBarTableView setBackgroundColor:[NSColor whiteColor]];
 }
 
 #pragma mark add remove
