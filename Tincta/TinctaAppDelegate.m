@@ -37,7 +37,6 @@
     [[BITHockeyManager sharedHockeyManager] configureWithIdentifier: HOCKEYAPPID];
     // Do some additional configuration if needed here
     [[BITHockeyManager sharedHockeyManager] startManager];
-    NSLog(@"blub");
 #endif
     NSArray* savedBookmarks = [TCADefaultsHelper getOpenFilesToRestoreBookmarks];
     
