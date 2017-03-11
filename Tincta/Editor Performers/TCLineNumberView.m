@@ -266,7 +266,6 @@
 	if (backgroundColor != nil) {
 		[backgroundColor set];
 		NSRectFill(bounds);
-		
 		[textColor set];
 		[NSBezierPath strokeLineFromPoint:NSMakePoint(NSMaxX(bounds) - 0/5, NSMinY(bounds)) toPoint:NSMakePoint(NSMaxX(bounds) - 0.5, NSMaxY(bounds))];
 	}
@@ -275,9 +274,6 @@
         return;
     }
     capsuleSet = NO;
-    
-    
-	
     NSRect visibleRect = [[[self scrollView] contentView] bounds];
     
     // Find the characters that are currently visible
@@ -311,11 +307,8 @@
     [linesTextView setFont:[TCADefaultsHelper getEditorFont]];
 
     NSInteger lastVisibleLine = [self lineNumberForCharacterIndex:NSMaxRange(visibleCharRange)];
-    
     while (lineNumber <= lastVisibleLine ) {
-        
         if (!self.isWrappingDisabled) {
-            
             lineStartIndex = [(TCTextStorage*) [textView textStorage] lineRangeOfLine:lineNumber].location;
             
             if (locationOfFirstVisibleChar > lineStartIndex) {
