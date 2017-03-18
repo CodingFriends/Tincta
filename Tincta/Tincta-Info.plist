@@ -58,7 +58,7 @@
 	<key>CFBundleSignature</key>
 	<string>TCTA</string>
 	<key>CFBundleVersion</key>
-	<string>3120</string>
+	<string>3121</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.developer-tools</string>
 	<key>LSMinimumSystemVersion</key>
