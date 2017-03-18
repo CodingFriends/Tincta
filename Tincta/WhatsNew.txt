@@ -1,6 +1,15 @@
-======================
+//////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                      //
+//   Tincta is now open source, learn more at https://codingfriends.github.io/Tincta/   //
+//                                                                                      //
+//   You are invited to contribute!                                                     //
+//                                                                                      //
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 Welcome to Tincta 3
-======================
+===================
 
 Did you know:
 ... that Tincta automatically notices if an open file was changed by another application? If you have
@@ -14,13 +23,14 @@ Did you know:
     defined language registered with certain file extensions you need to copy the file
     'FileExtension.plist' into '~/Library/Application Support/Tincta/' and extend it with a
     correspondig entry.
-    If you add new syntax definitions we'll be glad to hear from you!
+    If you add new syntax definitions we'll be glad to hear from you at https://codingfriends.github.io/Tincta/
 
 
 ----------------------
-New in Tincta 3.1.1
+New in Tincta 3.1.2
 ----------------------
 
-* Tincta is now open source, learn more at https://codingfriends.github.io/Tincta/
+* Fixed some warnings because of layout issues
+* Fixed a crash related to scrolling
 
 
