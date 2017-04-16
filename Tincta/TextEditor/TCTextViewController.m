@@ -689,6 +689,7 @@
     [self.textView setTabString];
     [self.textView toggleIndentNewLine:[TCADefaultsHelper getIndentNewLine]];
     [self.textView toggleAutocompleteBrackets:[TCADefaultsHelper getAutoCompleteBrackets]];
+    [self.textView toggleAutocompleteQuotations:[TCADefaultsHelper getAutoCompleteQuotations]];
 
     [self.textView setInsertionPointColor:[TCADefaultsHelper getTextColor]];
     [self.textView setBackgroundColor:[TCADefaultsHelper getBackgroundColor]];

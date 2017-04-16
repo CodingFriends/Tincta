@@ -20,6 +20,7 @@
     BOOL shallColorCurrentLine;
     BOOL shallIndentNewLine;
     BOOL shallAutocompleteBrackets;
+    BOOL shallAutocompleteQuotations;
     float tabWidth;
     
 }
@@ -41,6 +42,7 @@
 - (void)toggleIndentNewLine:(BOOL)b;
 - (void)markRanges:(NSArray* )ranges;
 - (void)toggleAutocompleteBrackets:(BOOL)b;
+- (void)toggleAutocompleteQuotations:(BOOL)b;
 - (void)setTabWidthForCurrentFont;
 - (void)setInvisiblesColor:(NSColor* )color;
 - (void)removeBackgroundColorAttributesInText;

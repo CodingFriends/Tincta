@@ -134,6 +134,14 @@
     return [TCADefaults boolForKey:@"autocompleteBrackets"];
 }
 
++ (BOOL)getAutoCompleteQuotations {
+    if (![TCADefaultsHelper getIsNotFirstStart]) {
+        [TCADefaultsHelper setAutoCompleteQuotations:YES];
+        return YES;
+    }
+    return [TCADefaults boolForKey:@"autocompleteQuotations"];
+}
+
 
 + (BOOL)getDontShowBinaryWarning {
     return [TCADefaults boolForKey:@"dontShowBinaryWarning"];
@@ -452,6 +460,11 @@
 
 + (void)setAutoCompleteBrackets:(BOOL)completeBrackets {
     [TCADefaults setBool:completeBrackets forKey:@"autocompleteBrackets"];
+    [TCADefaults synchronize];
+}
+
++ (void)setAutoCompleteQuotations:(BOOL)completeQuotations {
+    [TCADefaults setBool:completeQuotations forKey:@"autocompleteQuotations"];
     [TCADefaults synchronize];
 }
 

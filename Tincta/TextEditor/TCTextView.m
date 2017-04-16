@@ -68,18 +68,26 @@
     
     [super insertText:insertString];
     
-    if (shallAutocompleteBrackets && [insertString isKindOfClass:[NSString class]]) {
+    if ((shallAutocompleteBrackets || shallAutocompleteQuotations)
+        && [insertString isKindOfClass:[NSString class]]) {
+        // auto complete brackets
         if ([insertString isEqualToString:@"("]) {
             [super insertText:@")"];
         } else if ([insertString isEqualToString:@"["]) {
             [super insertText:@"]"];
         } else if ([insertString isEqualToString:@"{"]) {
             [super insertText:@"}"];
+        // auto complete quotations
+        } else if ([insertString isEqualToString:@"\""]) {
+            [super insertText:@"\""];
+        } else if ([insertString isEqualToString:@"'"]) {
+            [super insertText:@"'"];
+        // no autocompletion
         } else {
             return;
         }
         
-        // insertion point between the braces
+        // insertion point between the braces or quotations marks
         NSArray* selRanges = @[[NSValue valueWithRange:NSMakeRange([self selectedRange].location - 1, 0)]];
         [self setSelectedRanges:selRanges];
     }
@@ -756,6 +764,9 @@
     shallAutocompleteBrackets = b;
 }
 
+- (void)toggleAutocompleteQuotations:(BOOL)b {
+    shallAutocompleteQuotations = b;
+}
 
 - (float)calculateTabWidth {
     NSInteger tabLength = [TCADefaultsHelper getTabWidth];
