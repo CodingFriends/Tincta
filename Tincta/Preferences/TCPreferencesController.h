@@ -39,6 +39,7 @@
 @property (weak, nonatomic) IBOutlet NSButton *highlightCurrentLineCheckBox;
 @property (weak, nonatomic) IBOutlet NSButton *openLastFilesCheckBox;
 @property (weak, nonatomic) IBOutlet NSButton *autocompleteBracketsCheckBox;
+@property (weak, nonatomic) IBOutlet NSButton *autocompleteQuotationsCheckBox;
     
 @property (weak, nonatomic) IBOutlet NSButton *useGrayIconsCheckBox;
 @property (weak, nonatomic) IBOutlet NSButton *showBinaryWarningCheckBox;
@@ -90,6 +91,7 @@
 - (IBAction)toggleHighlightCurrentLine:(id)sender;
 - (IBAction)toggleOpenWithLastUsedFiles:(id)sender;
 - (IBAction)toggleAutocompleteBrackets:(id)sender;
+- (IBAction)toggleAutocompleteQuotations:(id)sender;
 - (IBAction)toggleShowBinaryWarning:(id)sender;
 - (IBAction)toggleUseGrayIcons:(id)sender;
 

@@ -58,6 +58,7 @@
     [self.highlightCurrentLineCheckBox setState:[TCADefaultsHelper getHighlightCurrentLine]];
     [self.openLastFilesCheckBox setState:[TCADefaultsHelper getOpenLastFiles]];
     [self.autocompleteBracketsCheckBox setState:[TCADefaultsHelper getAutoCompleteBrackets]];
+    [self.autocompleteQuotationsCheckBox setState:[TCADefaultsHelper getAutoCompleteQuotations]];
     [self.showBinaryWarningCheckBox setState:![TCADefaultsHelper getDontShowBinaryWarning]];
     BOOL useGrayIcons = [TCADefaultsHelper getUseGrayIcons];
     [self.useGrayIconsCheckBox setState: useGrayIcons];
@@ -199,6 +200,11 @@
 
 - (IBAction)toggleAutocompleteBrackets:(id)sender {
     [TCADefaultsHelper setAutoCompleteBrackets:([self.autocompleteBracketsCheckBox state] == 1)];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"TCPreferencesDidChange" object:self];
+}
+
+- (IBAction)toggleAutocompleteQuotations:(id)sender {
+    [TCADefaultsHelper setAutoCompleteQuotations:([self.autocompleteQuotationsCheckBox state] == 1)];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"TCPreferencesDidChange" object:self];
 }
 

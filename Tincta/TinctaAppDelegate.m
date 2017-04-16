@@ -84,6 +84,7 @@
         [TCADefaultsHelper setHighlightCurrentLine:YES];
         [TCADefaultsHelper setOpenLastFiles:YES];
         [TCADefaultsHelper setAutoCompleteBrackets:YES];
+        [TCADefaultsHelper setAutoCompleteQuotations:YES];
 
     }
     [TCADefaultsHelper setIsNotFirstStart:YES];

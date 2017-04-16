@@ -27,6 +27,7 @@
 + (BOOL)getHighlightCurrentLine;
 + (BOOL)getOpenLastFiles;
 + (BOOL)getAutoCompleteBrackets;
++ (BOOL)getAutoCompleteQuotations;
 + (BOOL)getDontShowBinaryWarning;
 + (BOOL)getUseGrayIcons;
 + (BOOL)getUseSmallSidebarIcons;
@@ -81,6 +82,7 @@
 + (void)setHighlightCurrentLine:(BOOL)highlight;
 + (void)setOpenLastFiles:(BOOL)open;
 + (void)setAutoCompleteBrackets:(BOOL)completeBrackets;
++ (void)setAutoCompleteQuotations:(BOOL)completeQuotations;
 + (void)setDontShowBinaryWarning:(BOOL)dontShow;
 + (void)setUseGrayIcons:(BOOL)grayIcons;
 + (void)setUseSmallSidebarIconsIcons:(BOOL)smallIcons;
