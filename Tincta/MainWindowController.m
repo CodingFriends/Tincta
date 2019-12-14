@@ -36,7 +36,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name: @"TCTextStorageDidChangeText" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateStatusText) name:@"TCShallUpdateStatusBar" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidChangeSelection:) name:@"NSTextViewDidChangeSelectionNotification" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preferencesDidChangeToolbarIcons:) name:@"TCPreferencesDidChangeToolbarIcons" object:nil];
 
     preferencesController = [[TCPreferencesController alloc] init];
 }
@@ -645,11 +644,6 @@
 #pragma mark notifcations
 
 
-- (void)preferencesDidChangeToolbarIcons:(NSNotification *)aNotification {
-    
-    [self setToolbarItemColor];
-    
-}
 
 
 - (void) textDidChange: (NSNotification*) aNotification {
@@ -826,44 +820,6 @@
 
 #pragma mark -
 #pragma mark helpers
-
-- (void) setToolbarItemColor {
-    
-    BOOL showGrayIcons = [TCADefaultsHelper getUseGrayIcons];
-    
-    if (showGrayIcons) {
-        
-        [self.toolbarNewItem setImage:[NSImage imageNamed:@"new"]];
-        [self.toolbarCloseItem setImage:[NSImage imageNamed:@"close"]];
-        [self.toolbarOpenItem setImage:[NSImage imageNamed:@"open"]];
-        [self.toolbarInvisiblesItem setImage:[NSImage imageNamed:@"invisibles"]];
-        [self.toolbarSaveItem setImage:[NSImage imageNamed:@"save"]];
-        [self.toolbarLowercaseItem setImage:[NSImage imageNamed:@"toLower"]];
-        [self.toolbarUppercaseItem setImage:[NSImage imageNamed:@"toUpper"]];
-        [self.toolbarPrintItem setImage:[NSImage imageNamed:@"print"]];
-        [self.toolbarSearchItem setImage:[NSImage imageNamed:@"search"]];
-        [self.toolbarPreferencesItem setImage:[NSImage imageNamed:@"preferences"]];
-        [self.toolbarCustomizeItem setImage:[NSImage imageNamed:@"customize"]];
-        [self.toolbarOpenBrowserItem setImage:[NSImage imageNamed:@"browser"]];
-        
-    } else {
-        
-        [self.toolbarNewItem setImage:[NSImage imageNamed:@"newPink"]];
-        [self.toolbarCloseItem setImage:[NSImage imageNamed:@"closePink"]];
-        [self.toolbarOpenItem setImage:[NSImage imageNamed:@"openPink"]];
-        [self.toolbarInvisiblesItem setImage:[NSImage imageNamed:@"showInvisibleCharsPink"]];
-        [self.toolbarSaveItem setImage:[NSImage imageNamed:@"savePink"]];
-        [self.toolbarLowercaseItem setImage:[NSImage imageNamed:@"toLowerCasePink"]];
-        [self.toolbarUppercaseItem setImage:[NSImage imageNamed:@"toUpperCasePink"]];
-        [self.toolbarPrintItem setImage:[NSImage imageNamed:@"printPink"]];
-        [self.toolbarSearchItem setImage:[NSImage imageNamed:@"searchPink"]];
-        [self.toolbarPreferencesItem setImage:[NSImage imageNamed:@"preferencesPink"]];
-        [self.toolbarCustomizeItem setImage:[NSImage imageNamed:@"customizePink"]];
-        [self.toolbarOpenBrowserItem setImage:[NSImage imageNamed:@"browserPink"]];
-        
-    }
-    
-}
 
 
 - (IBAction) customizeToolbar: (id) sender {

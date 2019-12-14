@@ -41,7 +41,6 @@
 @property (weak, nonatomic) IBOutlet NSButton *autocompleteBracketsCheckBox;
 @property (weak, nonatomic) IBOutlet NSButton *autocompleteQuotationsCheckBox;
     
-@property (weak, nonatomic) IBOutlet NSButton *useGrayIconsCheckBox;
 @property (weak, nonatomic) IBOutlet NSButton *showBinaryWarningCheckBox;
 
     
@@ -93,7 +92,6 @@
 - (IBAction)toggleAutocompleteBrackets:(id)sender;
 - (IBAction)toggleAutocompleteQuotations:(id)sender;
 - (IBAction)toggleShowBinaryWarning:(id)sender;
-- (IBAction)toggleUseGrayIcons:(id)sender;
 
 
 - (IBAction)duplicateColorProfile:(id)sender;
