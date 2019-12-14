@@ -6,6 +6,9 @@
     #import <Cocoa/Cocoa.h>
     #import <Foundation/Foundation.h>
     #import "TCADefaultsHelper.h"
+
+    //delete this if you get errors or define the file according to the example header
+    #import "AppCenterConfig.h"
 #endif
 
 #define TCADefaults [NSUserDefaults standardUserDefaults]
