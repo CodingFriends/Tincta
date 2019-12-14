@@ -60,13 +60,6 @@
     [self.autocompleteBracketsCheckBox setState:[TCADefaultsHelper getAutoCompleteBrackets]];
     [self.autocompleteQuotationsCheckBox setState:[TCADefaultsHelper getAutoCompleteQuotations]];
     [self.showBinaryWarningCheckBox setState:![TCADefaultsHelper getDontShowBinaryWarning]];
-    BOOL useGrayIcons = [TCADefaultsHelper getUseGrayIcons];
-    [self.useGrayIconsCheckBox setState: useGrayIcons];
-    if (useGrayIcons) {
-        [self.toolbarGeneralItem setImage:[NSImage imageNamed:@"preferences"]];
-        [self.toolbarColorsItem setImage:[NSImage imageNamed:@"color"]];
-
-    }
     
     [self loadColorProfiles];
     [self importColorsFromPreviousVersion]; //load colors from old tincta if set there
@@ -214,18 +207,6 @@
 }
 
 
-- (IBAction)toggleUseGrayIcons:(id)sender {
-    BOOL useGrayIcons = ([self.useGrayIconsCheckBox state] == NSOnState);
-    if (useGrayIcons) {
-        [self.toolbarGeneralItem setImage:[NSImage imageNamed:@"preferences"]];
-        [self.toolbarColorsItem setImage:[NSImage imageNamed:@"color"]];
-    } else  {
-        [self.toolbarGeneralItem setImage:[NSImage imageNamed:@"preferencesPink"]];
-        [self.toolbarColorsItem setImage:[NSImage imageNamed:@"colorPink"]];
-    }
-    [TCADefaultsHelper setUseGrayIcons:useGrayIcons];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"TCPreferencesDidChangeToolbarIcons" object:self];
-}
 
 
 #pragma mark - color profiles
