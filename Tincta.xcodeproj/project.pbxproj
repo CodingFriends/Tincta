@@ -807,13 +807,10 @@
 		95F1D07919AFA3C70022EA99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_X86_VECTOR_INSTRUCTIONS = ssse3;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3UAW763979;
@@ -824,14 +821,10 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/HockeySDK-Mac",
 				);
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tincta/Tincta-AppStore-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				GCC_UNROLL_LOOPS = NO;
-				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Tincta/Tincta-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -842,14 +835,12 @@
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
-				LLVM_LTO = NO;
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Tincta;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta AppStore-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SYMROOT = "build-appstore";
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
@@ -858,13 +849,10 @@
 		95F1D07A19AFA3C70022EA99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_X86_VECTOR_INSTRUCTIONS = ssse3;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3UAW763979;
@@ -876,11 +864,8 @@
 					"$(PROJECT_DIR)/HockeySDK-Mac",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tincta/Tincta-AppStore-Prefix.pch";
-				GCC_UNROLL_LOOPS = YES;
-				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Tincta/Tincta-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -891,14 +876,13 @@
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
-				LLVM_LTO = YES;
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Tincta;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tincta/Tincta AppStore-Bridging-Header.h";
-				SYMROOT = "build-appstore";
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
