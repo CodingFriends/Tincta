@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -100,7 +100,6 @@
 		0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tincta AppStore-Bridging-Header.h"; sourceTree = "<group>"; };
 		9554216516B3276400AB5874 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		9554218616B4193A00AB5874 /* WhatsNew.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhatsNew.txt; sourceTree = "<group>"; };
-		95768996166B56D900275BBA /* Web Sharing.prefPane */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Web Sharing.prefPane"; sourceTree = "<group>"; };
 		957D5D81139AA1A400186F1D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		957D5D94139AA29B00186F1D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		95A5CF111358922D008CA186 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -299,7 +298,6 @@
 				9554216516B3276400AB5874 /* MainMenu.xib */,
 				95B8F05D138C2C3400DB73DF /* Notification.xib */,
 				C638AAC81376CECC00E9339C /* Preferences.xib */,
-				95768996166B56D900275BBA /* Web Sharing.prefPane */,
 				95A5CF181358922D008CA186 /* Supporting Files */,
 				95A5CF3A135894DE008CA186 /* Icons */,
 				0E39E3422395B29B00EB5F86 /* icons.xcassets */,
@@ -540,7 +538,9 @@
 		95A5CF041358922D008CA186 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TC;
 				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Coding Friends UG";
 				TargetAttributes = {
 					95F1D01819AFA3C70022EA99 = {
 						DevelopmentTeam = 3UAW763979;
@@ -558,8 +558,8 @@
 					};
 				};
 			};
-			buildConfigurationList = 95A5CF071358922D008CA186 /* Build configuration list for PBXProject "tincta" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 95A5CF071358922D008CA186 /* Build configuration list for PBXProject "Tincta" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -834,7 +834,10 @@
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Tincta/Tincta-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
@@ -880,7 +883,10 @@
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Tincta/Tincta-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
@@ -933,7 +939,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Tincta Tests/Tincta Tests-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -977,7 +987,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Tincta Tests/Tincta Tests-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mrFridge.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -991,7 +1005,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95A5CF071358922D008CA186 /* Build configuration list for PBXProject "tincta" */ = {
+		95A5CF071358922D008CA186 /* Build configuration list for PBXProject "Tincta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95A5CF291358922E008CA186 /* Debug */,
