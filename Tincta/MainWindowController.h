@@ -62,7 +62,6 @@
 
 @property (strong) NSPopover* donationPopover;
 
-- (void) preferencesDidChangeToolbarIcons:(NSNotification *)aNotification;
 - (IBAction) newFile: (id) sender;
 - (IBAction) performClose1: (id) sender;
 - (IBAction) closeFile: (id) sender;

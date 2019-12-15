@@ -83,9 +83,9 @@
             if (self.fileUrl != nil) {
                 CGImageRef quickLookImage = QLThumbnailImageCreate(kCFAllocatorDefault, (__bridge CFURLRef)self.fileUrl, CGSizeMake(iconSize, iconSize), (__bridge CFDictionaryRef)quickLookOptions);
                 if (quickLookImage == nil) {
-                    image = [[NSWorkspace sharedWorkspace] iconForFile:self.filePath];
+                    self.image = [[NSWorkspace sharedWorkspace] iconForFile:self.filePath];
                 } else {
-                    image = [[NSImage alloc] initWithCGImage:quickLookImage size:NSMakeSize(128, 128)];
+                    self.image = [[NSImage alloc] initWithCGImage:quickLookImage size:NSMakeSize(128, 128)];
                     CFRelease(quickLookImage);   //aenderung
                 }
             }
