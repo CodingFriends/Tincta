@@ -6,9 +6,10 @@
 //  Copyright 2010-2016 Coding Friends UG (haftungsbeschränkt)
 //
 
-#ifdef RELEASE_BUILD
-#import <HockeySDK/HockeySDK.h>
-#import "HockeyConfig.h"
+#ifdef INCLUDE_APP_CENTER
+@import AppCenter;
+@import AppCenterAnalytics;
+@import AppCenterCrashes;
 #endif
 
 #import "TinctaAppDelegate.h"
@@ -33,10 +34,11 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-#ifdef RELEASE_BUILD
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier: HOCKEYAPPID];
-    // Do some additional configuration if needed here
-    [[BITHockeyManager sharedHockeyManager] startManager];
+#ifdef INCLUDE_APP_CENTER
+    [MSAppCenter start: APP_CENTER_KEY withServices:@[
+      [MSAnalytics class],
+      [MSCrashes class]
+    ]];
 #endif
     NSArray* savedBookmarks = [TCADefaultsHelper getOpenFilesToRestoreBookmarks];
     
