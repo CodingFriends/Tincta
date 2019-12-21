@@ -19,7 +19,7 @@
     NSMenu* syntaxDefinitionsMenu = [[NSMenu alloc] initWithTitle:@"Syntax Coloring"];
     NSMutableArray* availableSyntaxDefinitions = [TCAMenuHelper createSyntaxDefinitionsArray];
     for (NSString* syntaxDef in availableSyntaxDefinitions) {
-        NSMenuItem* item = [[NSMenuItem alloc] initWithTitle:syntaxDef action:@selector(menuSyntaxDefinitionChanged:) keyEquivalent:@""];
+        NSMenuItem* item = [[NSMenuItem alloc] initWithTitle:syntaxDef action:@selector(menuSyntaxDefinitionChange:) keyEquivalent:@""];
         [syntaxDefinitionsMenu addItem:item];
     }
     return syntaxDefinitionsMenu;

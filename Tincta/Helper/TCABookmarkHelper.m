@@ -27,7 +27,8 @@
     }
     NSURLBookmarkResolutionOptions options = NSURLBookmarkResolutionWithoutMounting;
     options = options | NSURLBookmarkResolutionWithSecurityScope;
-    NSURL* url = [NSURL URLByResolvingBookmarkData:theBookmark options:options relativeToURL:nil bookmarkDataIsStale:NO error:NULL];
+    BOOL isStale = NO;
+    NSURL* url = [NSURL URLByResolvingBookmarkData:theBookmark options:options relativeToURL:nil bookmarkDataIsStale:&isStale error:NULL];
     return url;
 }
 

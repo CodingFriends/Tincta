@@ -402,115 +402,33 @@
         [NSApp setApplicationIconImage:[NSImage imageNamed:@"app_icon_running.icns"]];
         
     } else {
+            
+        char *URL = "http://www.apple.com";
+        FSRef appRef;
+        CFURLRef appURL;
+        CFStringRef urlStr = CFStringCreateWithCString(NULL, URL, kCFStringEncodingASCII);
+        CFURLRef inURL = CFURLCreateWithString(NULL, urlStr, NULL);
         
-        NSString* siteUrlString = [[NSURL fileURLWithPath: [NSHomeDirectory() stringByAppendingPathComponent:@"Sites"]] absoluteString];
-        NSString* fileUrlString = [selectedItem.fileUrl absoluteString];
-        
-        //this will never kick in in sandbox because siteUrlString points to container folder
-        if ([fileUrlString rangeOfString:siteUrlString].location != NSNotFound && [fileUrlString.pathExtension isEqualToString:@"php"]) {
-            
-            NSFileManager* fm = [NSFileManager defaultManager];
-            BOOL prefPaneIsInstalledForUser = [fm fileExistsAtPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Library/PreferencePanes/Web Sharing.prefPane"]];
-            BOOL prefPaneIsInstalledForSystem = [fm fileExistsAtPath:@"/Library/PreferencePanes/Web Sharing.prefPane"];
-            
-            NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-            BOOL dontShowWebsharingAlert = [defaults boolForKey:@"dontShowWebSharingAlertAgain"];
-            if(!dontShowWebsharingAlert && !prefPaneIsInstalledForSystem && !prefPaneIsInstalledForUser) {
-                NSInteger returnCode;
-                if (floor(NSAppKitVersionNumber) <= NSAppKitVersionNumber10_7_2) {
-                    /* On a 10.6.x or earlier system */
-                    returnCode = NSRunAlertPanel(@"Enable Websharing", @"Tincta loads php-files from your Sites folder using the built in Mac OS Webserver. This way your pages are displayed just like they would be on the internet.\n \nIf you get an error message from your browser, you probably need to enable Web Sharing in: System Preferences > Sharing.", @"OK", @"Don't bother me again", nil);
-                    if (returnCode == NSAlertAlternateReturn) {
-                        [defaults setBool:YES forKey:@"dontShowWebSharingAlertAgain"];
-                    }
-                } else {
-                    /* Mountain Lion or later system */
-                    returnCode = NSRunAlertPanel(@"Enable Websharing", @"Tincta loads PHP-files from your Sites folder using the built in Mac OS Webserver.\n\nHowever Web Sharing is turned off by default and cannot be activated easily. Do you like Tincta to set up Web Sharing and install the free 'Web Sharing' preferences pane created by ClickOnTyler? It allows you to turn Web Sharing on and off with one click.", @"Install Web Sharing Preference Pane", @"Not yet", @"Don't bother me again", nil);
-                    if (returnCode == NSAlertDefaultReturn) {
-                        //install pref pane
-                        NSString* userName = NSUserName();
-                        NSString* configPath = [NSString stringWithFormat: @"/etc/apache2/users/%@.conf", userName];
-                        
-                        if (NO == [[NSFileManager defaultManager] fileExistsAtPath:configPath]) {
-                            
-                            // Create authorization reference
-                            AuthorizationRef authorizationRef;
-                            OSStatus status = AuthorizationCreate(NULL, kAuthorizationEmptyEnvironment, kAuthorizationFlagDefaults, &authorizationRef);
-                            if (status != errAuthorizationSuccess) {
-                                NSLog(@"Error Creating Initial Authorization: %d", status);
-                                return;
-                            }
-                            
-                            AuthorizationItem right = {kAuthorizationRightExecute, 0, NULL, 0};
-                            AuthorizationRights rights = {1, &right};
-                            AuthorizationFlags flags = kAuthorizationFlagDefaults | kAuthorizationFlagInteractionAllowed |
-                            kAuthorizationFlagPreAuthorize | kAuthorizationFlagExtendRights;
-                            
-                            // Call AuthorizationCopyRights to determine or extend the allowable rights.
-                            status = AuthorizationCopyRights(authorizationRef, &rights, NULL, flags, NULL);
-                            if (status != errAuthorizationSuccess) {
-                                NSLog(@"Copy Rights Unsuccessful: %d", status);
-                                return;
-                            }
-                            
-                            NSString* configText = [NSString stringWithFormat: @"<Directory \"/Users/%@/Sites\">\n    Options Indexes MultiViews\n    AllowOverride None \n    Order allow,deny\nAllow from all\n</Directory>", userName];
-                            NSString* configTmpPath = @"/tmp/com.mrFridge.Tincta.cfgTmp";
-                            NSString* configPath = [NSString stringWithFormat: @"/etc/apache2/users/%@.conf", userName];
-                            [configText writeToFile:configTmpPath atomically:YES encoding:NSUTF8StringEncoding error:NULL];
-                            
-                            char *tool = "/bin/cp";
-                            char *args[] = {(char*)configTmpPath.UTF8String, (char*)configPath.UTF8String, NULL};
-                            FILE *pipe = NULL;
-                            
-                            status = AuthorizationExecuteWithPrivileges(authorizationRef, tool, kAuthorizationFlagDefaults, args, &pipe);
-                            if (status != errAuthorizationSuccess) {
-                                NSLog(@"MWC > Error: %d", status);
-                                return;
-                            }
-                        }
-                        NSString* prefPanePath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Contents/Resources/Web Sharing.prefPane"];
-                        [[NSWorkspace sharedWorkspace] openFile:prefPanePath];
-                    }
-                    if (returnCode == NSAlertOtherReturn) {
-                        [defaults setBool:YES forKey:@"dontShowWebSharingAlertAgain"];
-                    }
-                }
-            }
-            
-            //this is in the site folder so we can open it with the webserver which will make php files open correctly
-            NSString* urlStringToOpen = [fileUrlString stringByReplacingOccurrencesOfString:siteUrlString withString:@""];
-            urlStringToOpen = [NSString stringWithFormat:@"http://localhost/~%@/%@", NSUserName(), urlStringToOpen];
-            NSURL* urlToOpenOnServer = [NSURL URLWithString:urlStringToOpen];
-            [[NSWorkspace sharedWorkspace] openURL:urlToOpenOnServer];
-        } else {
-            
-            char *URL = "http://www.google.com";
-            FSRef appRef;
-            CFURLRef appURL;
-            CFStringRef urlStr = CFStringCreateWithCString(NULL, URL, kCFStringEncodingASCII);
-            CFURLRef inURL = CFURLCreateWithString(NULL, urlStr, NULL);
-            
-            OSStatus err = LSGetApplicationForURL(inURL, kLSRolesEditor, &appRef, &appURL);
-            if (inURL != nil) {
-                CFRelease(inURL);
-            }
-            if (urlStr != nil) {
-                CFRelease(urlStr);
-            }
-            
-            if (err) {
-                NSLog(@"caught error opening file in browser");
-                NSRunAlertPanel(@"Could not open", @"Sorry, but Tincta could not find your default browser. Please make sure you have set up a default browser.\nTo do so go to your browser's preferences and change your default browser to another browser and then back again.", @"OK", nil, nil);
-                return;
-            }
-            NSURL* defaultBrowserURL = (__bridge NSURL*)appURL;
-            NSString* defaultBrowserName = [[defaultBrowserURL path] lastPathComponent];
-            
-            if (appURL != nil) {
-                CFRelease(appURL);
-            }
-            [[NSWorkspace sharedWorkspace] openFile:selectedItem.filePath withApplication:defaultBrowserName];
+        OSStatus err = LSGetApplicationForURL(inURL, kLSRolesEditor, &appRef, &appURL);
+        if (inURL != nil) {
+            CFRelease(inURL);
         }
+        if (urlStr != nil) {
+            CFRelease(urlStr);
+        }
+        
+        if (err) {
+            NSLog(@"caught error opening file in browser");
+            NSRunAlertPanel(@"Could not open", @"Sorry, but Tincta could not find your default browser. Please make sure you have set up a default browser.\nTo do so go to your browser's preferences and change your default browser to another browser and then back again.", @"OK", nil, nil);
+            return;
+        }
+        NSURL* defaultBrowserURL = (__bridge NSURL*)appURL;
+        NSString* defaultBrowserName = [[defaultBrowserURL path] lastPathComponent];
+        
+        if (appURL != nil) {
+            CFRelease(appURL);
+        }
+        [[NSWorkspace sharedWorkspace] openFile:selectedItem.filePath withApplication:defaultBrowserName];
     }
 }
 

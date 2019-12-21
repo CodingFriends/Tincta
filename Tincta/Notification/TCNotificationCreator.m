@@ -20,7 +20,7 @@
     if (self) {
         self.displayTime = 1.0;
     }
-    [NSBundle loadNibNamed:@"Notification" owner:self];
+    [[NSBundle mainBundle] loadNibNamed:@"Notification" owner:self topLevelObjects:NULL];
 
     return self;
 }
