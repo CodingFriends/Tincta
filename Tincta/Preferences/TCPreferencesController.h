@@ -22,6 +22,8 @@
 
 @property (weak, nonatomic) IBOutlet NSToolbarItem *toolbarGeneralItem;
 @property (weak, nonatomic) IBOutlet NSToolbarItem *toolbarColorsItem;
+@property (assign) IBOutlet NSButton* toolbarGeneralItemCell;
+@property (assign) IBOutlet NSButton* toolbarColorsItemCell;
 
     //General
 @property (weak, nonatomic) IBOutlet NSTextField *fontTextField;

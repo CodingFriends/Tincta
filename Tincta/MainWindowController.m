@@ -38,6 +38,28 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidChangeSelection:) name:@"NSTextViewDidChangeSelectionNotification" object:nil];
 
     preferencesController = [[TCPreferencesController alloc] init];
+    
+
+    NSFont* iconFont = [NSFont fontWithName:@"iconmonstr-iconic-font" size:18];
+    [self.toolbarSearchItemCell setFont: iconFont];
+    [self.toolbarNewItemCell setFont: iconFont];
+    [self.toolbarOpenItemCell setFont: iconFont];
+    [self.toolbarCloseItemCell setFont: iconFont];
+    [self.toolbarSaveItemCell setFont: iconFont];
+    [self.toolbarPreferencesItemCell setFont: iconFont];
+    [self.toolbarOpenBrowserItemCell setFont: iconFont];
+    [self.toolbarPrintItemCell setFont: iconFont];
+
+    [self.toolbarSearchItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe07a]];
+    [self.toolbarNewItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe072]];
+    [self.toolbarOpenItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe03a]];
+    [self.toolbarCloseItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe08c]];
+    [self.toolbarSaveItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe039]];
+    [self.toolbarPreferencesItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe09c]];
+    [self.toolbarOpenBrowserItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe0b0]];
+    [self.toolbarPrintItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe016]];
+
+
 }
 
 
@@ -403,7 +425,7 @@
         
     } else {
             
-        char *URL = "http://www.apple.com";
+        char *URL = "https://www.apple.com";
         FSRef appRef;
         CFURLRef appURL;
         CFStringRef urlStr = CFStringCreateWithCString(NULL, URL, kCFStringEncodingASCII);

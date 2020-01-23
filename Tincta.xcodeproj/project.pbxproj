@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		0E464D6223A51DE30099F4CD /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E464D5F23A51DE30099F4CD /* AppCenterCrashes.framework */; };
 		0E464D6323A51DE30099F4CD /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E464D6023A51DE30099F4CD /* AppCenter.framework */; };
 		0E7286D41A85726E008D6395 /* ColorSchemes in Resources */ = {isa = PBXBuildFile; fileRef = 0E7286D21A85726E008D6395 /* ColorSchemes */; };
+		0E7D0C3323DA3D94008B7E48 /* iconmonstr-iconic-font.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E7D0C3123DA3D39008B7E48 /* iconmonstr-iconic-font.ttf */; };
 		95F1D01B19AFA3C70022EA99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF1E1358922D008CA186 /* main.m */; };
 		95F1D01C19AFA3C70022EA99 /* TinctaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF241358922E008CA186 /* TinctaAppDelegate.m */; };
 		95F1D02019AFA3C70022EA99 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF4213589517008CA186 /* MainWindowController.m */; };
@@ -82,6 +83,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0E7D0C3223DA3D6F008B7E48 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Fonts;
+			dstSubfolderSpec = 7;
+			files = (
+				0E7D0C3323DA3D94008B7E48 /* iconmonstr-iconic-font.ttf in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C6624B781D871605005725B7 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +113,7 @@
 		0E464D6023A51DE30099F4CD /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
 		0E464D6423A51F030099F4CD /* AppCenterConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCenterConfig.h; sourceTree = "<group>"; };
 		0E7286D21A85726E008D6395 /* ColorSchemes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ColorSchemes; path = Tincta/ColorSchemes; sourceTree = "<group>"; };
+		0E7D0C3123DA3D39008B7E48 /* iconmonstr-iconic-font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iconmonstr-iconic-font.ttf"; sourceTree = "<group>"; };
 		0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tincta AppStore-Bridging-Header.h"; sourceTree = "<group>"; };
 		9554216516B3276400AB5874 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		9554218616B4193A00AB5874 /* WhatsNew.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhatsNew.txt; sourceTree = "<group>"; };
@@ -243,6 +255,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E7D0C3023DA3D39008B7E48 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0E7D0C3123DA3D39008B7E48 /* iconmonstr-iconic-font.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		95A5CF021358922D008CA186 = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +348,7 @@
 				0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */,
 				0E464D6423A51F030099F4CD /* AppCenterConfig.h */,
 				C6624B7A1D871D8C005725B7 /* AppCenterConfig_Example.h */,
+				0E7D0C3023DA3D39008B7E48 /* Fonts */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -514,6 +535,7 @@
 				95F1D03B19AFA3C70022EA99 /* Frameworks */,
 				95F1D04319AFA3C70022EA99 /* Resources */,
 				C6624B781D871605005725B7 /* Copy Files */,
+				0E7D0C3223DA3D6F008B7E48 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -568,7 +590,7 @@
 				};
 			};
 			buildConfigurationList = 95A5CF071358922D008CA186 /* Build configuration list for PBXProject "Tincta" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (

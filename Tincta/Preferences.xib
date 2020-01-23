@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment version="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -42,8 +42,10 @@
                 <outlet property="tagsColorWell" destination="44" id="86"/>
                 <outlet property="textColorWell" destination="47" id="80"/>
                 <outlet property="toolbar" destination="51" id="122"/>
-                <outlet property="toolbarColorsItem" destination="60" id="182"/>
-                <outlet property="toolbarGeneralItem" destination="59" id="181"/>
+                <outlet property="toolbarColorsItem" destination="YZA-fr-63n" id="zMg-ga-deb"/>
+                <outlet property="toolbarColorsItemCell" destination="iRV-cT-DtE" id="93N-zE-Cap"/>
+                <outlet property="toolbarGeneralItem" destination="tPY-Ub-gv5" id="jTp-FC-Tkd"/>
+                <outlet property="toolbarGeneralItemCell" destination="Vef-Oe-zXy" id="2YI-6k-x4o"/>
                 <outlet property="variablesColorWell" destination="213" id="220"/>
                 <outlet property="window" destination="1" id="125"/>
                 <outlet property="wrapLinesCheckBox" destination="156" id="164"/>
@@ -612,32 +614,46 @@
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="56" userLabel="Toolbar Space Item - Space"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="57"/>
-                    <toolbarItem implicitItemIdentifier="EBC963B7-4D4F-44DB-869C-08913BD893AF" explicitItemIdentifier="General" label="General" paletteLabel="General" tag="-1" image="iconmonstr-gear-2-32" selectable="YES" id="59">
+                    <toolbarItem implicitItemIdentifier="6C8BE0C5-786B-472B-B429-9EBABA60D229" explicitItemIdentifier="General" label="General" paletteLabel="General" sizingBehavior="auto" selectable="YES" id="tPY-Ub-gv5">
+                        <nil key="toolTip"/>
+                        <button key="view" verticalHuggingPriority="750" id="Vef-Oe-zXy">
+                            <rect key="frame" x="8" y="14" width="32" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" title="G" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="bQ6-8r-dIo">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
                         <connections>
-                            <action selector="changeToGeneralTab:" target="-2" id="96"/>
+                            <action selector="changeToGeneralTab:" target="-2" id="BgI-hK-bMH"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="CC7DB3A9-9E17-45EA-997D-C003127BDAFF" explicitItemIdentifier="Colors" label="Colors" paletteLabel="Colors" tag="-1" image="iconmonstr-color-fan-2-32" selectable="YES" id="60">
+                    <toolbarItem implicitItemIdentifier="9AEBF349-47F9-4F07-9310-A38B76A10717" explicitItemIdentifier="Colors" label="Colors" paletteLabel="Colors" sizingBehavior="auto" selectable="YES" id="YZA-fr-63n">
+                        <nil key="toolTip"/>
+                        <button key="view" verticalHuggingPriority="750" id="iRV-cT-DtE">
+                            <rect key="frame" x="5" y="14" width="32" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" title="C" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="EgJ-uo-gQe">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
                         <connections>
-                            <action selector="changeToColorsTab:" target="-2" id="97"/>
+                            <action selector="changeToColorsTab:" target="-2" id="zX2-ns-JMc"/>
                         </connections>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="NSToolbarSeparatorItem" id="54"/>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
-                    <toolbarItem reference="59"/>
-                    <toolbarItem reference="60"/>
+                    <toolbarItem reference="tPY-Ub-gv5"/>
+                    <toolbarItem reference="YZA-fr-63n"/>
                     <toolbarItem reference="57"/>
                 </defaultToolbarItems>
             </toolbar>
             <connections>
                 <outlet property="delegate" destination="-2" id="123"/>
             </connections>
-            <point key="canvasLocation" x="356.5" y="370"/>
+            <point key="canvasLocation" x="328" y="209"/>
         </window>
     </objects>
-    <resources>
-        <image name="iconmonstr-color-fan-2-32" width="32" height="32"/>
-        <image name="iconmonstr-gear-2-32" width="32" height="32"/>
-    </resources>
 </document>
