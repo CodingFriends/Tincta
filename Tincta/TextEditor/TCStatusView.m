@@ -36,14 +36,33 @@
 }
 
 - (void) setActive: (BOOL) isActive {
+    _isActive = isActive;
     if (isActive) {
-        self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.81 alpha:1];
-        self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.65 alpha:1];
-        self.borderColor = [NSColor colorWithDeviceWhite:0.318 alpha:1];
+        
+        self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.89 alpha:1];
+        self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.82 alpha:1];
+        self.borderColor = [NSColor colorWithDeviceWhite:0.8 alpha:1];
+            if (@available(macOS 10.14, *)) {
+                if (NSAppearance.currentAppearance.name == NSAppearanceNameDarkAqua) {
+                    self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.26 alpha:1];
+                    self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.22 alpha:1];
+                    self.borderColor = [NSColor colorWithDeviceWhite:0.11 alpha:1];
+                }
+            }
+        
+        
     } else {
-        self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.929 alpha:1];
-		self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.847 alpha:1];
-        self.borderColor = [NSColor colorWithDeviceWhite:0.318 alpha:1];
+        self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.96 alpha:1];
+		self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.96 alpha:1];
+        self.borderColor = [NSColor colorWithDeviceWhite:0.11 alpha:1];
+        
+        if (@available(macOS 10.14, *)) {
+            if (NSAppearance.currentAppearance.name == NSAppearanceNameDarkAqua) {
+                self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.19 alpha:1];
+                self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.19 alpha:1];
+                self.borderColor = [NSColor colorWithDeviceWhite:0.07 alpha:1];
+            }
+        }
     }
 }
 
@@ -52,7 +71,9 @@
  Draw the view with gradient
  */
 - (void)drawRect:(NSRect)dirtyRect {
-	
+    // need to update colors in case dark mode has changed
+    [self setActive: _isActive];
+
 	NSRect rect = [self bounds];
 	[self.borderColor set];
 	NSRectFill(rect);
