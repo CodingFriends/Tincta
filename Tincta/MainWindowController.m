@@ -40,6 +40,7 @@
     preferencesController = [[TCPreferencesController alloc] init];
     
     [self.toolbar setDisplayMode:NSToolbarDisplayModeIconOnly];
+    [self.toolbar setSizeMode:NSToolbarSizeModeRegular];
 
     self.toolbarSearchItemCell.toolTip = @"Search";
     self.toolbarNewItem.toolTip = @"New File";
@@ -64,6 +65,11 @@
     [self.toolbarOpenBrowserItemCell setFont: iconFont];
     [self.toolbarPrintItemCell setFont: iconFont];
 
+    // These just use text. Sizes are deliberately different
+    [self.toolbarToggleCaseItemCell setFont: [NSFont systemFontOfSize:21]];
+    [self.toolbarInvisiblesItemCell setFont: [NSFont systemFontOfSize:22]];
+
+    
     [self.toolbarSearchItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe07a]];
     [self.toolbarNewItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe072]];
     [self.toolbarOpenItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe03a]];

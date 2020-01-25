@@ -12,36 +12,36 @@
 @implementation TCBackgroundView
 
 - (id) initWithFrame:(NSRect)frameRect {
-	self = [super initWithFrame:frameRect];
-	if (self) {
-		
-		
-	}
+    self = [super initWithFrame:frameRect];
+    if (self) {
+        // nothing
+        
+    }
     return self;
-	
+    
 }
 
 - (void) setBackgroundColor:(NSColor *) bgColor {
-	_backgroundColor = bgColor;
-	[self setNeedsDisplay:YES];
+    _backgroundColor = bgColor;
+    [self setNeedsDisplay:YES];
 }
+
 - (NSColor*) backgroundColor {
     return _backgroundColor;
 }
 
 
 - (void)drawRect:(NSRect)dirtyRect {
-	// update view in case dark mode has changed
+    // update view in case dark mode has changed
     [super drawRect:dirtyRect];
-	NSRect rect = [self bounds];
+    NSRect rect = [self bounds];
     [self.backgroundColor setFill];
     NSRectFill(rect);
-	
 }
 
 //start in upper left
 - (BOOL) isFlipped {
-	return NO;
+    return NO;
 }
 
 

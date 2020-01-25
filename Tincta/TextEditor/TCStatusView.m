@@ -15,24 +15,24 @@
 @synthesize backgroundColorStart, backgroundColorEnd, borderColor, innerBorderColor, midBorderColor;
 
 - (id) initWithFrame:(NSRect)frameRect {
-	self = [super initWithFrame:frameRect];
-	if (self) {
-		
-		[self setActive:YES];
-		
-	}
+    self = [super initWithFrame:frameRect];
+    if (self) {
+        
+        [self setActive:YES];
+        
+    }
     return self;
-	
+    
 }
 
 - (void) setBackgroundColorEnd:(NSColor *) bgColorE {
-	backgroundColorEnd = bgColorE;
-	[self setNeedsDisplay:YES];
+    backgroundColorEnd = bgColorE;
+    [self setNeedsDisplay:YES];
 }
 
 - (void) setBackgroundColorStart:(NSColor *) bgColorS {
-	backgroundColorStart = bgColorS;
-	[self setNeedsDisplay:YES];
+    backgroundColorStart = bgColorS;
+    [self setNeedsDisplay:YES];
 }
 
 - (void) setActive: (BOOL) isActive {
@@ -42,18 +42,18 @@
         self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.89 alpha:1];
         self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.82 alpha:1];
         self.borderColor = [NSColor colorWithDeviceWhite:0.8 alpha:1];
-            if (@available(macOS 10.14, *)) {
-                if (NSAppearance.currentAppearance.name == NSAppearanceNameDarkAqua) {
-                    self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.26 alpha:1];
-                    self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.22 alpha:1];
-                    self.borderColor = [NSColor colorWithDeviceWhite:0.11 alpha:1];
-                }
+        if (@available(macOS 10.14, *)) {
+            if (NSAppearance.currentAppearance.name == NSAppearanceNameDarkAqua) {
+                self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.26 alpha:1];
+                self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.22 alpha:1];
+                self.borderColor = [NSColor colorWithDeviceWhite:0.11 alpha:1];
             }
+        }
         
         
     } else {
         self.backgroundColorStart = [NSColor colorWithDeviceWhite:0.96 alpha:1];
-		self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.96 alpha:1];
+        self.backgroundColorEnd = [NSColor colorWithDeviceWhite:0.96 alpha:1];
         self.borderColor = [NSColor colorWithDeviceWhite:0.11 alpha:1];
         
         if (@available(macOS 10.14, *)) {
@@ -73,22 +73,19 @@
 - (void)drawRect:(NSRect)dirtyRect {
     // need to update colors in case dark mode has changed
     [self setActive: _isActive];
-
-	NSRect rect = [self bounds];
-	[self.borderColor set];
-	NSRectFill(rect);
-	
     
-	rect.size.height -= 1;
-	
-	NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:self.backgroundColorStart endingColor:self.backgroundColorEnd];
-	[gradient drawInRect:rect angle:270];
-	
+    NSRect rect = [self bounds];
+    [self.borderColor set];
+    NSRectFill(rect);
+    rect.size.height -= 1;
+    NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:self.backgroundColorStart endingColor:self.backgroundColorEnd];
+    [gradient drawInRect:rect angle:270];
+    
 }
 
 //start in upper left
 - (BOOL) isFlipped {
-	return NO;
+    return NO;
 }
 
 
