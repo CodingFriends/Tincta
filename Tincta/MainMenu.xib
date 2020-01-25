@@ -555,7 +555,7 @@
                     </customView>
                 </subviews>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="52754B21-11B6-4ABA-9CB8-68776788396C" displayMode="iconAndLabel" sizeMode="regular" id="536">
+            <toolbar key="toolbar" implicitIdentifier="52754B21-11B6-4ABA-9CB8-68776788396C" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="regular" id="536">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="B6911588-0E91-49EC-97D2-69246860CA64" label="Syntax Coloring" paletteLabel="Syntax Coloring" id="966">
                         <nil key="toolTip"/>
