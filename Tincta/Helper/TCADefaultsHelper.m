@@ -25,7 +25,7 @@
     NSString* ret = [TCADefaults objectForKey:@"defaultSyntaxDefinition"];
     if (!ret
         || ![[TCAMenuHelper createSyntaxDefinitionsArray] containsObject:ret]) {
-        return @"None";
+        return @"Plain Text";
     }
     return ret;
 }

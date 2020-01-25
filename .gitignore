@@ -3,3 +3,4 @@ build
 tincta.xcodeproj/project.xcworkspace
 tincta.xcodeproj/xcuserdata
 AppCenterConfig.h
+.DS_Store

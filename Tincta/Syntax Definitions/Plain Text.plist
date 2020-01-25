@@ -2,28 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-
 	<key>attributesDelim</key>
-	<array>
-	</array>
-
+	<array/>
 	<key>blocks</key>
-	<array>
-	</array>
-
+	<array/>
 	<key>charStrings</key>
-	<array>
-	</array>
-
+	<array/>
 	<key>coloringOnlyInBlocksAndTags</key>
 	<false/>
-
 	<key>keywords</key>
 	<array/>
-
 	<key>keywordsCaseInsensitive</key>
 	<true/>
-
 	<key>multiLineComments</key>
 	<array>
 		<string></string>
@@ -31,25 +21,17 @@
 		<string></string>
 		<string></string>
 	</array>
-
 	<key>multiLineStrings</key>
-	<array>
-	</array>
-
+	<array/>
 	<key>predefined</key>
-	<array>
-	</array>
-
+	<array/>
 	<key>predefinedDelim</key>
-	<array>
-	</array>
-
+	<array/>
 	<key>singleLineComments</key>
 	<array>
 		<string></string>
 		<string></string>
 	</array>
-
 	<key>singleLineStrings</key>
 	<array>
 		<string></string>
@@ -57,23 +39,15 @@
 		<string></string>
 		<string></string>
 	</array>
-
 	<key>tags</key>
-	<array>
-	</array>
-
+	<array/>
 	<key>variablesDelim</key>
-	<array>
-	</array>
-
+	<array/>
 	<key>variablesDelimPartOfVar</key>
 	<false/>
-
 	<key>isXMLbased</key>
 	<false/>
-
 	<key>indentionBlocks</key>
-	<array>
-	</array>
+	<array/>
 </dict>
 </plist>

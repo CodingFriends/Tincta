@@ -120,6 +120,7 @@
 	</array>
 	<key>HTML</key>
 	<array>
+		<string>svelte</string>
 		<string>html</string>
 		<string>htm</string>
 		<string>xhtml</string>
@@ -143,6 +144,7 @@
 	<array>
 		<string>js</string>
 		<string>qml</string>
+		<string>json</string>
 	</array>
 	<key>JSP</key>
 	<array>
@@ -203,7 +205,7 @@
 	<array>
 		<string>hoc</string>
 	</array>
-	<key>None</key>
+	<key>Plain Text</key>
 	<array>
 		<string>txt</string>
 		<string>text</string>
@@ -289,6 +291,10 @@
 	<array>
 		<string>sc</string>
 		<string>scd</string>
+	</array>
+	<key>Swift</key>
+	<array>
+		<string>swift</string>
 	</array>
 	<key>Tcl</key>
 	<array>
