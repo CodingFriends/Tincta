@@ -33,8 +33,27 @@
 - (void) awakeFromNib {
     [sideBarTableView registerForDraggedTypes: @[WSSideBarDataType, @"public.file-url", @"public.url", NSURLPboardType, NSFilenamesPboardType] ];
     [sideBarTableView setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
-    [sideBarTableView setBackgroundColor:[NSColor whiteColor]];
+    
+    
 }
+
+- (void)viewDidLayout {
+    [super viewDidLayout];
+    
+    [sideBarTableView setBackgroundColor:[NSColor colorWithWhite:0.89 alpha:1]];
+
+    if (@available(macOS 10.14, *)) {
+        // Only effective Appearance works here. Currenct appearance will have the startup value all the time
+        NSString* effectiveAppearance = [[NSApplication sharedApplication] effectiveAppearance].name;
+
+        if (effectiveAppearance == NSAppearanceNameDarkAqua) {
+            [sideBarTableView setBackgroundColor:[NSColor colorWithWhite:0.22 alpha:1]];
+        }
+    }
+    
+}
+
+
 
 #pragma mark add remove
 - (void) addItem: (TCSideBarItem*) anItem {
@@ -233,8 +252,6 @@
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
     return [self.items count];
 }
-
-
 
 
 

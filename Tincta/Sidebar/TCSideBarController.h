@@ -19,7 +19,7 @@
 @end
 
 
-@interface TCSideBarController : NSObject <NSTableViewDelegate, NSTableViewDataSource> {
+@interface TCSideBarController : NSViewController <NSTableViewDelegate, NSTableViewDataSource> {
 
     NSMutableArray* items;
     TCSideBarItem* selectedItem;
