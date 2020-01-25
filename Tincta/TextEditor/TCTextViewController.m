@@ -714,6 +714,27 @@
     [self.textView uppercaseWord:sender];
 }
 
+- (IBAction)toggleCaseForSelection:(id)sender {
+    NSRange selRange = self.textView.selectedRange;
+    NSString* textString = self.textView.string;
+    if (![TCAMiscHelper isRange:selRange inBoundOfString:textString]) {
+        [self.textView lowercaseWord:sender];
+        return;
+    }
+    NSString* selectedString = [textString substringWithRange:selRange];
+    if (selectedString.length < 1) {
+           [self.textView lowercaseWord:sender];
+           return;
+       }
+    BOOL isUppercase = [[NSCharacterSet uppercaseLetterCharacterSet] characterIsMember:[selectedString characterAtIndex:0]];
+    if (isUppercase) {
+        [self.textView lowercaseWord:sender];
+    } else {
+        [self.textView uppercaseWord:sender];
+    }
+
+}
+
 - (IBAction)textViewLowercaseWord:(id)sender {
     [self.textView lowercaseWord:sender];
 }

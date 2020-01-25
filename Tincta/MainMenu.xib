@@ -555,7 +555,7 @@
                     </customView>
                 </subviews>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="52754B21-11B6-4ABA-9CB8-68776788396C" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="regular" id="536">
+            <toolbar key="toolbar" implicitIdentifier="52754B21-11B6-4ABA-9CB8-68776788396C" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="536">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="B6911588-0E91-49EC-97D2-69246860CA64" label="Syntax Coloring" paletteLabel="Syntax Coloring" id="966">
                         <nil key="toolTip"/>
@@ -580,8 +580,10 @@
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="542"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="541"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarSeparatorItem" id="995"/>
-                    <toolbarItem implicitItemIdentifier="011F5E33-6C49-4564-9FDF-A10DEFA69638" label="Preferences" paletteLabel="Preferences" sizingBehavior="auto" id="DtR-Cw-Qiy">
+                    <toolbarItem implicitItemIdentifier="011F5E33-6C49-4564-9FDF-A10DEFA69638" label="Preferences" paletteLabel="Preferences" id="DtR-Cw-Qiy">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="oxO-6D-98L">
                             <rect key="frame" x="19" y="14" width="32" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -594,8 +596,10 @@
                             <action selector="showPreferences:" target="544" id="E9q-Ev-bvH"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="EC5A41AE-5D82-4BB7-BA53-803DBF4A8C39" label="New" paletteLabel="New" sizingBehavior="auto" id="Gmf-xg-eAF">
+                    <toolbarItem implicitItemIdentifier="EC5A41AE-5D82-4BB7-BA53-803DBF4A8C39" label="New" paletteLabel="New" id="Gmf-xg-eAF">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="Byh-LU-1uH">
                             <rect key="frame" x="0.0" y="14" width="32" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -608,8 +612,10 @@
                             <action selector="newFile:" target="544" id="XKE-cy-yjX"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="1A081BF2-D439-42FB-9BDC-396FB075DEFD" label="Open" paletteLabel="Open" sizingBehavior="auto" id="wOK-Zz-3cO">
+                    <toolbarItem implicitItemIdentifier="1A081BF2-D439-42FB-9BDC-396FB075DEFD" label="Open" paletteLabel="Open" id="wOK-Zz-3cO">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="txr-rp-Uo0">
                             <rect key="frame" x="2" y="14" width="32" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -622,8 +628,10 @@
                             <action selector="open:" target="544" id="ULV-2k-VfJ"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="BF165A0F-6331-4D00-BB7E-A7A71FEDB21C" label="Save" paletteLabel="Save" sizingBehavior="auto" id="z5O-69-wgv">
+                    <toolbarItem implicitItemIdentifier="BF165A0F-6331-4D00-BB7E-A7A71FEDB21C" label="Save" paletteLabel="Save" id="z5O-69-wgv">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="aJn-9t-etz">
                             <rect key="frame" x="1" y="14" width="32" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -636,8 +644,10 @@
                             <action selector="save:" target="544" id="AjP-9c-5cK"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="E0980E4A-2CD4-4ACC-854A-791547DE7B9E" label="Close" paletteLabel="Close" sizingBehavior="auto" id="4uA-nu-qqa">
+                    <toolbarItem implicitItemIdentifier="E0980E4A-2CD4-4ACC-854A-791547DE7B9E" label="Close" paletteLabel="Close" id="4uA-nu-qqa">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="5Yb-qV-hoj">
                             <rect key="frame" x="3" y="14" width="32" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -650,8 +660,10 @@
                             <action selector="closeFile:" target="544" id="ayk-1P-SbU"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="65B9C739-8515-46B5-92AF-96D4AAD30CAE" label="Print" paletteLabel="Print" sizingBehavior="auto" id="eOI-gK-dCL">
+                    <toolbarItem implicitItemIdentifier="65B9C739-8515-46B5-92AF-96D4AAD30CAE" label="Print" paletteLabel="Print" id="eOI-gK-dCL">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="kw7-0k-Imk">
                             <rect key="frame" x="0.0" y="14" width="32" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -664,8 +676,10 @@
                             <action selector="print:" target="561" id="L4d-kW-3kS"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="0A1EDE26-9F03-4A06-AEE4-A21F66AFFAE7" label="Open in Browser" paletteLabel="Open in Browser" sizingBehavior="auto" id="lOZ-06-KVI">
+                    <toolbarItem implicitItemIdentifier="0A1EDE26-9F03-4A06-AEE4-A21F66AFFAE7" label="Open in Browser" paletteLabel="Open in Browser" id="lOZ-06-KVI">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="6Vn-il-5TG">
                             <rect key="frame" x="31" y="14" width="32" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -678,8 +692,10 @@
                             <action selector="openInBrowser:" target="544" id="9h1-iz-hvh"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="B261C29C-38A3-4DB1-834F-09EEE9F90893" label="Search" paletteLabel="Search" sizingBehavior="auto" id="rMl-g6-qD8">
+                    <toolbarItem implicitItemIdentifier="B261C29C-38A3-4DB1-834F-09EEE9F90893" label="Search" paletteLabel="Search" id="rMl-g6-qD8">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
                         <button key="view" verticalHuggingPriority="750" id="hMX-Ks-kEO">
                             <rect key="frame" x="6" y="14" width="32" height="24"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -692,6 +708,38 @@
                             <action selector="searchForSelection:" target="889" id="Eav-3s-01k"/>
                         </connections>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="5B92227A-F231-4EFE-BD96-0AD3C0D3C7F6" label="Toggle Case" paletteLabel="Toggle Case" id="U3x-9W-F63">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
+                        <button key="view" verticalHuggingPriority="750" id="sJV-oB-O7F">
+                            <rect key="frame" x="20" y="14" width="32" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" title="aA" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="6fg-BC-sWm">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system" size="17"/>
+                            </buttonCell>
+                        </button>
+                        <connections>
+                            <action selector="toggleCaseForSelection:" target="561" id="5uT-v5-stl"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="9E863747-A3E7-4A80-B5C2-89FC5808A179" label="Invisibles" paletteLabel="Invisibles" id="KjY-k2-GdD">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="24"/>
+                        <size key="maxSize" width="32" height="32"/>
+                        <button key="view" verticalHuggingPriority="750" id="krD-Et-bBi">
+                            <rect key="frame" x="12" y="14" width="32" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" title="¶" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="yqv-KD-uF1">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system" size="18"/>
+                            </buttonCell>
+                        </button>
+                        <connections>
+                            <action selector="setShowInvisibles:" target="561" id="8wZ-CY-zB3"/>
+                        </connections>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="Gmf-xg-eAF"/>
@@ -700,11 +748,11 @@
                     <toolbarItem reference="4uA-nu-qqa"/>
                     <toolbarItem reference="541"/>
                     <toolbarItem reference="lOZ-06-KVI"/>
-                    <toolbarItem reference="eOI-gK-dCL"/>
-                    <toolbarItem reference="542"/>
+                    <toolbarItem reference="U3x-9W-F63"/>
+                    <toolbarItem reference="KjY-k2-GdD"/>
                     <toolbarItem reference="rMl-g6-qD8"/>
+                    <toolbarItem reference="542"/>
                     <toolbarItem reference="966"/>
-                    <toolbarItem reference="541"/>
                     <toolbarItem reference="DtR-Cw-Qiy"/>
                 </defaultToolbarItems>
             </toolbar>
@@ -733,6 +781,8 @@
                 <outlet property="toolbar" destination="536" id="KZs-hD-U76"/>
                 <outlet property="toolbarCloseItem" destination="4uA-nu-qqa" id="c8O-OV-A92"/>
                 <outlet property="toolbarCloseItemCell" destination="5Yb-qV-hoj" id="Dj7-Ot-3R4"/>
+                <outlet property="toolbarInvisiblesItem" destination="KjY-k2-GdD" id="aMA-cn-kFc"/>
+                <outlet property="toolbarInvisiblesItemCell" destination="krD-Et-bBi" id="Ltt-bM-5Gf"/>
                 <outlet property="toolbarNewItem" destination="Gmf-xg-eAF" id="Nd9-rG-gxx"/>
                 <outlet property="toolbarNewItemCell" destination="Byh-LU-1uH" id="zG6-aI-hgj"/>
                 <outlet property="toolbarOpenBrowserItem" destination="lOZ-06-KVI" id="49p-D4-Z3g"/>
@@ -747,6 +797,9 @@
                 <outlet property="toolbarSaveItemCell" destination="aJn-9t-etz" id="5jb-OK-lkw"/>
                 <outlet property="toolbarSearchItem" destination="rMl-g6-qD8" id="ndf-eR-FhG"/>
                 <outlet property="toolbarSearchItemCell" destination="hMX-Ks-kEO" id="wqO-yo-I4h"/>
+                <outlet property="toolbarSyntaxColoringItem" destination="966" id="LbG-oo-khB"/>
+                <outlet property="toolbarToggleCaseItem" destination="U3x-9W-F63" id="JIz-7e-KvS"/>
+                <outlet property="toolbarToggleCaseItemCell" destination="sJV-oB-O7F" id="3fc-a0-hFl"/>
                 <outlet property="window" destination="371" id="566"/>
             </connections>
         </customObject>

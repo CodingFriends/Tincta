@@ -50,10 +50,8 @@
 @property (assign) IBOutlet NSButton* toolbarSaveItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarInvisiblesItem;
 @property (assign) IBOutlet NSButton* toolbarInvisiblesItemCell;
-@property (assign) IBOutlet NSToolbarItem* toolbarUppercaseItem;
-@property (assign) IBOutlet NSButton* toolbarUppercaseItemCell;
-@property (assign) IBOutlet NSToolbarItem* toolbarLowercaseItem;
-@property (assign) IBOutlet NSButton* toolbarLowercaseItemCell;
+@property (assign) IBOutlet NSToolbarItem* toolbarToggleCaseItem;
+@property (assign) IBOutlet NSButton* toolbarToggleCaseItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarSearchItem;
 @property (assign) IBOutlet NSButton* toolbarSearchItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarPrintItem;
@@ -64,6 +62,7 @@
 @property (assign) IBOutlet NSButton* toolbarCustomizeItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarOpenBrowserItem;
 @property (assign) IBOutlet NSButton* toolbarOpenBrowserItemCell;
+@property (assign) IBOutlet NSToolbarItem* toolbarSyntaxColoringItem;
 
 @property (assign) IBOutlet NSToolbar* toolbar;
 

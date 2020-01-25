@@ -39,7 +39,21 @@
 
     preferencesController = [[TCPreferencesController alloc] init];
     
+    [self.toolbar setDisplayMode:NSToolbarDisplayModeIconOnly];
 
+    self.toolbarSearchItemCell.toolTip = @"Search";
+    self.toolbarNewItem.toolTip = @"New File";
+    self.toolbarOpenItem.toolTip = @"Open File";
+    self.toolbarSaveItem.toolTip = @"Save File";
+    self.toolbarCloseItem.toolTip = @"Close File";
+    self.toolbarPrintItem.toolTip = @"Print";
+    self.toolbarInvisiblesItem.toolTip = @"Toggle Invisibles";
+    self.toolbarToggleCaseItem.toolTip = @"Toggle Case";
+    self.toolbarOpenBrowserItem.toolTip = @"Open in Browser";
+    self.toolbarPreferencesItem.toolTip = @"Preferences";
+    self.toolbarSyntaxColoringItem.toolTip = @"Syntax Coloring";
+
+    
     NSFont* iconFont = [NSFont fontWithName:@"iconmonstr-iconic-font" size:18];
     [self.toolbarSearchItemCell setFont: iconFont];
     [self.toolbarNewItemCell setFont: iconFont];

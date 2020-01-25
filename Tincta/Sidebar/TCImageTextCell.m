@@ -62,7 +62,7 @@
 
     
     CGFloat dirtyAlpha = 0.8;
-    CGFloat dirtyAlphaSelected = 0.9;
+    CGFloat dirtyAlphaSelected = 0.8;
 
     self.dirtySelectedBottomColor = [NSColor colorWithDeviceWhite:1 alpha:dirtyAlphaSelected];
     self.dirtySelectedTopColor = [NSColor colorWithDeviceWhite:1 alpha:dirtyAlphaSelected];

@@ -90,6 +90,7 @@
 - (void)clearUndoManager;
 - (NSUndoManager*) undoManager;
 
+- (IBAction)toggleCaseForSelection:(id)sender;
 - (IBAction)textViewUppercaseWord:(id)sender;
 - (IBAction)textViewLowercaseWord:(id)sender;
 - (IBAction)textViewCapitalizeWord:(id)sender;
