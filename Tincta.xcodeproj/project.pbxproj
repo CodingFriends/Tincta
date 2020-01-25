@@ -27,8 +27,6 @@
 		95F1D04B19AFA3C70022EA99 /* app_icon_running.icns in Resources */ = {isa = PBXBuildFile; fileRef = C66657D5137A8A4E00E6822F /* app_icon_running.icns */; };
 		95F1D04C19AFA3C70022EA99 /* Syntax Definitions in Resources */ = {isa = PBXBuildFile; fileRef = C63E5C021382E42300C62BCF /* Syntax Definitions */; };
 		95F1D04D19AFA3C70022EA99 /* Notification.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95B8F05D138C2C3400DB73DF /* Notification.xib */; };
-		95F1D05019AFA3C70022EA99 /* search_notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF7B13B0D51C00A7F1CD /* search_notification.png */; };
-		95F1D05219AFA3C70022EA99 /* wrap_notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF7C13B0D51C00A7F1CD /* wrap_notification.png */; };
 		95F1D05319AFA3C70022EA99 /* app_icon_ink1.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF7F13B0F25800A7F1CD /* app_icon_ink1.icns */; };
 		95F1D05419AFA3C70022EA99 /* app_icon_ink2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF8013B0F25900A7F1CD /* app_icon_ink2.icns */; };
 		95F1D05519AFA3C70022EA99 /* app_icon_ink3.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95B0CF8113B0F25A00A7F1CD /* app_icon_ink3.icns */; };
@@ -120,8 +118,6 @@
 		95A5CF4213589517008CA186 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		95A5CF501358955A008CA186 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		95AA9E0314DC2A050092346D /* tincta_pro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tincta_pro.png; sourceTree = "<group>"; };
-		95B0CF7B13B0D51C00A7F1CD /* search_notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_notification.png; sourceTree = "<group>"; };
-		95B0CF7C13B0D51C00A7F1CD /* wrap_notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrap_notification.png; sourceTree = "<group>"; };
 		95B0CF7F13B0F25800A7F1CD /* app_icon_ink1.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_ink1.icns; sourceTree = "<group>"; };
 		95B0CF8013B0F25900A7F1CD /* app_icon_ink2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_ink2.icns; sourceTree = "<group>"; };
 		95B0CF8113B0F25A00A7F1CD /* app_icon_ink3.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_ink3.icns; sourceTree = "<group>"; };
@@ -343,8 +339,6 @@
 				95B0CF8213B0F25C00A7F1CD /* app_icon_yelling.icns */,
 				C66657D5137A8A4E00E6822F /* app_icon_running.icns */,
 				95AA9E0314DC2A050092346D /* tincta_pro.png */,
-				95B0CF7B13B0D51C00A7F1CD /* search_notification.png */,
-				95B0CF7C13B0D51C00A7F1CD /* wrap_notification.png */,
 				C6ACD8E618788F8700EB30C4 /* GenericDocumentIcon.icns */,
 			);
 			name = Icons;
@@ -599,8 +593,6 @@
 				95F1D04B19AFA3C70022EA99 /* app_icon_running.icns in Resources */,
 				95F1D04C19AFA3C70022EA99 /* Syntax Definitions in Resources */,
 				95F1D04D19AFA3C70022EA99 /* Notification.xib in Resources */,
-				95F1D05019AFA3C70022EA99 /* search_notification.png in Resources */,
-				95F1D05219AFA3C70022EA99 /* wrap_notification.png in Resources */,
 				95F1D05319AFA3C70022EA99 /* app_icon_ink1.icns in Resources */,
 				95F1D05419AFA3C70022EA99 /* app_icon_ink2.icns in Resources */,
 				95F1D05519AFA3C70022EA99 /* app_icon_ink3.icns in Resources */,
