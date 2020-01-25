@@ -72,7 +72,7 @@
 }
 
 - (void)testGetDefaultSyntaxDefiniton {
-    NSString* defaultDef = @"None";
+    NSString* defaultDef = @"Plain Text";
 
     NSString* testDef = @"JavaScript";
     [TCADefaultsHelper setDefaultSyntaxDefinition:testDef];

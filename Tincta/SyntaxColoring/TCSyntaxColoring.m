@@ -40,7 +40,7 @@
         stateFactory = [[TCStateFactory alloc] init];
         attributesFactory = [[TCTextAttributesFactory alloc] init];
         
-        syntaxDefinition = @"None";
+        syntaxDefinition = @"Plain Text";
         availableSyntaxDefinitions = [@[] mutableCopy];
         
         [self initSyntaxColors];
@@ -74,7 +74,7 @@
 - (void)setSyntaxDefinitionByName:(NSString *)definitionName {
     
     if (definitionName == nil) {
-        syntaxDefinition = @"None";
+        syntaxDefinition = @"Plain Text";
     } else {
         syntaxDefinition = definitionName;
     }
@@ -87,9 +87,9 @@
         syntaxDictionary = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:syntaxDefinition ofType:@"plist" inDirectory:@"Syntax Definitions"]];
     }
     
-    //If all fails, let's do it again in the mainbundle with "None"
+    //If all fails, let's do it again in the mainbundle with "Plain Text"
     if (syntaxDictionary == nil) {
-        syntaxDefinition = @"None";
+        syntaxDefinition = @"Plain Text";
         syntaxDictionary = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:syntaxDefinition ofType:@"plist" inDirectory:@"Syntax Definitions"]];
     }
     [self loadDefinitionDictionary:syntaxDictionary];
@@ -357,7 +357,7 @@
     
     //unknown extension
     if (!syntaxDefName || [syntaxDefName length] == 0) {
-        syntaxDefName = @"None";
+        syntaxDefName = @"Plain Text";
     }
     if ([syntaxDefinition isNotEqualTo:syntaxDefName]) {
         [self setSyntaxDefinitionByName:syntaxDefName];
