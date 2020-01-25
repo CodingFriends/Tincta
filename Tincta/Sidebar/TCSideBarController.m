@@ -8,12 +8,29 @@
 #import "TCSideBarController.h"
 #import "TCSideBarItem.h"
 #import "TCSyntaxColoring.h"
-
+#import "TCImageTextCell.h"
 #import "TCAMenuHelper.h"
+#import "TCBackgroundView.h"
 
 @implementation TCSideBarController
 
 @synthesize items, selectedItem, selectedIndex, delegate;
+
+
++ (NSColor*) sidebarBGColor {
+    
+    if (@available(macOS 10.14, *)) {
+        // Only effective Appearance works here. Currenct appearance will have the startup value all the time
+        NSString* effectiveAppearance = [[NSApplication sharedApplication] effectiveAppearance].name;
+
+        if (effectiveAppearance == NSAppearanceNameDarkAqua) {
+           return [NSColor colorWithWhite:0.22 alpha:1];
+        }
+    }
+    
+    return [NSColor colorWithWhite:0.89 alpha:1];
+}
+
 
 - (id)init
 {
@@ -33,8 +50,19 @@
 - (void) awakeFromNib {
     [sideBarTableView registerForDraggedTypes: @[WSSideBarDataType, @"public.file-url", @"public.url", NSURLPboardType, NSFilenamesPboardType] ];
     [sideBarTableView setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
-    [sideBarTableView setBackgroundColor:[NSColor whiteColor]];
+    
+    [sideBarTableView setSelectionHighlightStyle: NSTableViewSelectionHighlightStyleNone];
+
 }
+
+- (void)viewDidLayout {
+    [super viewDidLayout];
+    
+    [sideBarTableView setBackgroundColor:[TCSideBarController sidebarBGColor]];
+    [((TCBackgroundView*) self.view) setBackgroundColor:[TCSideBarController sidebarBGColor]];
+}
+
+
 
 #pragma mark add remove
 - (void) addItem: (TCSideBarItem*) anItem {
@@ -230,12 +258,25 @@
     [sideBarTableView scrollRowToVisible:self.selectedIndex];
 }
 
+
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
     return [self.items count];
 }
 
 
+- (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+    TCImageTextCell* theCell = (TCImageTextCell*) aCell;
+    if ([[aTableView selectedRowIndexes] containsIndex:rowIndex]) {
+        // Tincta purple
+        [theCell setBackgroundColor: [NSColor colorWithRed:0.54 green:0.41 blue:.61 alpha:1]];
+        [theCell setHighlighted:YES];
+    } else {
+        [theCell setBackgroundColor: [TCSideBarController sidebarBGColor]];
+        [theCell setHighlighted:NO];
 
+    }
+    [theCell setDrawsBackground:YES];
+}
 
 
 #pragma mark drag and drop

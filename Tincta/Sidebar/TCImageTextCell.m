@@ -53,18 +53,41 @@
     //useSmallerIcons = YES;
     ////////
 
+    
+    
     self.topColor = [NSColor blackColor];
     self.bottomColor = [NSColor blackColor];
     self.selectedBottomColor = [NSColor whiteColor];
     self.selectedTopColor = [NSColor whiteColor];
 
-    CGFloat dirtyAlpha = 0.5;
+    
+    CGFloat dirtyAlpha = 0.8;
+    CGFloat dirtyAlphaSelected = 0.8;
 
-    self.dirtySelectedBottomColor = [NSColor colorWithDeviceWhite:1 alpha:0.8];
-    self.dirtySelectedTopColor = [NSColor colorWithDeviceWhite:1 alpha:0.8];
+    self.dirtySelectedBottomColor = [NSColor colorWithDeviceWhite:1 alpha:dirtyAlphaSelected];
+    self.dirtySelectedTopColor = [NSColor colorWithDeviceWhite:1 alpha:dirtyAlphaSelected];
 
     self.dirtyTopColor = [NSColor colorWithDeviceWhite:0 alpha:dirtyAlpha];
     self.dirtyBottomColor = [NSColor colorWithDeviceWhite:0 alpha:dirtyAlpha];
+    
+    if (@available(macOS 10.14, *)) {
+           // Only effective Appearance works here. Currenct appearance will have the startup value all the time
+           NSString* effectiveAppearance = [[NSApplication sharedApplication] effectiveAppearance].name;
+           if (effectiveAppearance == NSAppearanceNameDarkAqua) {
+               self.topColor = [NSColor whiteColor];
+               self.bottomColor = [NSColor whiteColor];
+               self.selectedBottomColor = [NSColor whiteColor];
+               self.selectedTopColor = [NSColor whiteColor];
+               
+               self.dirtySelectedBottomColor = [NSColor colorWithDeviceWhite:1 alpha:dirtyAlphaSelected];
+               self.dirtySelectedTopColor = [NSColor colorWithDeviceWhite:1 alpha:dirtyAlphaSelected];
+               
+               self.dirtyTopColor = [NSColor colorWithDeviceWhite:1 alpha:dirtyAlpha];
+               self.dirtyBottomColor = [NSColor colorWithDeviceWhite:1 alpha:dirtyAlpha];
+           }
+       }
+    
+    
     if (useSmallerIcons) {
         self.topFont = [NSFont boldSystemFontOfSize:11];
         self.bottomFont = [NSFont systemFontOfSize:9];
@@ -98,8 +121,14 @@
 
 
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView {
-    [self setTextColor:[NSColor blackColor]];
+    
+    [self.backgroundColor setFill];
+    NSRectFill(cellFrame);
 
+    
+    [self setTextColor:[NSColor labelColor]];
+
+    [self setupColorsAndFonts];
     TCSideBarItem* data = [self objectValue];
 
 
@@ -215,7 +244,7 @@
 
     CGFloat opacity = 1.0;
     if (data.isDirty) {
-        opacity = 0.5;
+        opacity = 0.7;
 
         /*
          [icon lockFocus];

@@ -32,6 +32,12 @@
     [super awakeFromNib];
     [[self window] center];
 
+    NSFont* iconFont = [NSFont fontWithName:@"iconmonstr-iconic-font" size:18];
+    [self.toolbarGeneralItemCell setFont: iconFont];
+    [self.toolbarColorsItemCell setFont: iconFont];
+    [self.toolbarGeneralItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe0e3]];
+    [self.toolbarColorsItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe11a]];
+    
     [self createSyntaxDefinitionsArrays];
     [self.syntaxDefinitionPopUp addItemsWithTitles:availableSyntaxDefinitions];
     [self.syntaxDefinitionPopUp setTitle:[TCADefaultsHelper getDefaultSyntaxDefinition]];
@@ -95,12 +101,14 @@
 
 - (IBAction)changeToGeneralTab:(id)sender {
     [self.tabView selectTabViewItemWithIdentifier:@"General"];
+    [self.toolbar setSelectedItemIdentifier:@"General"];
 }
 
 
 - (IBAction)changeToColorsTab:(id)sender {
     [self.tabView selectTabViewItemWithIdentifier:@"Colors"];
     [self.window makeFirstResponder:self.colorProfileDummyField];
+    [self.toolbar setSelectedItemIdentifier:@"Colors"];
 }
 
 #pragma mark general
@@ -216,8 +224,17 @@
     [self.colorProfiles addObjectsFromArray: [TCAColorScheme builtInColorSchemes]];
     [self.colorProfiles addObjectsFromArray: [TCAColorScheme userColorSchemes]];
 
+    // set standard if first start:
+    self.selectedColorProfile = [self.colorProfiles objectAtIndex:2]; // tincta light
+    if (@available(macOS 10.14, *)) {
+        if (NSAppearance.currentAppearance.name == NSAppearanceNameDarkAqua) {
+            self.selectedColorProfile = self.colorProfiles.lastObject; // tincta dark
+        }
+    }
     
-    self.selectedColorProfile = self.colorProfiles.firstObject;
+    if (self.selectedColorProfile == NULL) {
+        self.selectedColorProfile = self.colorProfiles.firstObject;
+    }
     NSString* savedFilePath = [TCADefaults objectForKey:@"selectedColorProfilePath"];
     for (TCAColorScheme* profile in self.colorProfiles) {
         if ([savedFilePath isEqualToString:profile.fileUrl.path]) {

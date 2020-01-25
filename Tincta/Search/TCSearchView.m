@@ -33,14 +33,33 @@
 }
 
 - (void) setActive: (BOOL) isActive {
+    _isActive = isActive;
+
     if (isActive) {
         backgroundColorStart = [NSColor colorWithDeviceWhite:0.91 alpha:1];
         backgroundColorEnd = [NSColor colorWithDeviceWhite:0.91 alpha:1];
         borderColor = [NSColor colorWithDeviceWhite:0.318 alpha:1];
+        
+        if (@available(macOS 10.14, *)) {
+            if (NSAppearance.currentAppearance.name == NSAppearanceNameDarkAqua) {
+                backgroundColorStart = [NSColor colorWithDeviceWhite:0.21 alpha:1];
+                backgroundColorEnd = [NSColor colorWithDeviceWhite:0.21 alpha:1];
+                borderColor = [NSColor colorWithDeviceWhite:0.0 alpha:1];
+            }
+        }
+        
     } else {
         backgroundColorStart = [NSColor colorWithDeviceWhite:0.91 alpha:1];
 		backgroundColorEnd = [NSColor colorWithDeviceWhite:0.91 alpha:1];
         borderColor = [NSColor colorWithDeviceWhite:0.6 alpha:1];
+        
+        if (@available(macOS 10.14, *)) {
+            if (NSAppearance.currentAppearance.name == NSAppearanceNameDarkAqua) {
+                backgroundColorStart = [NSColor colorWithDeviceWhite:0.21 alpha:1];
+                backgroundColorEnd = [NSColor colorWithDeviceWhite:0.21 alpha:1];
+                borderColor = [NSColor colorWithDeviceWhite:0.0 alpha:1];
+            }
+        }
     }
 }
 
@@ -49,7 +68,9 @@
  Draw the view with gradient
  */
 - (void)drawRect:(NSRect)dirtyRect {
-	
+	// update view in case dark mode has changed
+    [self setActive: _isActive];
+    
 	NSRect rect = [self bounds];
 	[borderColor set];
 	NSRectFill(rect);

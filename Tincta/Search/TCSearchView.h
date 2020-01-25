@@ -18,6 +18,8 @@
 	NSColor *midBorderColor;
 	NSColor *innerBorderColor;
 	
+    BOOL _isActive;
+
 }
 
 - (void) setActive: (BOOL) isActive;

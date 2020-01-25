@@ -41,17 +41,28 @@
 @property (assign) IBOutlet TCTextViewController* textViewController;
 @property (assign) IBOutlet TCSideBarController* sidebarController;
 @property (assign) IBOutlet NSToolbarItem* toolbarOpenItem;
+@property (assign) IBOutlet NSButton* toolbarOpenItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarCloseItem;
+@property (assign) IBOutlet NSButton* toolbarCloseItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarNewItem;
+@property (assign) IBOutlet NSButton* toolbarNewItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarSaveItem;
+@property (assign) IBOutlet NSButton* toolbarSaveItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarInvisiblesItem;
-@property (assign) IBOutlet NSToolbarItem* toolbarUppercaseItem;
-@property (assign) IBOutlet NSToolbarItem* toolbarLowercaseItem;
+@property (assign) IBOutlet NSButton* toolbarInvisiblesItemCell;
+@property (assign) IBOutlet NSToolbarItem* toolbarToggleCaseItem;
+@property (assign) IBOutlet NSButton* toolbarToggleCaseItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarSearchItem;
+@property (assign) IBOutlet NSButton* toolbarSearchItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarPrintItem;
+@property (assign) IBOutlet NSButton* toolbarPrintItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarPreferencesItem;
+@property (assign) IBOutlet NSButton* toolbarPreferencesItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarCustomizeItem;
+@property (assign) IBOutlet NSButton* toolbarCustomizeItemCell;
 @property (assign) IBOutlet NSToolbarItem* toolbarOpenBrowserItem;
+@property (assign) IBOutlet NSButton* toolbarOpenBrowserItemCell;
+@property (assign) IBOutlet NSToolbarItem* toolbarSyntaxColoringItem;
 
 @property (assign) IBOutlet NSToolbar* toolbar;
 

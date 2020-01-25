@@ -19,7 +19,7 @@
 @end
 
 
-@interface TCSideBarController : NSObject <NSTableViewDelegate, NSTableViewDataSource> {
+@interface TCSideBarController : NSViewController <NSTableViewDelegate, NSTableViewDataSource> {
 
     NSMutableArray* items;
     TCSideBarItem* selectedItem;
@@ -35,7 +35,7 @@
 @property (strong) id<TCSideBarDelegate> delegate;
 
 - (NSInteger) indexOfItemUrlEqualToItem: (TCSideBarItem*) anItem;
-
++ (NSColor*) sidebarBGColor;
 
 - (void) addItem: (TCSideBarItem*) anItem;
 - (void) addItemWithImage: (NSImage*) anImage topTitle: (NSString*) aTopTitle andBottomTitle: (NSString*) aBottomTitle;
