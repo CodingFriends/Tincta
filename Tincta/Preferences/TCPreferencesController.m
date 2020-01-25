@@ -224,8 +224,17 @@
     [self.colorProfiles addObjectsFromArray: [TCAColorScheme builtInColorSchemes]];
     [self.colorProfiles addObjectsFromArray: [TCAColorScheme userColorSchemes]];
 
+    // set standard if first start:
+    self.selectedColorProfile = [self.colorProfiles objectAtIndex:2]; // tincta light
+    if (@available(macOS 10.14, *)) {
+        if (NSAppearance.currentAppearance.name == NSAppearanceNameDarkAqua) {
+            self.selectedColorProfile = self.colorProfiles.lastObject; // tincta dark
+        }
+    }
     
-    self.selectedColorProfile = self.colorProfiles.firstObject;
+    if (self.selectedColorProfile == NULL) {
+        self.selectedColorProfile = self.colorProfiles.firstObject;
+    }
     NSString* savedFilePath = [TCADefaults objectForKey:@"selectedColorProfilePath"];
     for (TCAColorScheme* profile in self.colorProfiles) {
         if ([savedFilePath isEqualToString:profile.fileUrl.path]) {
