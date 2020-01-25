@@ -13,6 +13,7 @@
 		0E464D6323A51DE30099F4CD /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E464D6023A51DE30099F4CD /* AppCenter.framework */; };
 		0E7286D41A85726E008D6395 /* ColorSchemes in Resources */ = {isa = PBXBuildFile; fileRef = 0E7286D21A85726E008D6395 /* ColorSchemes */; };
 		0E7D0C3323DA3D94008B7E48 /* iconmonstr-iconic-font.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E7D0C3123DA3D39008B7E48 /* iconmonstr-iconic-font.ttf */; };
+		0EA8209123DC7DE100671B5C /* TCBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8209023DC7DE000671B5C /* TCBackgroundView.m */; };
 		95F1D01B19AFA3C70022EA99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF1E1358922D008CA186 /* main.m */; };
 		95F1D01C19AFA3C70022EA99 /* TinctaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF241358922E008CA186 /* TinctaAppDelegate.m */; };
 		95F1D02019AFA3C70022EA99 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5CF4213589517008CA186 /* MainWindowController.m */; };
@@ -115,6 +116,8 @@
 		0E7286D21A85726E008D6395 /* ColorSchemes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ColorSchemes; path = Tincta/ColorSchemes; sourceTree = "<group>"; };
 		0E7D0C3123DA3D39008B7E48 /* iconmonstr-iconic-font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iconmonstr-iconic-font.ttf"; sourceTree = "<group>"; };
 		0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tincta AppStore-Bridging-Header.h"; sourceTree = "<group>"; };
+		0EA8208F23DC7DE000671B5C /* TCBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCBackgroundView.h; path = Tincta/TCBackgroundView.h; sourceTree = SOURCE_ROOT; };
+		0EA8209023DC7DE000671B5C /* TCBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCBackgroundView.m; path = Tincta/TCBackgroundView.m; sourceTree = SOURCE_ROOT; };
 		9554216516B3276400AB5874 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		9554218616B4193A00AB5874 /* WhatsNew.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhatsNew.txt; sourceTree = "<group>"; };
 		957D5D81139AA1A400186F1D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -398,6 +401,8 @@
 		C6B908141D7E1C49009F3465 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0EA8208F23DC7DE000671B5C /* TCBackgroundView.h */,
+				0EA8209023DC7DE000671B5C /* TCBackgroundView.m */,
 				C6B908151D7E1C49009F3465 /* ColorConverter.h */,
 				C6B908161D7E1C49009F3465 /* ColorConverter.m */,
 				C6B908171D7E1C49009F3465 /* Reachability.h */,
@@ -669,6 +674,7 @@
 				C6B908671D7E1C49009F3465 /* TCAScanner.m in Sources */,
 				C6B9085D1D7E1C49009F3465 /* TCNotificationBackground.m in Sources */,
 				C6B9086C1D7E1C49009F3465 /* OHGradientView.m in Sources */,
+				0EA8209123DC7DE100671B5C /* TCBackgroundView.m in Sources */,
 				C6B908601D7E1C49009F3465 /* TCPreferencesController.m in Sources */,
 				C6B9085C1D7E1C49009F3465 /* TCAMiscHelper.m in Sources */,
 				C6B908621D7E1C49009F3465 /* TCSearchView.m in Sources */,
