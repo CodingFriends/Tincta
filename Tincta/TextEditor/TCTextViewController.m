@@ -128,12 +128,16 @@
 
 - (void)scrollTextViewToPoint:(NSPoint)aPoint {
     NSPoint scrollPoint = aPoint;
-        CGFloat maxPoint = [[self.scrollView documentView] frame].size.height - [self.scrollView visibleRect].size.height;
-        if (scrollPoint.y > maxPoint) {
-            scrollPoint.y = maxPoint;
-        }
-        [[self.scrollView contentView] scrollToPoint: scrollPoint];
-        [self.scrollView reflectScrolledClipView: [self.scrollView contentView]];
+    CGFloat maxPoint = [[self.scrollView documentView] frame].size.height - [self.scrollView visibleRect].size.height;
+    if (scrollPoint.y > maxPoint) {
+        scrollPoint.y = maxPoint;
+    }
+    CGFloat maxX = -lineNumberView.bounds.size.width;
+    if (scrollPoint.x > maxX) {
+        scrollPoint.x = maxX;
+    }
+    [[self.scrollView contentView] scrollToPoint: scrollPoint];
+    [self.scrollView reflectScrolledClipView: [self.scrollView contentView]];
 }
 
 - (NSPoint)textViewScrollPoint {
@@ -256,7 +260,8 @@
     TCTextStorage* ts = (TCTextStorage*)[self.textView textStorage];
     NSRange lineRange = [ts lineRangeOfLine:aLine];
     NSRect boundingRect =  [[self.textView layoutManager] boundingRectForGlyphRange:lineRange inTextContainer:[self.textView textContainer]];
-    NSPoint scrollPoint = NSMakePoint(0, boundingRect.origin.y); 
+    CGFloat lineNumberWidth = lineNumberView.frame.size.width;
+    NSPoint scrollPoint = NSMakePoint(-lineNumberWidth, boundingRect.origin.y);
     [self scrollTextViewToPoint:scrollPoint];
 }
 
@@ -415,8 +420,11 @@
 #pragma mark -
 #pragma mark helpers
 
+
+
 - (void)setLineWrapping:(BOOL)doWrap {
-     [self scrollTextViewToPoint:NSZeroPoint];
+    CGFloat lineNumberWidth = lineNumberView.frame.size.width;
+    [self scrollTextViewToPoint:NSMakePoint(0, 0)];
     [self.textView setSelectedRange:NSMakeRange(0, 0)];
     [self.scrollView setHasVerticalScroller:YES];
     [self.scrollView setAutohidesScrollers:YES];
@@ -425,7 +433,7 @@
         [[self.textView textContainer] setWidthTracksTextView:NO];
         [[self.textView textContainer] setContainerSize: NSMakeSize(FLT_MAX, FLT_MAX)];
         [self.scrollView setHasHorizontalScroller:YES];
-
+        
     } else {
         BOOL modfiedBackup = selectedSideBarItem.isModified;
         BOOL dirtyBackup = selectedSideBarItem.isDirty;
@@ -440,11 +448,11 @@
         //////
         
         [[self.textView textContainer] setWidthTracksTextView:YES];
-
-        NSSize newSize = NSMakeSize([self.scrollView documentVisibleRect].size.width, FLT_MAX);
+        
+        NSSize newSize = NSMakeSize([self.scrollView documentVisibleRect].size.width - lineNumberWidth, FLT_MAX);
         [[self.textView textContainer] setContainerSize: newSize];
         [self.scrollView setHasHorizontalScroller:NO];
-
+        
         //////
         [self setTextViewString: textBackup];
         [syntaxColoring setSyntaxDefinitionByName:syntaxBackup];
@@ -460,6 +468,22 @@
     [self invalidateAllLineNumbers];
 }
 
+- (void) updateTextViewSize {
+    CGFloat lineNumberWidth = lineNumberView.frame.size.width;
+
+    if ([TCADefaultsHelper getNotWrapLines]) {
+           [[self.textView textContainer] setWidthTracksTextView:NO];
+           [[self.textView textContainer] setContainerSize: NSMakeSize(FLT_MAX, FLT_MAX)];
+           [self.scrollView setHasHorizontalScroller:YES];
+           
+       } else {
+           [[self.textView textContainer] setWidthTracksTextView:YES];
+           
+           NSSize newSize = NSMakeSize([self.scrollView documentVisibleRect].size.width - lineNumberWidth, FLT_MAX);
+           [[self.textView textContainer] setContainerSize: newSize];
+           [self.scrollView setHasHorizontalScroller:NO];
+       }
+}
 
 - (void)invalidateAllLineNumbers {
     //lineNumberView.lineWraps = nil;
@@ -511,6 +535,7 @@
         [self scrollTextViewToPoint:selectedSideBarItem.scrollPoint];
         needsScrolling = NO;
     }
+    [self updateTextViewSize];
 }
 
 - (NSRange)textView:(NSTextView *)aTextView willChangeSelectionFromCharacterRange:(NSRange)oldSelectedCharRange toCharacterRange:(NSRange)newSelectedCharRange {

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class TCNotificationCreator, MainWindowController;
+@class TCNotificationCreator, MainWindowController, TCTextViewController;
 @interface TCASearchController : NSObject {
 
     NSRange foundRange;
@@ -30,11 +30,12 @@
 @property (assign) IBOutlet NSSegmentedControl* prevNextSegmentedControl;
 @property (assign) IBOutlet NSWindow* window;
 @property (assign) IBOutlet MainWindowController* mainWindowController;
+@property (assign) IBOutlet TCTextViewController* textViewController;
 
 @property (assign) BOOL isActive;
 
 
-- (void) scollToPoint: (NSPoint) aPoint;
+- (void) scrollToPoint: (NSPoint) aPoint;
 - (NSString* )unescapeString: (NSString* )aString;
 - (NSString* )escapeString: (NSString* )aString;
 

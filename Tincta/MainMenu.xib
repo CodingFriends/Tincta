@@ -518,6 +518,7 @@
                                                 </textView>
                                             </subviews>
                                         </clipView>
+                                        <edgeInsets key="contentInsets" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                         <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="987">
                                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -559,7 +560,7 @@
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="B6911588-0E91-49EC-97D2-69246860CA64" label="Syntax Coloring" paletteLabel="Syntax Coloring" id="966">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="110" height="25"/>
+                        <size key="minSize" width="100" height="25"/>
                         <size key="maxSize" width="100" height="25"/>
                         <popUpButton key="view" verticalHuggingPriority="750" id="960">
                             <rect key="frame" x="0.0" y="14" width="100" height="25"/>
@@ -835,6 +836,7 @@
                 <outlet property="searchBox" destination="858" id="899"/>
                 <outlet property="searchView" destination="849" id="890"/>
                 <outlet property="textView" destination="986" id="990"/>
+                <outlet property="textViewController" destination="561" id="xtb-sH-Drj"/>
                 <outlet property="window" destination="371" id="905"/>
             </connections>
         </customObject>
