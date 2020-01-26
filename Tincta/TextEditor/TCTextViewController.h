@@ -67,6 +67,7 @@
 - (void)textViewDidResize:(NSNotification *)aNotification;
 - (void)textViewDidScroll:(NSNotification *)aNotification;
 - (void)textViewDidChangeSelection:(NSNotification *)aNotification;
+- (void) updateTextViewSize;
 
 - (void)preferencesDidChange:(NSNotification *)aNotification ;
 - (void) preferencesDidChangeWrapping:(NSNotification *)aNotification;

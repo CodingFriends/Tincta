@@ -8,6 +8,8 @@
 
 
 #import "TCASearchController.h"
+#import "TCTextViewController.h"
+#import "TCLineNumberView.h"
 #import "TCNotificationCreator.h"
 #import "MainWindowController.h"
 #import "TCSideBarItem.h"
@@ -141,7 +143,7 @@
         if (foundRange.location != NSNotFound) {
             NSRect boundingRect =  [[self.textView layoutManager] boundingRectForGlyphRange:foundRange inTextContainer:[self.textView textContainer]];
             NSPoint scrollPoint = NSMakePoint(0, boundingRect.origin.y);        
-            [self scollToPoint:scrollPoint];
+            [self scrollToPoint:scrollPoint];
             
             
         } else {
@@ -220,7 +222,7 @@
         }
         NSRect boundingRect =  [[self.textView layoutManager] boundingRectForGlyphRange:foundRange inTextContainer:[self.textView textContainer]];
         NSPoint scrollPoint = NSMakePoint(0, boundingRect.origin.y);        
-        [self scollToPoint:scrollPoint];
+        [self scrollToPoint:scrollPoint];
         [self.textView showFindIndicatorForRange:foundRange];
 	}
 }
@@ -274,7 +276,7 @@
         }          NSRect boundingRect =  [[self.textView layoutManager] boundingRectForGlyphRange:foundRange inTextContainer:[self.textView textContainer]];
         NSPoint scrollPoint = NSMakePoint(0, boundingRect.origin.y);
         
-        [self scollToPoint: scrollPoint];
+        [self scrollToPoint: scrollPoint];
         
         [self.textView showFindIndicatorForRange:foundRange];        
 	}
@@ -292,7 +294,7 @@
     NSRect boundingRect =  [[self.textView layoutManager] boundingRectForGlyphRange:[self.textView selectedRange] inTextContainer:[self.textView textContainer]];
     NSPoint scrollPoint = NSMakePoint(0, boundingRect.origin.y);
     
-    [self scollToPoint: scrollPoint];    
+    [self scrollToPoint: scrollPoint];    
 }
 
 
@@ -401,14 +403,17 @@
     return numberOfMatches;
 }
 
-- (void) scollToPoint: (NSPoint) aPoint {
+- (void) scrollToPoint: (NSPoint) aPoint {
     NSPoint scrollPoint = aPoint;
+    scrollPoint.x = -self.textViewController.lineNumberView.bounds.size.width;
+    
     if (!NSPointInRect(scrollPoint, [self.textView visibleRect])) {
         
         CGFloat maxPoint = [[self.scrollView documentView] frame].size.height - [self.scrollView visibleRect].size.height;
         if (scrollPoint.y > maxPoint) {            
             scrollPoint.y = maxPoint;
         }
+        
         [[self.scrollView contentView] scrollToPoint: scrollPoint];
         [self.scrollView reflectScrolledClipView: [self.scrollView contentView]];
     }
