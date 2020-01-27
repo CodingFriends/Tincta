@@ -105,7 +105,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E070DC023A524DC00902B1B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0E39E3422395B29B00EB5F86 /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
 		0E464D5E23A51DE30099F4CD /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
 		0E464D5F23A51DE30099F4CD /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
@@ -265,7 +264,6 @@
 		95A5CF021358922D008CA186 = {
 			isa = PBXGroup;
 			children = (
-				0E070DC023A524DC00902B1B /* README.md */,
 				95A5CF171358922D008CA186 /* Tincta */,
 				0E7286D21A85726E008D6395 /* ColorSchemes */,
 				C63E5C021382E42300C62BCF /* Syntax Definitions */,
