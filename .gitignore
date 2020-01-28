@@ -1,6 +1,8 @@
 build-appstore
-build
-tincta.xcodeproj/project.xcworkspace
-tincta.xcodeproj/xcuserdata
+Source/build
+Source/Tincta.xcodeproj/project.xcworkspace/xcuserdata
+Source/Tincta.xcodeproj/project.xcworkspace
+Source/Tincta.xcodeproj/xcuserdata
 AppCenterConfig.h
 .DS_Store
+
