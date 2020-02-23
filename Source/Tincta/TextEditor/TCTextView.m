@@ -268,6 +268,8 @@
     NSInteger selLength = selRange.length;
     NSInteger selMax = NSMaxRange(selRange);
     NSString* text = [self string];
+    
+    
     NSRange lineRange = [text lineRangeForRange:NSMakeRange(selLoc, 0)];
     NSInteger lineStart = lineRange.location;
     while (lineStart <= selMax) { //iterate over all selected lines
@@ -317,13 +319,13 @@
             if (selLoc > self.string.length || selLoc < 0) {
                 selLoc = 0;
             }
-        } else if ((lineStart >= selLoc)&& [text characterAtIndex:lineStart] == '\t') {
+        } else if ((lineStart >= selLoc) && (text.length > lineStart) && [text characterAtIndex:lineStart] == '\t') {
             //remove tab at line start
             stringToReplace = @"\t";
             blankLength = 1;
             tabReplaceRange = NSMakeRange(lineStart, blankLength);
             selLength -= blankLength;
-        } else if ((lineStart >= selLoc)&& [text characterAtIndex:lineStart] == ' ') {
+        } else if ((lineStart >= selLoc) && (text.length > lineStart) &&[text characterAtIndex:lineStart] == ' ') {
             //remove blanks at line start
             blankLength = 0;
             NSInteger tabLength = tabBlankLength;
