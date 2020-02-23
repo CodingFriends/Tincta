@@ -165,7 +165,15 @@
 
 
 - (IBAction)openWebsite:(id)sender {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://mr-fridge.de/software/tincta"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://codingfriends.github.io/Tincta/"]];
+}
+
+- (IBAction)openSupportPage:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/CodingFriends/Tincta/issues"]];
+}
+
+- (IBAction)openContributePage:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/CodingFriends/Tincta"]];
 }
 
 -(BOOL)isInternetAvail {

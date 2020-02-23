@@ -26,6 +26,9 @@
 - (IBAction) openRecentItem: (id) sender;
 -(BOOL)isInternetAvail;
 - (IBAction)openWebsite:(id)sender;
+- (IBAction)openSupportPage:(id)sender;
+- (IBAction)openContributePage:(id)sender;
+
 
 + (BOOL)isInternetAvailable;
 
