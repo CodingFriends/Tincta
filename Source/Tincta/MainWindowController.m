@@ -20,6 +20,9 @@
     isAwakeFromNib = YES;
     
     [[self window] setAllowsConcurrentViewDrawing:YES];
+    if (@available(macOS 10.16, *)) {
+        [[self window] setToolbarStyle: NSWindowToolbarStyleExpanded];
+    }
     
     self.openUrlBookmarks = [NSMutableSet set];
     recentItemsBookmarks = [NSMutableArray arrayWithArray:[TCADefaultsHelper getRecentItemsBookmarks]];
@@ -64,6 +67,22 @@
     [self.toolbarPreferencesItemCell setFont: iconFont];
     [self.toolbarOpenBrowserItemCell setFont: iconFont];
     [self.toolbarPrintItemCell setFont: iconFont];
+    
+    if (@available(macOS 10.16, *)) {
+        NSColor* iconColor = [NSColor colorNamed:@"Toolbar Color"];
+        
+        [self.toolbarSearchItemCell setContentTintColor: iconColor];
+        [self.toolbarNewItemCell setContentTintColor: iconColor];
+        [self.toolbarOpenItemCell setContentTintColor: iconColor];
+        [self.toolbarCloseItemCell setContentTintColor: iconColor];
+        [self.toolbarSaveItemCell setContentTintColor: iconColor];
+        [self.toolbarPreferencesItemCell setContentTintColor: iconColor];
+        [self.toolbarOpenBrowserItemCell setContentTintColor: iconColor];
+        [self.toolbarPrintItemCell setContentTintColor: iconColor];
+        [self.toolbarInvisiblesItemCell setContentTintColor: iconColor];
+        [self.toolbarToggleCaseItemCell setContentTintColor: iconColor];
+    }
+    
 
     // These just use text. Sizes are deliberately different
     [self.toolbarToggleCaseItemCell setFont: [NSFont systemFontOfSize:21]];

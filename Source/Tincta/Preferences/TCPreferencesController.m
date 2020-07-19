@@ -31,12 +31,23 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     [[self window] center];
-
+    
+    if (@available(macOS 10.16, *)) {
+        [[self window] setToolbarStyle:NSWindowToolbarStylePreference];
+    }
+    
     NSFont* iconFont = [NSFont fontWithName:@"iconmonstr-iconic-font" size:18];
     [self.toolbarGeneralItemCell setFont: iconFont];
     [self.toolbarColorsItemCell setFont: iconFont];
     [self.toolbarGeneralItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe0e3]];
     [self.toolbarColorsItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe11a]];
+    
+    if (@available(macOS 10.16, *)) {
+        NSColor* iconColor = [NSColor colorNamed:@"Toolbar Color"];
+
+        [self.toolbarGeneralItemCell setContentTintColor: iconColor];
+        [self.toolbarColorsItemCell setContentTintColor: iconColor];
+    }
     
     [self createSyntaxDefinitionsArrays];
     [self.syntaxDefinitionPopUp addItemsWithTitles:availableSyntaxDefinitions];

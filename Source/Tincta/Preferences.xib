@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17132" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment version="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17132"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -56,7 +56,7 @@
         <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="1">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <rect key="contentRect" x="398" y="189" width="501" height="396"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
             <view key="contentView" id="2">
                 <rect key="frame" x="0.0" y="0.0" width="501" height="396"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="General" identifier="General" id="4">
-                                <view key="view" ambiguous="YES" id="7">
+                                <view key="view" id="7">
                                     <rect key="frame" x="0.0" y="0.0" width="500" height="402"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -292,7 +292,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <popUpButtonCell key="cell" type="push" title="None" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" selectedItem="168" id="166">
                                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                            <font key="font" metaFont="system"/>
+                                                            <font key="font" metaFont="menu"/>
                                                             <menu key="menu" title="OtherViews" id="167">
                                                                 <items>
                                                                     <menuItem title="None" state="on" id="168"/>
@@ -311,15 +311,15 @@
                             </tabViewItem>
                             <tabViewItem label="Colors" identifier="Colors" id="5">
                                 <view key="view" id="6">
-                                    <rect key="frame" x="0.0" y="0.0" width="500" height="381"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="500" height="402"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X0O-3C-hDh">
-                                            <rect key="frame" x="134" y="341" width="208" height="26"/>
+                                            <rect key="frame" x="134" y="362" width="208" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="06x-gE-pGp" id="G6m-3s-vm1">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
+                                                <font key="font" metaFont="menu"/>
                                                 <menu key="menu" id="hqm-3n-dLf">
                                                     <items>
                                                         <menuItem title="Item 1" state="on" id="06x-gE-pGp"/>
@@ -560,7 +560,7 @@
                                                     <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kOI-04-x64">
                                                         <rect key="frame" x="16" y="271" width="222" height="28"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" title="Solarized" id="Omw-ej-4Oi">
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" focusRingType="none" title="Solarized" id="Omw-ej-4Oi">
                                                             <font key="font" metaFont="system" size="20"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -617,8 +617,8 @@
                     <toolbarItem implicitItemIdentifier="6C8BE0C5-786B-472B-B429-9EBABA60D229" explicitItemIdentifier="General" label="General" paletteLabel="General" sizingBehavior="auto" selectable="YES" id="tPY-Ub-gv5">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="Vef-Oe-zXy">
-                            <rect key="frame" x="8" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <rect key="frame" x="17" y="14" width="14" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="G" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="bQ6-8r-dIo">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -631,8 +631,8 @@
                     <toolbarItem implicitItemIdentifier="9AEBF349-47F9-4F07-9310-A38B76A10717" explicitItemIdentifier="Colors" label="Colors" paletteLabel="Colors" sizingBehavior="auto" selectable="YES" id="YZA-fr-63n">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="iRV-cT-DtE">
-                            <rect key="frame" x="5" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <rect key="frame" x="14" y="14" width="14" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="C" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="EgJ-uo-gQe">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
