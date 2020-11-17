@@ -59,6 +59,9 @@
 
     
     NSFont* iconFont = [NSFont fontWithName:@"iconmonstr-iconic-font" size:18];
+    if (iconFont == nil) {
+        NSLog(@"🚨 IconMonstr Font Not Found");
+    }
     [self.toolbarSearchItemCell setFont: iconFont];
     [self.toolbarNewItemCell setFont: iconFont];
     [self.toolbarOpenItemCell setFont: iconFont];
@@ -68,9 +71,15 @@
     [self.toolbarOpenBrowserItemCell setFont: iconFont];
     [self.toolbarPrintItemCell setFont: iconFont];
     
-    if (@available(macOS 10.16, *)) {
-        NSColor* iconColor = [NSColor colorNamed:@"Toolbar Color"];
-        
+    // These just use text. Sizes are deliberately different
+    [self.toolbarToggleCaseItemCell setFont: [NSFont systemFontOfSize:21]];
+    [self.toolbarInvisiblesItemCell setFont: [NSFont systemFontOfSize:22]];
+    
+    NSColor* iconColor = [NSColor darkGrayColor];
+    if (@available(macOS 10.13, *)) {
+        iconColor = [NSColor colorNamed:@"Toolbar Color"];
+    }
+    if (@available(macOS 10.14, *)) {
         [self.toolbarSearchItemCell setContentTintColor: iconColor];
         [self.toolbarNewItemCell setContentTintColor: iconColor];
         [self.toolbarOpenItemCell setContentTintColor: iconColor];
@@ -82,22 +91,26 @@
         [self.toolbarInvisiblesItemCell setContentTintColor: iconColor];
         [self.toolbarToggleCaseItemCell setContentTintColor: iconColor];
     }
-    
+
+    // For Big Sur, setting the font and color above is not sufficient
+    // we actually need to set attributed strings
+    // probably the above is no longer necessary but we don't want to break it
+    // on older systems. So we rather set too much than too little.
+
+    // Set font icons
+    NSDictionary<NSAttributedStringKey, id>* attributes = @{NSFontAttributeName: iconFont, NSForegroundColorAttributeName: iconColor};
+    [self.toolbarSearchItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue07a" attributes:attributes]];
+    [self.toolbarNewItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue072" attributes:attributes]];
+    [self.toolbarOpenItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue03a" attributes:attributes]];
+    [self.toolbarCloseItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue08c" attributes:attributes]];
+    [self.toolbarSaveItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue039" attributes:attributes]];
+    [self.toolbarPreferencesItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue09c" attributes:attributes]];
+    [self.toolbarOpenBrowserItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue0b0" attributes:attributes]];
+    [self.toolbarPrintItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue016" attributes:attributes]];
 
     // These just use text. Sizes are deliberately different
-    [self.toolbarToggleCaseItemCell setFont: [NSFont systemFontOfSize:21]];
-    [self.toolbarInvisiblesItemCell setFont: [NSFont systemFontOfSize:22]];
-
-    
-    [self.toolbarSearchItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe07a]];
-    [self.toolbarNewItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe072]];
-    [self.toolbarOpenItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe03a]];
-    [self.toolbarCloseItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe08c]];
-    [self.toolbarSaveItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe039]];
-    [self.toolbarPreferencesItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe09c]];
-    [self.toolbarOpenBrowserItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe0b0]];
-    [self.toolbarPrintItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe016]];
-
+    [self.toolbarToggleCaseItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"aA" attributes:@{NSFontAttributeName: [NSFont systemFontOfSize:21], NSForegroundColorAttributeName: iconColor}]];
+    [self.toolbarInvisiblesItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"¶" attributes:@{NSFontAttributeName: [NSFont systemFontOfSize:22], NSForegroundColorAttributeName: iconColor}]];
 
 }
 

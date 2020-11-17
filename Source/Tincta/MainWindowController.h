@@ -98,7 +98,6 @@
 - (void) alertDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
 - (void) updateStatusText;
 - (void) addRecentItem: (NSURL*) anUrl;
-- (void) setToolbarItemColor;
 
 - (void) textDidChange: (NSNotification*) aNotification;
 - (void) textViewDidChangeSelection:(NSNotification *)aNotification;

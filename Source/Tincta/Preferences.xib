@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17132" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment version="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17132"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -614,8 +614,10 @@
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="56" userLabel="Toolbar Space Item - Space"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="57"/>
-                    <toolbarItem implicitItemIdentifier="6C8BE0C5-786B-472B-B429-9EBABA60D229" explicitItemIdentifier="General" label="General" paletteLabel="General" sizingBehavior="auto" selectable="YES" id="tPY-Ub-gv5">
+                    <toolbarItem implicitItemIdentifier="6C8BE0C5-786B-472B-B429-9EBABA60D229" explicitItemIdentifier="General" label="General" paletteLabel="General" selectable="YES" id="tPY-Ub-gv5">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="64" height="64"/>
+                        <size key="maxSize" width="64" height="64"/>
                         <button key="view" verticalHuggingPriority="750" id="Vef-Oe-zXy">
                             <rect key="frame" x="17" y="14" width="14" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
@@ -623,13 +625,18 @@
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <connections>
+                                <action selector="changeToGeneralTab:" target="-2" id="ncj-L6-B3D"/>
+                            </connections>
                         </button>
                         <connections>
                             <action selector="changeToGeneralTab:" target="-2" id="BgI-hK-bMH"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="9AEBF349-47F9-4F07-9310-A38B76A10717" explicitItemIdentifier="Colors" label="Colors" paletteLabel="Colors" sizingBehavior="auto" selectable="YES" id="YZA-fr-63n">
+                    <toolbarItem implicitItemIdentifier="9AEBF349-47F9-4F07-9310-A38B76A10717" explicitItemIdentifier="Colors" label="Colors" paletteLabel="Colors" selectable="YES" id="YZA-fr-63n">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="64" height="64"/>
+                        <size key="maxSize" width="64" height="64"/>
                         <button key="view" verticalHuggingPriority="750" id="iRV-cT-DtE">
                             <rect key="frame" x="14" y="14" width="14" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
@@ -637,6 +644,9 @@
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <connections>
+                                <action selector="changeToColorsTab:" target="-2" id="q8i-2X-15B"/>
+                            </connections>
                         </button>
                         <connections>
                             <action selector="changeToColorsTab:" target="-2" id="zX2-ns-JMc"/>

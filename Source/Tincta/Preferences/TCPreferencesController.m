@@ -39,15 +39,25 @@
     NSFont* iconFont = [NSFont fontWithName:@"iconmonstr-iconic-font" size:18];
     [self.toolbarGeneralItemCell setFont: iconFont];
     [self.toolbarColorsItemCell setFont: iconFont];
-    [self.toolbarGeneralItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe0e3]];
-    [self.toolbarColorsItemCell setTitle:[NSString stringWithFormat: @"%C", 0xe11a]];
     
-    if (@available(macOS 10.16, *)) {
-        NSColor* iconColor = [NSColor colorNamed:@"Toolbar Color"];
-
+    NSColor* iconColor = [NSColor darkGrayColor];
+    if (@available(macOS 10.13, *)) {
+        iconColor = [NSColor colorNamed:@"Toolbar Color"];
+    }
+    if (@available(macOS 10.14, *)) {
         [self.toolbarGeneralItemCell setContentTintColor: iconColor];
         [self.toolbarColorsItemCell setContentTintColor: iconColor];
     }
+    
+    // For Big Sur, setting the font and color above is not sufficient
+    // we actually need to set attributed strings
+    // probably the above is no longer necessary but we don't want to break it
+    // on older systems. So we rather set too much than too little.
+    
+    NSDictionary<NSAttributedStringKey, id>* attributes = @{NSFontAttributeName: iconFont, NSForegroundColorAttributeName: iconColor};
+    [self.toolbarGeneralItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue0e3" attributes:attributes]];
+    [self.toolbarColorsItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"\ue11a" attributes:attributes]];
+    
     
     [self createSyntaxDefinitionsArrays];
     [self.syntaxDefinitionPopUp addItemsWithTitles:availableSyntaxDefinitions];
