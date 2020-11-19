@@ -122,9 +122,16 @@
 
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView {
     
-    [self.backgroundColor setFill];
-    NSRectFill(cellFrame);
+    
 
+    if (@available(macOS 10.16, *)) {
+        NSBezierPath* roundRect = [NSBezierPath bezierPathWithRoundedRect:cellFrame xRadius:8 yRadius:8];
+        [self.backgroundColor set];
+        [roundRect fill];
+    } else {
+        [self.backgroundColor setFill];
+        NSRectFill(cellFrame);
+    }
     
     [self setTextColor:[NSColor labelColor]];
 
