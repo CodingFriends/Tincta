@@ -52,6 +52,11 @@
     [sideBarTableView setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
     
     [sideBarTableView setSelectionHighlightStyle: NSTableViewSelectionHighlightStyleNone];
+    if (@available(macOS 10.16, *)) {
+        // we manually draw the rounded selection rect in TCImageTextCell
+        [sideBarTableView setStyle: NSTableViewStyleFullWidth];
+        
+    }
 
 }
 

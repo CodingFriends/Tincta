@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -108,6 +108,7 @@
 		0E09BF91256443DA00F1A9C3 /* Sentry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sentry.framework; sourceTree = "<group>"; };
 		0E39E3422395B29B00EB5F86 /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
 		0E464D6423A51F030099F4CD /* SentryConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentryConfig.h; sourceTree = "<group>"; };
+		0E53F00824C462A900A0F693 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0E7286D21A85726E008D6395 /* ColorSchemes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ColorSchemes; path = Tincta/ColorSchemes; sourceTree = "<group>"; };
 		0E7D0C3123DA3D39008B7E48 /* iconmonstr-iconic-font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iconmonstr-iconic-font.ttf"; sourceTree = "<group>"; };
 		0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tincta AppStore-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -321,6 +322,7 @@
 				95A5CF181358922D008CA186 /* Supporting Files */,
 				95A5CF3A135894DE008CA186 /* Icons */,
 				0E39E3422395B29B00EB5F86 /* icons.xcassets */,
+				0E53F00824C462A900A0F693 /* Colors.xcassets */,
 			);
 			path = Tincta;
 			sourceTree = "<group>";
@@ -561,7 +563,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TC;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Coding Friends UG";
 				TargetAttributes = {
 					95F1D01819AFA3C70022EA99 = {
@@ -581,7 +583,7 @@
 				};
 			};
 			buildConfigurationList = 95A5CF071358922D008CA186 /* Build configuration list for PBXProject "Tincta" */;
-			compatibilityVersion = "Xcode 11.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -609,6 +611,7 @@
 				95F1D04619AFA3C70022EA99 /* Credits.html in Resources */,
 				0E7286D41A85726E008D6395 /* ColorSchemes in Resources */,
 				0E39E3432395B29B00EB5F86 /* icons.xcassets in Resources */,
+				0E53F00924C462A900A0F693 /* Colors.xcassets in Resources */,
 				95F1D04B19AFA3C70022EA99 /* app_icon_running.icns in Resources */,
 				95F1D04C19AFA3C70022EA99 /* Syntax Definitions in Resources */,
 				95F1D04D19AFA3C70022EA99 /* Notification.xib in Resources */,
@@ -733,6 +736,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -785,6 +789,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -812,10 +817,11 @@
 		95F1D07919AFA3C70022EA99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "Accent Color";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 4010;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -855,10 +861,11 @@
 		95F1D07A19AFA3C70022EA99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "Accent Color";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 4010;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
