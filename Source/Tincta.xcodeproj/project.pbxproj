@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E09BF92256443DA00F1A9C3 /* Sentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E09BF91256443DA00F1A9C3 /* Sentry.framework */; };
+		0E09BF95256447C900F1A9C3 /* Sentry.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0E09BF91256443DA00F1A9C3 /* Sentry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E39E3432395B29B00EB5F86 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E39E3422395B29B00EB5F86 /* icons.xcassets */; };
-		0E464D6123A51DE30099F4CD /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E464D5E23A51DE30099F4CD /* AppCenterAnalytics.framework */; };
-		0E464D6223A51DE30099F4CD /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E464D5F23A51DE30099F4CD /* AppCenterCrashes.framework */; };
-		0E464D6323A51DE30099F4CD /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E464D6023A51DE30099F4CD /* AppCenter.framework */; };
-		0E53F00924C462A900A0F693 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E53F00824C462A900A0F693 /* Colors.xcassets */; };
 		0E7286D41A85726E008D6395 /* ColorSchemes in Resources */ = {isa = PBXBuildFile; fileRef = 0E7286D21A85726E008D6395 /* ColorSchemes */; };
 		0E7D0C3323DA3D94008B7E48 /* iconmonstr-iconic-font.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E7D0C3123DA3D39008B7E48 /* iconmonstr-iconic-font.ttf */; };
 		0EA8209123DC7DE100671B5C /* TCBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8209023DC7DE000671B5C /* TCBackgroundView.m */; };
@@ -99,6 +97,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0E09BF95256447C900F1A9C3 /* Sentry.framework in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,11 +105,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E09BF91256443DA00F1A9C3 /* Sentry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sentry.framework; sourceTree = "<group>"; };
 		0E39E3422395B29B00EB5F86 /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
-		0E464D5E23A51DE30099F4CD /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
-		0E464D5F23A51DE30099F4CD /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
-		0E464D6023A51DE30099F4CD /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
-		0E464D6423A51F030099F4CD /* AppCenterConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCenterConfig.h; sourceTree = "<group>"; };
+		0E464D6423A51F030099F4CD /* SentryConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentryConfig.h; sourceTree = "<group>"; };
 		0E53F00824C462A900A0F693 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0E7286D21A85726E008D6395 /* ColorSchemes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ColorSchemes; path = Tincta/ColorSchemes; sourceTree = "<group>"; };
 		0E7D0C3123DA3D39008B7E48 /* iconmonstr-iconic-font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iconmonstr-iconic-font.ttf"; sourceTree = "<group>"; };
@@ -148,7 +145,7 @@
 		C63E5C021382E42300C62BCF /* Syntax Definitions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Syntax Definitions"; path = "Tincta/Syntax Definitions"; sourceTree = "<group>"; };
 		C63F316B18A2DA4E008B2B8E /* TCATextStorageTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCATextStorageTest.m; sourceTree = "<group>"; };
 		C63F316D18A2DA9B008B2B8E /* TCALineNumberViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCALineNumberViewTest.m; sourceTree = "<group>"; };
-		C6624B7A1D871D8C005725B7 /* AppCenterConfig_Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCenterConfig_Example.h; sourceTree = "<group>"; };
+		C6624B7A1D871D8C005725B7 /* SentryConfig_Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentryConfig_Example.h; sourceTree = "<group>"; };
 		C66657CD137A84C900E6822F /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		C66657D5137A8A4E00E6822F /* app_icon_running.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app_icon_running.icns; sourceTree = "<group>"; };
 		C66A9F9A189964E3004CCC9E /* TinctaSyntaxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TinctaSyntaxTest.m; sourceTree = "<group>"; };
@@ -233,10 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F1D03C19AFA3C70022EA99 /* IOKit.framework in Frameworks */,
-				0E464D6323A51DE30099F4CD /* AppCenter.framework in Frameworks */,
 				95F1D03D19AFA3C70022EA99 /* Security.framework in Frameworks */,
-				0E464D6223A51DE30099F4CD /* AppCenterCrashes.framework in Frameworks */,
-				0E464D6123A51DE30099F4CD /* AppCenterAnalytics.framework in Frameworks */,
+				0E09BF92256443DA00F1A9C3 /* Sentry.framework in Frameworks */,
 				95F1D03E19AFA3C70022EA99 /* SystemConfiguration.framework in Frameworks */,
 				95F1D03F19AFA3C70022EA99 /* CoreFoundation.framework in Frameworks */,
 				95F1D04019AFA3C70022EA99 /* QuickLook.framework in Frameworks */,
@@ -287,9 +282,7 @@
 		95A5CF101358922D008CA186 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E464D6023A51DE30099F4CD /* AppCenter.framework */,
-				0E464D5E23A51DE30099F4CD /* AppCenterAnalytics.framework */,
-				0E464D5F23A51DE30099F4CD /* AppCenterCrashes.framework */,
+				0E09BF91256443DA00F1A9C3 /* Sentry.framework */,
 				C6B1DEDB18F5B61F00AF2F76 /* IOKit.framework */,
 				95D8361516B56B8900400410 /* Security.framework */,
 				95A5CF501358955A008CA186 /* QuickLook.framework */,
@@ -346,8 +339,8 @@
 				9554218616B4193A00AB5874 /* WhatsNew.txt */,
 				95F1D07D19AFA44C0022EA99 /* Tincta-AppStore-Prefix.pch */,
 				0E9FC5E41A6199B100B519EB /* Tincta AppStore-Bridging-Header.h */,
-				0E464D6423A51F030099F4CD /* AppCenterConfig.h */,
-				C6624B7A1D871D8C005725B7 /* AppCenterConfig_Example.h */,
+				0E464D6423A51F030099F4CD /* SentryConfig.h */,
+				C6624B7A1D871D8C005725B7 /* SentryConfig_Example.h */,
 				0E7D0C3023DA3D39008B7E48 /* Fonts */,
 			);
 			name = "Supporting Files";
