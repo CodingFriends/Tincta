@@ -2,8 +2,7 @@
 
 One-window text editor for Mac with focus on speed, stability and ease of use.
 
-![Tincta screenshot](https://github.com/CodingFriends/Tincta/raw/master/Screenshot.png)
-
+![Tincta screenshot](/website-images/Screenshot.png?raw=true)
 
 ## Features
 
