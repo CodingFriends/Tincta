@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E09BF92256443DA00F1A9C3 /* Sentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E09BF91256443DA00F1A9C3 /* Sentry.framework */; };
 		0E09BF95256447C900F1A9C3 /* Sentry.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0E09BF91256443DA00F1A9C3 /* Sentry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E17980F256A6C7400705E19 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E53F00824C462A900A0F693 /* Colors.xcassets */; };
 		0E39E3432395B29B00EB5F86 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E39E3422395B29B00EB5F86 /* icons.xcassets */; };
 		0E7286D41A85726E008D6395 /* ColorSchemes in Resources */ = {isa = PBXBuildFile; fileRef = 0E7286D21A85726E008D6395 /* ColorSchemes */; };
 		0E7D0C3323DA3D94008B7E48 /* iconmonstr-iconic-font.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E7D0C3123DA3D39008B7E48 /* iconmonstr-iconic-font.ttf */; };
@@ -612,6 +613,7 @@
 				0E7286D41A85726E008D6395 /* ColorSchemes in Resources */,
 				0E39E3432395B29B00EB5F86 /* icons.xcassets in Resources */,
 				95F1D04B19AFA3C70022EA99 /* app_icon_running.icns in Resources */,
+				0E17980F256A6C7400705E19 /* Colors.xcassets in Resources */,
 				95F1D04C19AFA3C70022EA99 /* Syntax Definitions in Resources */,
 				95F1D04D19AFA3C70022EA99 /* Notification.xib in Resources */,
 				95F1D05319AFA3C70022EA99 /* app_icon_ink1.icns in Resources */,
@@ -822,7 +824,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 4101;
+				CURRENT_PROJECT_VERSION = 4102;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3UAW763979;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -866,7 +868,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 4101;
+				CURRENT_PROJECT_VERSION = 4102;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3UAW763979;
 				ENABLE_HARDENED_RUNTIME = YES;
