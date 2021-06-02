@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment version="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <deployment version="101003" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -467,7 +467,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="202" height="492"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <tableView focusRingType="none" appearanceType="vibrantLight" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="52" id="550">
+                                                <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="52" id="550">
                                                     <rect key="frame" x="0.0" y="0.0" width="202" height="492"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -569,7 +569,7 @@
             </view>
             <toolbar key="toolbar" implicitIdentifier="52754B21-11B6-4ABA-9CB8-68776788396C" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="536">
                 <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="B6911588-0E91-49EC-97D2-69246860CA64" label="Syntax Coloring" paletteLabel="Syntax Coloring" id="966">
+                    <toolbarItem implicitItemIdentifier="B6911588-0E91-49EC-97D2-69246860CA64" label="Syntax Coloring" paletteLabel="Syntax Coloring" title="Item 1" id="966">
                         <nil key="toolTip"/>
                         <size key="minSize" width="100" height="25"/>
                         <size key="maxSize" width="100" height="25"/>
@@ -592,11 +592,11 @@
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="542"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="541"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarSeparatorItem" id="995"/>
-                    <toolbarItem implicitItemIdentifier="011F5E33-6C49-4564-9FDF-A10DEFA69638" label="Preferences" paletteLabel="Preferences" sizingBehavior="auto" id="DtR-Cw-Qiy">
+                    <toolbarItem implicitItemIdentifier="011F5E33-6C49-4564-9FDF-A10DEFA69638" label="Preferences" paletteLabel="Preferences" title="p" sizingBehavior="auto" id="DtR-Cw-Qiy">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="oxO-6D-98L">
                             <rect key="frame" x="19" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="p" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="EPG-Ol-eIA">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -606,11 +606,11 @@
                             <action selector="showPreferences:" target="544" id="E9q-Ev-bvH"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="EC5A41AE-5D82-4BB7-BA53-803DBF4A8C39" label="New" paletteLabel="New" sizingBehavior="auto" id="Gmf-xg-eAF">
+                    <toolbarItem implicitItemIdentifier="EC5A41AE-5D82-4BB7-BA53-803DBF4A8C39" label="New" paletteLabel="New" title="+" sizingBehavior="auto" id="Gmf-xg-eAF">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="Byh-LU-1uH">
                             <rect key="frame" x="0.0" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="+" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="gJt-ZL-SFf">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -620,11 +620,11 @@
                             <action selector="newFile:" target="544" id="XKE-cy-yjX"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="1A081BF2-D439-42FB-9BDC-396FB075DEFD" label="Open" paletteLabel="Open" sizingBehavior="auto" id="wOK-Zz-3cO">
+                    <toolbarItem implicitItemIdentifier="1A081BF2-D439-42FB-9BDC-396FB075DEFD" label="Open" paletteLabel="Open" title="W" sizingBehavior="auto" id="wOK-Zz-3cO">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="txr-rp-Uo0">
                             <rect key="frame" x="2" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="W" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="CUz-4U-sc4">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -634,11 +634,11 @@
                             <action selector="open:" target="544" id="ULV-2k-VfJ"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="BF165A0F-6331-4D00-BB7E-A7A71FEDB21C" label="Save" paletteLabel="Save" sizingBehavior="auto" id="z5O-69-wgv">
+                    <toolbarItem implicitItemIdentifier="BF165A0F-6331-4D00-BB7E-A7A71FEDB21C" label="Save" paletteLabel="Save" title="V" sizingBehavior="auto" id="z5O-69-wgv">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="aJn-9t-etz">
                             <rect key="frame" x="1" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="V" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="uDx-Bk-ij3">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -648,11 +648,11 @@
                             <action selector="save:" target="544" id="AjP-9c-5cK"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="E0980E4A-2CD4-4ACC-854A-791547DE7B9E" label="Close" paletteLabel="Close" sizingBehavior="auto" id="4uA-nu-qqa">
+                    <toolbarItem implicitItemIdentifier="E0980E4A-2CD4-4ACC-854A-791547DE7B9E" label="Close" paletteLabel="Close" title="X" sizingBehavior="auto" id="4uA-nu-qqa">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="5Yb-qV-hoj">
                             <rect key="frame" x="3" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="X" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="X1q-u2-FEe">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -662,11 +662,11 @@
                             <action selector="closeFile:" target="544" id="ayk-1P-SbU"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="65B9C739-8515-46B5-92AF-96D4AAD30CAE" label="Print" paletteLabel="Print" sizingBehavior="auto" id="eOI-gK-dCL">
+                    <toolbarItem implicitItemIdentifier="65B9C739-8515-46B5-92AF-96D4AAD30CAE" label="Print" paletteLabel="Print" title="U" sizingBehavior="auto" id="eOI-gK-dCL">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="kw7-0k-Imk">
                             <rect key="frame" x="0.0" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="U" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="gD4-Mu-xFq">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -676,11 +676,11 @@
                             <action selector="print:" target="561" id="L4d-kW-3kS"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="0A1EDE26-9F03-4A06-AEE4-A21F66AFFAE7" label="Open in Browser" paletteLabel="Open in Browser" sizingBehavior="auto" id="lOZ-06-KVI">
+                    <toolbarItem implicitItemIdentifier="0A1EDE26-9F03-4A06-AEE4-A21F66AFFAE7" label="Open in Browser" paletteLabel="Open in Browser" title="O" sizingBehavior="auto" id="lOZ-06-KVI">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="6Vn-il-5TG">
                             <rect key="frame" x="31" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="O" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="3qN-8R-IGD">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -690,11 +690,11 @@
                             <action selector="openInBrowser:" target="544" id="9h1-iz-hvh"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="B261C29C-38A3-4DB1-834F-09EEE9F90893" label="Search" paletteLabel="Search" sizingBehavior="auto" id="rMl-g6-qD8">
+                    <toolbarItem implicitItemIdentifier="B261C29C-38A3-4DB1-834F-09EEE9F90893" label="Search" paletteLabel="Search" title="O--" sizingBehavior="auto" id="rMl-g6-qD8">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="hMX-Ks-kEO">
                             <rect key="frame" x="6" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="O--" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Zw4-LT-ODL">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -704,11 +704,11 @@
                             <action selector="searchForSelection:" target="889" id="Eav-3s-01k"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="5B92227A-F231-4EFE-BD96-0AD3C0D3C7F6" label="Toggle Case" paletteLabel="Toggle Case" sizingBehavior="auto" id="U3x-9W-F63">
+                    <toolbarItem implicitItemIdentifier="5B92227A-F231-4EFE-BD96-0AD3C0D3C7F6" label="Toggle Case" paletteLabel="Toggle Case" title="aA" sizingBehavior="auto" id="U3x-9W-F63">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="sJV-oB-O7F">
                             <rect key="frame" x="20" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="aA" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="6fg-BC-sWm">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system" size="17"/>
@@ -718,11 +718,11 @@
                             <action selector="toggleCaseForSelection:" target="561" id="5uT-v5-stl"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="9E863747-A3E7-4A80-B5C2-89FC5808A179" label="Invisibles" paletteLabel="Invisibles" sizingBehavior="auto" id="KjY-k2-GdD">
+                    <toolbarItem implicitItemIdentifier="9E863747-A3E7-4A80-B5C2-89FC5808A179" label="Invisibles" paletteLabel="Invisibles" title="¶" sizingBehavior="auto" id="KjY-k2-GdD">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="krD-Et-bBi">
                             <rect key="frame" x="12" y="14" width="32" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="¶" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="yqv-KD-uF1">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system" size="18"/>
