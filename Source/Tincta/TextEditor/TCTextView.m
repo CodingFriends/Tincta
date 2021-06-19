@@ -70,24 +70,34 @@
     
     if ((shallAutocompleteBrackets || shallAutocompleteQuotations)
         && [insertString isKindOfClass:[NSString class]]) {
-        // auto complete brackets
-        if ([insertString isEqualToString:@"("]) {
-            [super insertText:@")"];
-        } else if ([insertString isEqualToString:@"["]) {
-            [super insertText:@"]"];
-        } else if ([insertString isEqualToString:@"{"]) {
-            [super insertText:@"}"];
-        // auto complete quotations
-        } else if ([insertString isEqualToString:@"\""]) {
-            [super insertText:@"\""];
-        } else if ([insertString isEqualToString:@"'"]) {
-            [super insertText:@"'"];
-        // no autocompletion
-        } else {
-            return;
+        BOOL hasInsertedAutoComplete = false;
+        if (shallAutocompleteBrackets) {
+            if ([insertString isEqualToString:@"("]) {
+                [super insertText:@")"];
+                hasInsertedAutoComplete = true;
+            } else if ([insertString isEqualToString:@"["]) {
+                [super insertText:@"]"];
+                hasInsertedAutoComplete = true;
+            } else if ([insertString isEqualToString:@"{"]) {
+                [super insertText:@"}"];
+                hasInsertedAutoComplete = true;
+            }
+        }
+        if (shallAutocompleteQuotations) {
+            if ([insertString isEqualToString:@"\""]) {
+                [super insertText:@"\""];
+                hasInsertedAutoComplete = true;
+            } else if ([insertString isEqualToString:@"'"]) {
+                [super insertText:@"'"];
+                hasInsertedAutoComplete = true;
+            }
         }
         
-        // insertion point between the braces or quotations marks
+        if (!hasInsertedAutoComplete) {
+            return; //nothing more to do here
+        }
+        
+        // put insertion point between the braces or quotations marks
         NSArray* selRanges = @[[NSValue valueWithRange:NSMakeRange([self selectedRange].location - 1, 0)]];
         [self setSelectedRanges:selRanges];
     }
