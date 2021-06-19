@@ -1,6 +1,6 @@
 # Tincta
 
-One-window text editor for Mac with focus on speed, stability and ease of use.
+Free text editor for Mac with focus on speed, stability and ease of use.
 
 ![Tincta screenshot](/website-images/Screenshot.png?raw=true)
 
@@ -61,7 +61,12 @@ It should just compile with XCode. There are two caveats, though:
 
 
 ## Support Development
-Maintainance, App Store and website hosting is cross-financed from sales of Coding Friends' [vocabulary learning app Wokabulary](https://wokabulary.com). If you are learning a foreign language and want to support development of Tincta, give [Wokabulary](https://wokabulary.com) a try.
+Maintainance, App Store and website hosting is cross-financed from sales of Coding Friends' other apps.
+
+If you are learning a foreign language and want to support development of Tincta, try out [Wokabulary — the best app to learn your vocabulary](https://wokabulary.com).
+
+Or make your project's decision process speedier and more transparent with our [decision logging app Loqbooq](https://loqbooq.app).
+          
 
 
 ## Supporters
