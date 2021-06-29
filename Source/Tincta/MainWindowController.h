@@ -91,7 +91,8 @@
 
 - (IBAction) openRecentItem: (id) sender;
 - (IBAction) showPreferences: (id) sender;
- - (IBAction) showWhatsNewInfo:(id)sender;
+- (IBAction) showWhatsNewInfo:(id)sender;
+
 
 - (void) openPanelDidEnd:(NSOpenPanel *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
 - (void) savePanelDidEnd:(NSSavePanel *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;

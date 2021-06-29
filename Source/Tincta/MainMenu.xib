@@ -415,10 +415,16 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="491">
                         <items>
-                            <menuItem title="Visit website…" id="999">
+                            <menuItem title="What's new..." id="999">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showWhatsNewInfo:" target="544" id="hSE-Ve-OQX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Visit website…" id="sf5-Kn-M1j">
                                 <modifierMask key="keyEquivalentModifierMask" control="YES"/>
                                 <connections>
-                                    <action selector="openWebsite:" target="494" id="1002"/>
+                                    <action selector="openWebsite:" target="494" id="gyx-ZK-Tht"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Report a problem…" id="Y7R-gv-bRD">

@@ -8,13 +8,15 @@
 
 
 
-Welcome to Tincta 3
+Welcome to Tincta 4
 ===================
 
 Did you know:
+
 ... that Tincta automatically notices if an open file was changed by another application? If you have
     not modified the file in Tincta it will even reload the file contents without you noticing.
     If you made unsaved changes, Tincta will ask you what you would like to do.
+
 ... that you can make your own syntax definitions? just right-click the application, click
     'Show Package Contents' and go into the foler 'Contents/Resources/Syntax Definitons'. Then copy
     one of the definitions that describes the language you need best and copy it to the folder
@@ -25,12 +27,5 @@ Did you know:
     correspondig entry.
     If you add new syntax definitions we'll be glad to hear from you at https://codingfriends.github.io/Tincta/
 
-
-----------------------
-New in Tincta 3.1.2
-----------------------
-
-* Fixed some warnings because of layout issues
-* Fixed a crash related to scrolling
 
 

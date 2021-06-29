@@ -58,7 +58,7 @@
 // other preferences
 
 + (CGFloat)getDontShowProInfoForVersion;
-+ (CGFloat)getLastDisplayedVersionInfo;
++ (NSString*)getLastDisplayedWhatsNewVersion;
 + (BOOL)getIsNotFirstStart;
 + (NSInteger)getZenVersion;
 + (BOOL)hasImportedColorsFromPreviousVersion;
@@ -116,7 +116,7 @@
 // other preferences
 
 + (void)setDontShowProInfoForVersion:(CGFloat)version;
-+ (void)setLastDisplayedVersionInfo:(CGFloat)lastVersion;
++ (void)setLastDisplayedWhatsNewVersion:(NSString*)lastVersion;
 + (void)setIsNotFirstStart:(BOOL)notFirstStart;
 + (void)setZenVersion:(NSInteger)version;
 + (void) setHasImportedColorsFromPreviousVersion: (BOOL) hasImported;
