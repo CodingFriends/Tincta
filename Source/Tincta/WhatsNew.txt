@@ -1,23 +1,25 @@
 TL;DR: Tintca is free and stays free - Check out our newest product Loqbooq.app if you want to support us.
 
 
-🎉 10 years of Tincta!
+🎉 10 YEARS OF TINCTA!
 ======================
 Tincta 1.0 has been released exactly ten years ago on July 09, 2011.
 
 What could be better to celebrate this event than to fix a little bug that has been there ever since version 1.0:
 Finally fixed: Autocompletion of brackets and quotes could only be turned off, by turning off both.
 
-📖 A short history of Tincta
+
+📖 A SHORT HISTORY OF TINCTA
 ============================
 A lot has happened in the last ten years. We originally started Tincta because there simply was no good native text editor for macOS at that time. We were looking for an editor that would be super fast and integrate perfectly in the Mac look and feel. Later, we even created a paid companion app "Tincta Pro" with more features like split screen editing.
-However, that was also the time when GitHub and Microsoft both brought their free editors Visual Studio Code and Atom to the Mac. Without a doubt, they were more powerful than Tincta and Tincta Pro did not stand a chance to compete in features. Luckily, these large IDE editors were also very slow and heavy. So we decided to focus on Tincta's simplicity and speed.
+However, that was also the time when GitHub and Microsoft both brought their free editors Visual Studio Code and Atom to the Mac. Without a doubt, they were more powerful than Tincta and Tincta Pro and we did not stand a chance to compete in features. Luckily, these large IDE editors were also quite slow, heavy and complicated. So we decided to focus on Tincta's simplicity and speed.
 We integrated Tincta Pro's best features back into Tincta and made Tincta free and open source.
-We are sure Tincta still has its place in our and other people's toolbox because it is so approachable and lightweight. We don't always have the time to wait 10 seconds for some overblown editor to launch. So often we use Tincta to jot things down or do quick edits.
+We are sure Tincta still has its place in people's toolbox because it is so approachable and lightweight. You don't always have the patience to wait 10 seconds for some overblown editor to launch. We often rely on Tincta ourselves to jot things down or do quick edits.
 
-🚢 Where we're sailing to
+
+🚢 WHERE WE'RE SAILING TO
 =========================
-We have been supporting Tincta as a side project for years now. We don't plan for any revolutionary changes to Tincta. But simply keeping it updated for new versions of macOS requires quite some time (think of features like dark mode or under the hood changes to the APIs). So we have been cross-funding Tincta development with our other apps and we're happy with that (you might know our vocabulary learning app Wokabulary → https://wokabulary.com).
+We have been supporting Tincta as a side project for years now. We don't plan for any revolutionary changes to Tincta. But simply keeping it updated for new versions of macOS requires quite some time (think of features like dark mode or under the hood changes to the APIs). So we have been cross-funding Tincta development with our other apps (you might know our vocabulary learning app Wokabulary → https://wokabulary.com) — and we'll continue doing that.
 
 Let us use this opportunity to introduce you to our latest app "Loqbooq".
 We have been working on Loqbooq for two years now and we're proud to finally present it.
@@ -26,7 +28,7 @@ Loqbooq is a decision log for your team projects.
 With Loqbooq you commit to decisions together. Who decided what, when and why is recorded quickly and permanently. So, Loqbooq serves both as documentation and as a neutral party in the event of a dispute.
 Like Tincta, Loqbooq is lightweight and simple to use. There is a sleek web app and a Slack app. So you can easily record decisions right when they are made — without overhead.
 
-No, we did not do the entire programming in Tincta. But we did use it regularly, for example to quickly edit config files or to paste and format JSON payloads. We could not live without it. And if you can't either, take a look at Loqbooq ;-) We know most users of Tincta work in areas like software engineering, design or science, where project management is an integral part of your job. And we think Loqbooq might be a useful tool for quite a few of you.
+No, we did not do the entire programming in Tincta. But we did use it regularly, for example to quickly edit config files or to paste and format JSON payloads. We could not live without it. And if you can't either, take a look at Loqbooq 😉 We know most users of Tincta work in areas like software engineering, design or science, where project management is an integral part of your job. And we think Loqbooq might be a useful tool for quite a few of you.
 
 Learn more about Loqbooq on
 https://loqbooq.app
