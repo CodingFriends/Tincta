@@ -367,8 +367,8 @@
 }
 
 
-+ (CGFloat)getLastDisplayedVersionInfo {
-    return [TCADefaults doubleForKey:@"lastDisplayedVersionInfo"];
++ (NSString*)getLastDisplayedWhatsNewVersion {
+    return [TCADefaults stringForKey:@"lastDisplayedWhatsNewVersion"];
 }
 
 
@@ -600,8 +600,8 @@
 }
 
 
-+ (void)setLastDisplayedVersionInfo:(CGFloat)lastVersion {
-    [TCADefaults setDouble:lastVersion forKey:@"lastDisplayedVersionInfo"];
++ (void)setLastDisplayedWhatsNewVersion:(NSString*)lastVersion {
+    [TCADefaults setObject:lastVersion forKey:@"lastDisplayedWhatsNewVersion"];
     [TCADefaults synchronize];
 }
 

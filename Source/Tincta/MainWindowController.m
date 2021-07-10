@@ -111,6 +111,11 @@
     // These just use text. Sizes are deliberately different
     [self.toolbarToggleCaseItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"aA" attributes:@{NSFontAttributeName: [NSFont systemFontOfSize:21], NSForegroundColorAttributeName: iconColor}]];
     [self.toolbarInvisiblesItemCell setAttributedTitle:[[NSAttributedString alloc] initWithString:@"¶" attributes:@{NSFontAttributeName: [NSFont systemFontOfSize:22], NSForegroundColorAttributeName: iconColor}]];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self showWhatsNewOnOpen:self];
+
+    });
 
 }
 
@@ -534,14 +539,30 @@
 }
 
 
+
+- (IBAction) showWhatsNewOnOpen:(id)sender {
+    
+    NSString* bundleBuild = [[[NSBundle mainBundle] infoDictionary] objectForKey: (NSString *)kCFBundleVersionKey];
+    NSInteger currentBuildNumber = [bundleBuild integerValue];
+    NSInteger lastDisplayedBuildNumber = [[TCADefaultsHelper getLastDisplayedWhatsNewVersion] integerValue] ?: 0;
+    if (lastDisplayedBuildNumber >= currentBuildNumber) {
+        return;
+    }
+    [self showWhatsNewInfo:sender];
+    [TCADefaultsHelper setLastDisplayedWhatsNewVersion:bundleBuild];
+}
+
 - (IBAction) showWhatsNewInfo:(id)sender {
+    NSString* bundleVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey: @"CFBundleShortVersionString"];
+    
     NSString* whatsNewPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/Contents/Resources/WhatsNew.txt"];
     NSString* whatsNewHelp = [NSString stringWithContentsOfFile:whatsNewPath encoding:NSUTF8StringEncoding error:NULL];
     [self newFile:self];
     [textViewController setTextViewString: whatsNewHelp];
-    selectedItem.isDirty = YES;
+    selectedItem.isDirty = NO;
     selectedItem.isModified = NO;
-    selectedItem.topTitle = @"What's New";
+    selectedItem.topTitle = @"What’s New in Tincta";
+    selectedItem.bottomTitle = [NSString stringWithFormat:@"New in version %@", bundleVersion];
 }
 
 
