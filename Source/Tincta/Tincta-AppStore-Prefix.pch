@@ -7,9 +7,6 @@
     #import <Foundation/Foundation.h>
     #import "TCADefaultsHelper.h"
 
-    //it is safe to delete this if you get errors
-    // or define the file according to the example in 'SentryConfig_template.h'
-    #import "SentryConfig.h"
 #endif
 
 #define TCADefaults [NSUserDefaults standardUserDefaults]
