@@ -6,9 +6,6 @@
 //  Copyright 2010-2016 Coding Friends UG (haftungsbeschränkt)
 //
 
-#ifdef INCLUDE_SENTRY
-@import Sentry;
-#endif
 
 #import "TinctaAppDelegate.h"
 #import "MainWindowController.h"
@@ -33,14 +30,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 
-#ifdef INCLUDE_SENTRY
-    [SentrySDK startWithConfigureOptions:^(SentryOptions *options) {
-            options.dsn = SENTRY_DSN;
-        }];
-    
-    // for testing:
-    // [SentrySDK crash];
-#endif
     
     NSArray* savedBookmarks = [TCADefaultsHelper getOpenFilesToRestoreBookmarks];
     
