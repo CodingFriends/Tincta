@@ -67,6 +67,12 @@ If you are learning a foreign language and want to support development of Tincta
 
 Or make your project's decision process speedier and more transparent with our [decision logging app Loqbooq — The ideal app for ADR](https://loqbooq.app).
           
+## Beta Test
+You can also support development by beta testing new versions prior to release.
+Simply use this link to sign up for our TestFlight beta testers group:
+https://testflight.apple.com/join/JpE6RvBv
+
+Please note, that TestFlight requires macOS 12 Monterey.
 
 
 ## Supporters
