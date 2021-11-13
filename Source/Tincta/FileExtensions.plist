@@ -254,6 +254,7 @@
 	<key>R</key>
 	<array>
 		<string>r</string>
+		<string>rmd</string>
 	</array>
 	<key>REBOL</key>
 	<array>
