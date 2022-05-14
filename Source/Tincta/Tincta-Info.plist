@@ -76,7 +76,7 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>© Coding Friends UG (haftungsbeschränkt) 2011-2021</string>
+	<string>© 2011–2022 Coding Friends UG (haftungsbeschränkt)</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
