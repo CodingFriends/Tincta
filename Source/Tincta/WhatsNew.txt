@@ -1,11 +1,11 @@
 🐙 TINCTA SAYS GOODBYE!
 ======================
-It is over 11 years that the first version of Tincta was released. For an octpus this is an exceptional age (most species live only about one year!).
+It has been over 11 years that the first version of Tincta was released. For an octpus this is an exceptional age (most species live only about one year!).
 However, Tincta is showing signs of ageing. Already on macOS Monterey, we noticed an increase of app crashes. In future versions of macOS, Tincta won’t launch anymore at all. We could neither locate nor fix these crashes.
-Tincta’s codebase is over 10 years old and was originally built for MacOS Snow Leopard. Since them, macOS has moved on not only from cats to landmarks but also technically. But Tincta, being a free app, could not keep up.
+Tincta’s codebase is over 10 years old and was originally built for MacOS Snow Leopard. Since then, macOS has moved on — not only from cats to landmarks but also technically. But Tincta, being a free app, could not keep up.
 
 So, it is time to say goodbye to the Kraken. This will be the last update for the time being.
-Maybe some day Tincta will return from the depths if we find time to re-write the code base (or if someone else figures out how to fix those crashes and makes pull request).
+Maybe some day Tincta will return from the depths if we find time to re-write the code base (or if someone else figures out how to fix those crashes and opens a pull request).
 
 
 🚢 WHERE WE'RE SAILING TO
