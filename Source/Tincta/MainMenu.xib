@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment version="101003" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -452,7 +452,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <rect key="contentRect" x="284" y="137" width="787" height="511"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1470" height="919"/>
             <value key="minSize" type="size" width="600" height="450"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="787" height="511"/>
@@ -601,7 +601,7 @@
                     <toolbarItem implicitItemIdentifier="011F5E33-6C49-4564-9FDF-A10DEFA69638" label="Preferences" paletteLabel="Preferences" title="p" sizingBehavior="auto" id="DtR-Cw-Qiy">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="oxO-6D-98L">
-                            <rect key="frame" x="19" y="14" width="32" height="24"/>
+                            <rect key="frame" x="29" y="14" width="12" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="p" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="EPG-Ol-eIA">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -615,7 +615,7 @@
                     <toolbarItem implicitItemIdentifier="EC5A41AE-5D82-4BB7-BA53-803DBF4A8C39" label="New" paletteLabel="New" title="+" sizingBehavior="auto" id="Gmf-xg-eAF">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="Byh-LU-1uH">
-                            <rect key="frame" x="0.0" y="14" width="32" height="24"/>
+                            <rect key="frame" x="9" y="14" width="13" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="+" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="gJt-ZL-SFf">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -629,7 +629,7 @@
                     <toolbarItem implicitItemIdentifier="1A081BF2-D439-42FB-9BDC-396FB075DEFD" label="Open" paletteLabel="Open" title="W" sizingBehavior="auto" id="wOK-Zz-3cO">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="txr-rp-Uo0">
-                            <rect key="frame" x="2" y="14" width="32" height="24"/>
+                            <rect key="frame" x="10" y="14" width="17" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="W" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="CUz-4U-sc4">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -643,7 +643,7 @@
                     <toolbarItem implicitItemIdentifier="BF165A0F-6331-4D00-BB7E-A7A71FEDB21C" label="Save" paletteLabel="Save" title="V" sizingBehavior="auto" id="z5O-69-wgv">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="aJn-9t-etz">
-                            <rect key="frame" x="1" y="14" width="32" height="24"/>
+                            <rect key="frame" x="10" y="14" width="13" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="V" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="uDx-Bk-ij3">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -657,7 +657,7 @@
                     <toolbarItem implicitItemIdentifier="E0980E4A-2CD4-4ACC-854A-791547DE7B9E" label="Close" paletteLabel="Close" title="X" sizingBehavior="auto" id="4uA-nu-qqa">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="5Yb-qV-hoj">
-                            <rect key="frame" x="3" y="14" width="32" height="24"/>
+                            <rect key="frame" x="12" y="14" width="13" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="X" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="X1q-u2-FEe">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -671,7 +671,7 @@
                     <toolbarItem implicitItemIdentifier="65B9C739-8515-46B5-92AF-96D4AAD30CAE" label="Print" paletteLabel="Print" title="U" sizingBehavior="auto" id="eOI-gK-dCL">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="kw7-0k-Imk">
-                            <rect key="frame" x="0.0" y="14" width="32" height="24"/>
+                            <rect key="frame" x="9" y="14" width="14" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="U" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="gD4-Mu-xFq">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -685,7 +685,7 @@
                     <toolbarItem implicitItemIdentifier="0A1EDE26-9F03-4A06-AEE4-A21F66AFFAE7" label="Open in Browser" paletteLabel="Open in Browser" title="O" sizingBehavior="auto" id="lOZ-06-KVI">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="6Vn-il-5TG">
-                            <rect key="frame" x="31" y="14" width="32" height="24"/>
+                            <rect key="frame" x="40" y="14" width="14" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="O" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="3qN-8R-IGD">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -699,7 +699,7 @@
                     <toolbarItem implicitItemIdentifier="B261C29C-38A3-4DB1-834F-09EEE9F90893" label="Search" paletteLabel="Search" title="O--" sizingBehavior="auto" id="rMl-g6-qD8">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="hMX-Ks-kEO">
-                            <rect key="frame" x="6" y="14" width="32" height="24"/>
+                            <rect key="frame" x="9" y="14" width="27" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="O--" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Zw4-LT-ODL">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -713,7 +713,7 @@
                     <toolbarItem implicitItemIdentifier="5B92227A-F231-4EFE-BD96-0AD3C0D3C7F6" label="Toggle Case" paletteLabel="Toggle Case" title="aA" sizingBehavior="auto" id="U3x-9W-F63">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="sJV-oB-O7F">
-                            <rect key="frame" x="20" y="14" width="32" height="24"/>
+                            <rect key="frame" x="24" y="14" width="24" height="20"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="aA" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="6fg-BC-sWm">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -727,7 +727,7 @@
                     <toolbarItem implicitItemIdentifier="9E863747-A3E7-4A80-B5C2-89FC5808A179" label="Invisibles" paletteLabel="Invisibles" title="¶" sizingBehavior="auto" id="KjY-k2-GdD">
                         <nil key="toolTip"/>
                         <button key="view" verticalHuggingPriority="750" id="krD-Et-bBi">
-                            <rect key="frame" x="12" y="14" width="32" height="24"/>
+                            <rect key="frame" x="21" y="14" width="15" height="21"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="square" title="¶" bezelStyle="shadowlessSquare" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="yqv-KD-uF1">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
